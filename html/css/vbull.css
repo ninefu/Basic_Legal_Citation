@@ -1,0 +1,187 @@
+#channel-subtabbar ul li a.navbar_member_list {
+ display: none;
+}
+
+.clear-block { display: block; clear: both }
+.clear-block:after, .inner:after {
+    clear: both;
+    content: ".";
+    display: block;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    visibility: hidden; 
+}
+
+#cu-identity {height: 45px; background: #68645b; margin-top: 0;}
+
+#cu-identity .inner {width: 100%; max-width: 1200px; min-width: 320px; margin: 0 auto; }
+
+#cu-logo {margin-left: 10px; background: url("/sites/all/themes/liinsd7port/images/cufull.gif") no-repeat 0px 0px; }
+
+#cu-logo a#insignialink {
+    display: inline-block;
+    height: 45px;
+    width: 40px;
+}
+
+#cu-logo a#clslink {
+    display: inline-block;
+    height: 45px;
+    width: 208px;
+}
+
+#cu-search { float: right; margin-top: -30px; padding-right: 10px; }
+
+#cu-search a { color: #fff; }
+
+#liihead { width: 100%; max-width: 1200px; padding: 10px 0; }
+
+#liihead #logo {  width: 620px; 
+background: url("/sites/all/themes/liinsd7port/images/liilogodonate.gif") no-repeat scroll 0 0 rgba(0, 0, 0, 0); 
+display: block; 
+float: left;
+}
+
+#liihead a#liilogo    {
+    display: inline-block;
+    height: 45px;
+    margin-right: 32px;
+    width: 436px; }
+
+#liihead a#liidonate {
+display: inline-block;
+width: 152px;
+height: 45px; }
+
+#liiheadersearchbox {
+ width: 300px;
+ display: inline-block;
+ float: right;
+ margin-left: 20px;
+ margin-top: 3px;
+}
+
+
+#liiheadersearchbox .inner {
+ background: #f0f0f0;
+ border: solid 1px #ccc;
+ padding: 10px;
+}
+
+#liiheadersearchbox .icon {
+ width: 44px;
+ height: 38px;
+ float: left;
+ margin-top: -14px;
+ background: url(/sites/all/themes/liinsd7port/images/iconsfull.gif) no-repeat 0 0;
+}
+
+#liiheadersearchbox label.element-invisible {
+ position: absolute !important;
+clip: rect(1px 1px 1px 1px);
+clip: rect(1px,1px,1px,1px);
+overflow: hidden;
+height: 1px;
+}
+
+#liiheadersearchbox .form-item-search-block-form {
+ display: inline;
+ margin-left: 16px;
+}
+
+#liiheadersearchbox input[type="text"] {
+ height: 13px;
+ padding-top: 2px;
+ padding-left: 2px;
+}
+
+#liiheadersearchbox input[type="submit"] {
+ padding: 4px 8px 2px;
+ text-align: center;
+}
+
+#liiheadersearchbox .form-actions {
+ display: inline;
+}
+
+
+#liinavandsearch .inner { clear: both; width: 100%; border-bottom: 1px solid #D4E0E4;
+border-top: 1px solid #D4E0E4;
+padding: 7px 0 3px;  
+}
+
+#liinav {
+ display: block;
+ float: left; 
+ clear: left;
+}
+
+#liinav a { text-decoration: none;
+color: #8B7F5F;
+font-size: 15px;
+line-height: 18px;
+padding: 2px 8px;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+div#socialmedia {
+ display: block;
+ float: right;
+ width: 114px;
+ margin: 0;
+ padding: 0;
+} 
+
+div#socialmedia ul {
+ margin: 0;
+ padding: 0;
+}
+
+div#socialmedia li {
+ margin: 0;
+ padding: 0;
+}
+
+div#socialmedia ul li {
+ float: left;
+}
+
+#header .header-cell {
+ display: block;
+}
+#header .toolbar {
+ display: block;
+ float: right;
+ margin-top: -46px;
+}
+
+body.vb-page, body #header {
+ background: #fff;
+}
+
+
+div#liifooter {
+ 
+}
+
+ul.liifooterNav li {
+ float: left;
+}
+
+ul.liifooterNav li a {
+text-decoration: none;
+color: #68645b;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 14px;
+padding: 2px 28px;
+}
+
+
+div#liifooter .grid-1 {
+ float: right;
+ margin-top: -26px;
+ padding-right: 20px;
+}

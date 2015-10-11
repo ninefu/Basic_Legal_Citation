@@ -1,0 +1,147 @@
+/* CSS Document */
+
+/* emendations to lii_new.css */
+
+BODY DIV#ours DIV#middle UL UL {
+ MARGIN-LEFT: 3%;
+ PADDING-LEFT: 0;
+}
+
+* HTML BODY DIV#ours DIV#middle UL UL {
+ MARGIN-LEFT: 6%;
+}
+
+DIV#content {
+ FLOAT: right;
+}
+
+DIV#menu {
+ MIN-HEIGHT: 1200px;
+}
+
+* HTML DIV#menu {
+ HEIGHT: 1200px;
+}
+
+* HTML DIV#ours DIV#middle DIV#content {
+ OVERFLOW: auto;
+}
+
+
+/* menu proper */
+
+DIV#nav {
+/* WIDTH: 15em; */
+WIDTH: 98%;
+}
+	
+DIV#navBox {
+ MARGIN: 1em 0.5em 0 0;
+ FLOAT: left;
+}
+
+* HTML DIV#navBox, *:first-child+HTML DIV#container DIV#ours DIV#navBox {
+ MARGIN: 0 0 0 -3em;
+}
+
+.navMenu ul {
+ padding: 0 10px;	
+ background: #f0f0f0;
+ list-style-type: none;
+}
+
+.navMenu ul ul {
+ PADDING: 0;
+}
+
+.navMenu li {
+ 	display: block;
+	margin: 0;
+	text-align: left;
+	border-bottom: solid #ffffff 1px;
+	list-style-type: none; /* redundant, but needed to eliminate bullets in IE/Mac & Mozilla */
+	width: 100%;
+}
+
+.navMenu #nav a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.navMenu #nav li a {
+ 	display: block;
+	margin: 0;	
+ 	padding: 5px 10px;	
+ 	color: #ffffff;
+	background: #333;
+}
+*:first-child+HTML .navMenu #nav li a {
+	WIDTH: 11em;
+}
+	
+.navMenu #nav li a:hover {
+ 	display: block;
+ 	background: #ffffff; 
+ 	color: #333;
+}
+/* END NEW */
+
+.navMenu #nav li li a {
+	display: block;
+	MIN-WIDTH: 12em;
+	padding: 5px 10px;	
+	color: #333;
+	font-weight: normal;
+	background: #f0f0f0;
+	border-bottom: solid 1px #ccc;
+}
+
+.navMenu #nav li li a:hover {
+	padding: 5px 10px;	
+	color: #000;
+	background: #ffffff;
+}
+
+.navMenu li#first {
+	border-top-width: 1em;
+	border-top: solid 1em #f0f0f0;
+/* or left for horiz menus*/
+}
+
+.navMenu li#last {
+	border-bottom-width: 1em; 
+	border-bottom: solid 1em #f0f0f0;
+/* or left for horiz menus */
+}
+
+DIV#container DIV#ours .navMenu li ul {
+ MARGIN-LEFT: 3em;
+ BORDER-TOP: 1px;
+ BORDER-BOTTOM: 1px;
+ BORDER: solid #ccc collapse;
+}
+
+.navMenu li ul {
+	display: none; 
+	position: absolute;	
+	font-weight: normal;
+}
+
+.navMenu li>ul {
+	top: auto;
+	left: auto;
+}
+
+.navMenu li li {
+	display: block;
+	background: #f0f0f0;
+}
+
+.navMenu li li.first {
+	line-height: 1.25em;
+}
+
+.navMenu li:hover ul, li.over ul {
+	display: block; 
+}
+

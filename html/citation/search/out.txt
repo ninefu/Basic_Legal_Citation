@@ -1,0 +1,151 @@
+<url>../1-100.htm</url>
+<title>1-100. Introduction</title> The Bluebook and the ALWD Citation Manual A Professional System of Citation practitioner rules foreign material
+<url>../1-200.htm</url>
+<title>1-200. Purposes of Legal Citation</title> 
+<url>../1-300.htm</url>
+<title>1-300. Types of Citation Principles</title> full address principles Minimum Content Principles Compaction Principles abbreviations Format Principles
+<url>../1-400.htm</url>
+<title>1-400. Levels of Mastery</title> 
+<url>../1-500.htm</url>
+<title>1-500. Citation in Transition: From Proprietary Print Citations to Vendor and Media Neutral Schemes</title> American Bar Association ABA resolution uniform public domain citation American Association of Law Libraries AALL vendor and media neutral citation North Dakota paragraph number Maine Mississippi Montana New Mexico Oklahoma South Dakota Utah Vermont Wisconsin Wyoming U.S. Court of Appeals for the Sixth Circuit Louisiana Ohio 6th cir.
+<url>../1-600.htm</url>
+<title>1-600. Who Sets Citation Norms</title> The Bluebook ALWD Citation Manual: A Professional System of Citation The University of Chicago Manual of Legal Citation the Maroon Book local citation rules AALL American Association of Law Libraries Universal Citation Guide American Bar Association ABA public domain citation vendor media neutral citation 
+<url>../2-100.htm</url>
+<title>2-100. How to Cite Electronic Sources</title> Electronic citation of electronically accessed sources on-line sources CD-ROMs print alternatives judicial opinions statutes regulations journal articles government reports print electronic editions same format without regard to format or source commercial public non-profit U.S. Supreme Court decision U.S. Code or a comparable compilation of state statutes need not indicate whether article law journal law review LEXIS Westlaw not widely available 
+<url>../2-100.htm#2-110</url>
+<title>2-110. Electronic Sources - Core Elements</title> denominated and organized in print better access electronically electronic source reasonably available in print version reference parallel citation signals indicate only known source at parallel reference available at case constitution statute regulation appropriate signal ID address online on-line URL Web-based WWW world wide web internet Westlaw citation Westlaw cite LEXIS cite LEXIS citation database VersusLaw LoisLaw Michie Matthew Bender date current through date release date CD-ROM through date last modified date last visited date last accessed date
+<url>../2-100.htm#2-150</url>
+<title>2-150. Electronic Sources - Points of Difference in Citation Practice</title> ALWD Citation Manual electronic journals URL without signal commercial database cite parties' electronic address URL Westlaw cite LEXIS cite  database identifier available in available at The Bluebook angle brackets last accessed last visited 
+<url>../2-200.htm</url>
+<title>2-200. How to Cite Judicial Opinions</title> judicial opinions binding precedent persuasive authority on point cited cases case reports appellate courts trial court electronic unpublished cases on-line online pinpoint cite jump cite
+<url>../2-200.htm#2-210</url>
+<title>2-210. Case Citations - Most Common Form</title> case citation elements parties' names party names case name style of the case caption of the case italicized italics underlined omissions abbreviations v. vs. versus cite media-neutral citation reporter volume number reporter name abbreviated the first page paragraph number page number pinpoint citation or jump citation pinpoint cite jump cite parallel cite parallel citation media-neutral citation official reporter West regional reporter West national reporter system year of decision highest appellate court circuits districts divisions departments circuit U.S. Court of Appeals U.S. District Court intermediate level 
+<url>../2-200.htm#2-215</url>
+<title>2-215. Case Citations - Points of Difference in Citation Practice</title> parallel citations West regional reporter ALWD Citation Manual Ct. court of appeals
+<url>../2-200.htm#2-220</url>
+<title>2-215. Case Citations - Variants and Special Cases </title> case citations law reports print reporters recent media-neutral citation precedent looseleaf service electronic format docket number westlaw cite westlaw citation lexis cite lexis citation url slip opinion full date 
+<url>../2-200.htm#2-225</url>
+<title>2-225. Case Citations - More Points of Difference in Citation Practice</title> ALWD Citation Manual docket number LEXIS Westlaw Web site skeletal print citation volume page numbers 
+<url>../2-200.htm#2-230</url>
+<title>2-230. Media-Neutral Case Citations</title> American Bar Association ABA uniform public domain citation system printed case reports electronically published computer disks network services cd-rom American Association of Law Libraries AALL vendor neutral media neutral citation Universal Citation Guide North Dakota Maine Montana New Mexico Oklahoma South Dakota Utah Vermont  Wisconsin Wyoming Ohio Louisiana Mississippi docket number U.S. Court of Appeals for the Sixth Circuit 6th cir. page numbers slip opinion paragraph numbers pinpoint citation
+<url>../2-200.htm#2-240</url>
+<title>2-240. Case Citations - Conditional Items</title> holding majority dissent dissenting concur concurring plurality dictum subsequent actions reversed certiorari cert. denied
+<url>../2-200.htm#2-250</url>
+<title>2-250. Citing Unpublished Cases</title> precedential precedent unpublished unreported res judicata
+<url>../2-300.htm</url>
+<title>2-300. How to Cite Constitutions and Statutes</title> constitutions statutes vendor neutral media neutral articles sections clauses subsections volumes page numbers codes codification amendment
+<url>../2-300.htm#2-310</url>
+<title>2-310. Constitution Citations</title> citation federal constitution u.s. constitution state constitution elements name constitution abbreviation jurisdiction cited part article art. amendment amend. clause cl. Section § italicized underlined date in effect
+<url>../2-300.htm#2-320</url>
+<title>2-320. Statute Citations - Most Common Form</title> Statutory provisions compilations codifications codes sections titles official current through date italicized underlined name of code (abbreviated) number of the section or part currency 
+<url>../2-300.htm#2-330</url>
+<title>2-330. Statute Citations - Conditional items</title official codification United States Code U.S. Code U.S.C.A. U.S.C.S. Ann. supplements pocket parts Supp.
+<url>../2-300.htm#2-335</url>
+<title>2-335. Statute Citations - Points of Difference in Citation Practice</title> The Bluebook ALWD Citation Manual Ann. commercially produced statutory compilation brand name official code AALL Universal Citation Guide publisher's name currency information annotations on-line online LEXIS Westlaw currency AALL Universal Citation Guide current through date state variation briefs opinions 
+<url>../2-300.htm#2-340</url>
+<title>2-340. Statute Citations - Variants and Special Cases</title> Session Laws compiled compilation code legislative body congress session codified public law number Pub. L. No. volume year number name publication abbreviated Stat. or U.S.C.C.A.N. federal act page number year of enactment Bills legislative history proposed legislation Named Acts Social Security Act original section numbers Internal Revenue Code I.R.C. current through date year Uniform Acts uniform law parallel citation Uniform Laws Annotated U.L.A. model codes
+<url>../2-300.htm#2-350</url>
+<title>2-350. Local Ordinance Citations</title> local codes municipal ordinances local ordinances county ordinances
+<url>../2-300.htm#2-360</url>
+<title>2-360. Treaty Citations</title> treaty treaties international agreements convention conventions U.N.
+<url>../2-400.htm</url>
+<title>2-400. How to Cite Regulations and Other Agency Material</title> federal agency state agency administrative agency administrative agencies regulations Internet Web site
+<url>../2-400.htm#2-410</url>
+<title>2-410. Regulation Citations - Most Common Form</title> agency regulations codifications codes title number C.F.R. Code of Federal Regulations section number section symbol year compilation of that title through date italicized underlined codified state regulation administrative code parallel electronic citation 
+<url>../2-400.htm#2-415</url>
+<title>2-415. Regulation Citations - Points of Difference in Citation Practice</title> State regulations abbreviations The Bluebook ALWD Citation Manual 
+<url>../2-400.htm#2-420</url>
+<title>2-420. Regulation Citations - Variants and Special Cases</title> Federal regulations Federal Register (Fed. Reg.) C.F.R. sentencing guidelines
+<url>../2-400.htm#2-450</url>
+<title>2-450. Agency Adjudication Citations</title> Agency adjudications judicial opinions cases Names italicized underlined omissions abbreviations procedural phrases official reporter date parallel citation to an electronic source unofficial reporter service agency
+<url>../2-400.htm#2-455</url>
+<title>2-455. Agency Adjudication Citations - Points of Difference in Citation Practice</title> ALWD Citation Manual format judicial opinions abbreviations italicizing party names 
+<url>../2-400.htm#2-470</url>
+<title>2-470. Agency Report Citations</title> agency reports same form journal articles books institutional authors 
+<url>../2-400.htm#2-480</url>
+<title>2-480. Executive Orders and Proclamations</title> executive orders presidential proclamations governor 
+<url>../2-400.htm#2-490</url>
+<title>2-490. Attorney General and Other Advisory Opinions</title> attorney general opinions advisory opinions 
+<url>../2-500.htm</url>
+<title>2-500. How to Cite Arbitration Decisions</title> arbitration decisions arbitration awards court cases adversary parties administrative adjudications arbitrator's name
+<url>../2-600.htm</url>
+<title>2-600. How to Cite Court Rules</title> Rules of evidence or rules of procedure civil procedure criminal procedure rule number date year
+<url>../2-700.htm</url>
+<title>2-700. How to Cite Books</title> 
+<url>../2-700.htm#2-710</url>
+<title>2-710. Book Citations - Most Common Form </title> book citation elements volume number multi-volume treatise name author more than two authors et al. two authors & full name first name initial Title italicized italics underlined section paragraph page number edition number multiple editions year publication 
+<url>../2-700.htm#2-710</url>
+<title>2-715. Book Citations - Points of Difference in Citation Practice</title> The Bluebook volume number multi-volume author's name ALWD Citation Manual multiple authors et al. publisher's name abbreviated year of publication 
+<url>../2-700.htm#2-720</url>
+<title>2-720. Book Citations - Variants and Special Cases</title> institutional authors institution name individual author Services looseleaf service cases  administrative material volume abbreviated title italicized publisher date Restatements Annotations American Law Reports A.L.R. articles journal
+<url>../2-800.htm</url>
+<title>2-800. How to Cite Articles and Other Law Journal Writing</title> 
+<url>../2-800.htm#2-810</url>
+<title>2-810. Journal Article Citations - Most Common Form</title> law journal law review full name contributing author comma more than two authors et al. two authors & Middle names initials article title italicized or underlined volume number paginated consecutively year journal name abbreviated page number pinpoint cite jump cite year of publication 
+<url>../2-800.htm#2-820</url>
+<title>2-820. Journal Article Citations - Variants and Special Cases</title> Journal contributing authors Student Writing Named Student category type note comment case note Unsigned Student Writing title Book Reviews author student editor Book Note Symposia survey symposium comment
+<url>../2-800.htm#2-825</url>
+<title>2-825. Journal Article Citations - Points of Difference in Citation Practice</title> student writing category type Note Comment ALWD Citation Manual Student Author 
+<url>../2-900.htm</url>
+<title>2-900. How to Cite Documents from Earlier Stages of the Same Case</title> record brief memorandum parentheses capitalized italicized italics abbreviations at page number
+<url>../3-100.htm</url>
+<title>3-100. Examples ... Electronic Sources</title> examples samples
+<url>../3-200.htm</url>
+<title>3-200. Examples ... Judicial Opinions</title> examples samples Supreme Court Court of Federal Claims  Courts of Appeals Bankruptcy Courts and Bankruptcy Panels Court of Appeals for the Federal Circuit Tax Court District Courts Military Service Courts of Criminal Appeals
+<url>../3-300.htm</url>
+<title>3-300. Examples ... Constitutions and Statutes</title> examples samples U.S. Constitution United States Code U.S.C.
+<url>../3-300.htm#3-340</url>
+<title>3-340. Statutes - Variants and Special Cases</title> session laws bills internal revenue code I.R.C. uniform laws named statutes original section numbers
+<url>../3-400.htm</url>
+<title>3-400. Examples ... Regulations</title> examples samples 
+<url>../3-400.htm#3-450</url>
+<title>3-450. Examples ... Agency Adjudications</title> examples samples 
+<url>../3-400.htm#3-470</url>
+<title>3-470. Examples ... Agency Reports</title> examples samples 
+<url>../3-500.htm</url>
+<title>3-500. Examples ... Arbitration Decisions</title> examples samples
+<url>../3-600.htm</url>
+<title>3-600. Examples ... Court Rules</title> examples samples federal rules of civil procedure rules of evidence criminal procedure
+<url>../3-700.htm</url>
+<title>3-700. Examples ... Books</title> examples samples institutional authors looseleaf services restatements annotations
+<url>../3-800.htm</url>
+<title>3-800. Examples ... Law Journal Writing</title> examples samples unsigned student writing symposia book reviews notes comments
+<url>../4-100.htm</url>
+<title>4-100. Words Abbreviated in Case Names </title> Academy Casualty Administrative Administration Center Centre Administrator Administratrix Central Advertising Chemical Agriculture Agricultural College America American Commission And Commissioner Associate Committee Association Community Atlantic Company Authority Compensation Automobile Automotive Condominium Avenue Congress Congressional Bankruptcy Consolidated Board Construction Broadcast Broadcasting Continental Brotherhood Cooperative Brothers Corporation Building Correction Correctional Corrections Business Defense Federal Department Federation Detention Fidelity Development Finance Financial Financing Director Foundation Discount General Distributor Distributing Government District Guaranty Division Hospital East Eastern Housing Economic Economical Economics Economy Import Importation Importer Education Educational Incorporated Electric Electrical Electricity Electronic Indemnity Engineer Independent Engineering Industry Industries Industrial Enterprise Information Entertainment Institute Institution Environment Insurance Environmental International Equality Investment Equipment Laboratory Examiner Liability Exchange Limited Executor Executrix Litigation Export Exportation Exporter Machine Machinery Pacific Maintenance Partnership Management Person Personal Personnel Manufacturer Pharmaceutics Pharmaceuticals Manufacturing Preserve Preservation Maritime Probation Market Product Production Marketing Professional Mechanic Mechanical Property Medical Medicine Protection Memorial Public Merchant Merchandise Merchandising Publication Metropolitan Publishing Municipal Railroad Mutual Railway National Refining National Labor Relations Board Regional North Northern Rehabilitation Number Reproduction Reproductive Organization Organizing Resource Resources Restaurant Retirement Road Savings Technology School Schools Telecommunication Science Telephone Telegraph Secretary Temporary Security Securities Transcontinental Service Transport Transportation Shareholder Trustee Social Turnpike Society Uniform South Southern University Steamship Steamships Utility Street Village Subcommittee West Western Surety System Systems
+<url>../4-200.htm</url>
+<title>4-200. Abbreviations for Words Used in Providing Case Histories</title> acquiescing nonacquiescing affirmed probable affirming rehearing certiorari reversed jurisdiction reversing memorandum
+<url>../4-300.htm</url>
+<title>4-300. Words Omitted in Case Names</title> the in rem ex rel multiple parties multiple actions on behalf of for the use of in the matter of Petition of trustee executor administrator state of city of location locational united states of america surnames middle names first names initials Inc. Ltd. N.A. F.S.B. Co. Corp. R.R. Bros. Ass'n
+<url>../4-400.htm</url>
+<title>4-400. Abbreviations ... Reporters and Courts</title>
+<url>../4-500.htm</url>
+<title>4-500. State Abbreviations</title> Alabama Ala. Montana Mont. Alaska Nebraska Neb. Arizona Ariz. Nevada Nev. Arkansas Ark. New Hampshire N.H. California Cal. New Jersey N.J. Colorado Colo. New Mexico N.M. Connecticut Conn. New York N.Y. Delaware Del. North Carolina N.C. Washington, D.C. D.C. District of Columbia North Dakota N.D. Florida Fla. Ohio Georgia Ga. Oklahoma Okla. Hawaii Haw. Oregon Or. Idaho Pennsylvania Pa. Illinois Ill. Rhode Island R.I.   Indiana Ind. South Carolina S.C Iowa Iowa South Dakota S.D. Kansas Kan. Tennessee Tenn. Kentucky Ky. Texas Tex.  Louisiana La. Utah  Maine Me. Vermont Vt. Maryland Md. Virginia Va. Massachusetts Mass. Washington Wash. Michigan Mich. West Virginia W. Va. Minnesota Minn. Wisconsin Wisc. Mississippi Miss. Wyoming Wyo. Missouri Mo.
+<url>../4-600.htm</url>
+<title>4-600. Abbreviations ... Months</title> January Jan. July February Feb. August Aug. March Mar. September Sept. April Apr. October Oct. May November Nov. June December Dec.
+<url>../4-700.htm</url>
+<title>4-700. Abbreviations ... Frequently Cited Journals</title> Boston University Law Review Ohio State Law Journal Buffalo Law Review Rutgers Law Review California Law Review Seton Hall Law Review Case Western Reserve Law Review Stanford Law Review Columbia Law Review  Supreme Court Review Cornell Law Review Temple Law Review Duke Law Journal Texas Law Review Fordham Law Review UCLA Law Review 
+Georgetown Law Journal University of Chicago Law Review George Washington Law Review University of Pennsylvania Law Review Harvard Law Review Vanderbilt Law Review Howard Law Journal Virginia Law Review Michigan Law Review Yale Law Journal  Yale Minnesota Law Review Washington University Law Quarterly New York University Law Review Wisconsin Law Review
+<url>../4-800.htm</url>
+<title>4-800. Spacing between Abbreviated Words and Periods in Abbreviations</title>
+<url>../4-900.htm</url>
+<title>4-900. Abbreviations ... Documents from Earlier Stages of a Case</title> Affidavit Aff. Answer Brief Br. Complaint Compl. Court Ct. Declaration Decl. Defendant Def. Deposition Dep. Discovery Disc. Document Doc. Exhibit Ex. Memorandum Mem. Motion Mot. Opinion Op. Petition Pet. Plaintiff Pl. Record R. Transcript
+<url>../5-000.htm</url> 
+<title>5-000. Underling and Italics</title> case names procedural phrases book titles titles of journal articles introductory signals used in citation sentences or clauses prior or subsequent history explanatory phrases words or phrases attributing one cited authority to another source cross reference words id. supra infra foreign words
+<url>../6-100.htm</url>
+<title>6-100. Quoting </title> quotation marks ellipsis ellipses indent quote
+<url>../6-200.htm</url>
+<title>6-200. Citations and Related Text</title> footnotes citation sentence citation clause
+<url>../6-3100.htm</url>
+<title>6-300. Signals</title> e.g. see accord see also cf. compare with contra but see but c.f. see generally 
+<url>../6-400.htm</url>
+<title>6-400. Order</title> string citation signals
+<url>../6-500.htm</url>
+<title>6-500. Short Form Citations</title> short form cases statutes constitutions law journal law review books regulations
+<url>../7-200.htm</url>
+<title>7-200. Significant Changes in The Bluebook: 17th edition</title> signals public domain vendor media neutral authors electronic media
+<url>../7-300.htm</url>
+<title>7-300. Cross Reference Table: The Bluebook</title>
+<url>../7-400.htm</url>
+<title>7-400. Cross Reference Table: ALWD Citation Manual</title> American Legal Writing Directors
+<url>../7-500.htm</url>
+<title>7-500. Table of State-Specific Citation Norms and Practices</title> Alabama Ala. Montana Mont. Alaska Nebraska Neb. Arizona Ariz. Nevada Nev. Arkansas Ark. New Hampshire N.H. California Cal. New Jersey N.J. Colorado Colo. New Mexico N.M. Connecticut Conn. New York N.Y. Delaware Del. North Carolina N.C. Washington, D.C. D.C. District of Columbia North Dakota N.D. Florida Fla. Ohio Georgia Ga. Oklahoma Okla. Hawaii Haw. Oregon Or. Idaho Pennsylvania Pa. Illinois Ill. Rhode Island R.I.   Indiana Ind. South Carolina S.C Iowa Iowa South Dakota S.D. Kansas Kan. Tennessee Tenn. Kentucky Ky. Texas Tex.  Louisiana La. Utah  Maine Me. Vermont Vt. Maryland Md. Virginia Va. Massachusetts Mass. Washington Wash. Michigan Mich. West Virginia W. Va. Minnesota Minn. Wisconsin Wisc. Mississippi Miss. Wyoming Wyo. Missouri Mo.

@@ -1,0 +1,73 @@
+	<script type="text/javascript"> 
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script> 
+<script type="text/javascript"> 
+var pageTracker = _gat._getTracker("UA-1734385-15");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script> 
+ 
+<div id="liicontainer"> <a href="#content" class="skipNav" name="navigation">skip navigation</a> 
+  <div id="cu-head" class="clear-block"> 
+    <div id="cu-identity" class="clear-block"> 
+      <div id="cu-logo"> <a id="insignia-link" href="http://www.cornell.edu/" title="Cornell University"><img src="/css/images/insignia.gif" alt="Cornell University" border="0"></a><a id="unit-link" href="http://www.lawschool.cornell.edu/" title="Cornell Law School"><img src="/css/images/unit_name.gif" alt="Cornell Law School" border="0" /></a> </div><!-- /cu-logo --> 
+      <div id="search-navigation"> 
+        <ul> 
+          <li><a href="http://www.cornell.edu/search/">Search Cornell</a></li> 
+        </ul> 
+      </div><!-- /search-navigation --> 
+    </div><!-- /cu-identity --> 
+  </div><!-- /cu-head --> 
+<div id="liipage"> 
+  <div id="ours"> 
+	<div id="liihead" class="clear-block"> 
+	 <div id="ourliilogo" class="grid-8"> 
+	 <div id="liilogo" class="grid-6 alpha"> 
+ 
+	  <a href="http://www.law.cornell.edu"><img src="/css/images/liilogo.gif" border="0" /></a> 
+	  </div><!-- /liilogo --> 
+	  <div id="liidonate" class="grid-2 alpha"><a href="http://www.law.cornell.edu/donate"><img src="/css/images/donate.gif" alt="Show your support, make a donation" /></a> 
+	  </div><!-- /liidonate --> 
+	 </div><!-- /logoandnav --> 
+	 <div id="liiheadersearchbox" class="grid-4"> 
+	  <div class="inner"> 
+	   <!-- Search form -->	
+        <div class="search-icon"><img src="/css/images/icon_search.jpg" alt="search" /></div><div id="search-box"><form action="http://www.law.cornell.edu/search/index.html" method="post" id="search-theme-form"> 
+ 
+		<div> 
+		<div id="search" class="container-inline"> 
+  <div class="form-item" id="edit-search-theme-form-1-wrapper"> 
+ <input type="text" maxlength="128" name="query" id="edit-search-theme-form-1" size="15" value="Search all of LII..." class="form-text NormalTextBox txtSearch" onblur="if (this.value == &#039;&#039;) {this.value = &#039;Search all of LII...&#039;;} ;" onfocus="if (this.value == &#039;Search all of LII...&#039;) {this.value = &#039;&#039;;} ;" /> 
+</div><!-- /form-item--> 
+<input type="submit" name="op" id="edit-submit" value="Go"  class="form-submit" /> 
+</div><!-- /search --> 
+ 
+</div><!-- /extra div --> 
+</form> 
+</div><!-- /#search-box --> 
+ 
+	  </div> <!-- /inner --> 
+	 </div><!-- /liisearchbox --> 
+	 </div><!-- /liihead --> 
+ <div id="liinavandsearch" class="clear-block"> 
+	  <div id="liinav" class="grid-8"><a href="http://www.law.cornell.edu/lii/about/about_lii">About LII</a> / 
+ 
+	   <a href="http://www.law.cornell.edu/lii/get_the_law">Get the law</a> / 
+	   <a href="http://lawyers.law.cornell.edu/">Find a lawyer</a> / 
+	   <a href="http://www.law.cornell.edu/wex">Legal Encyclopedia</a> / 
+	   <a href="http://www.law.cornell.edu/lii/help_out">Help Out</a></div><!-- /liinav --> 
+	  <div id="socialmedia" class="grid-4" align="right"> 
+        <ul> 
+            <li><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=LIICornell&show_screen_name=false" style="width:150px; height:20px;"></iframe></li> 
+            <li><iframe src="http://www.facebook.com/plugins/like.php?app_id=275300119163721&amp;href=http%3A%2F%2Ffacebook.com%2Flaw.lii&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=20" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:72px; height:20px;" allowTransparency="true"></iframe></li> 
+            </ul> 
+        </div><!-- /socialmedia --> 
+	</div><!-- /liinavandsearch --> 
+	 
+ <!-- end lii sitewide head --> 
+ 
+ <div id="main" class="clear-block"> 
+  <div id="main-content"> 
+ <div class="content"> 
+ <div class="content-inner"> 

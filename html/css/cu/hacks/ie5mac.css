@@ -1,0 +1,15 @@
+/* secondary navigation is not aligning right */
+#search-navigation ul {
+	list-style: none;
+	float: right;
+	}
+	
+/* Secondary navigation links are offset */
+#search-navigation li {
+	float: none;
+	}
+
+/* Search links are being rendered on top of logo links */
+#search-navigation {
+	width: 300px;
+	}

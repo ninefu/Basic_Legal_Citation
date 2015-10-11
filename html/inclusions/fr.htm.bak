@@ -1,0 +1,64 @@
+
+<!-- splashover begins here -->
+<link href="http://www.law.cornell.edu/css/fundraiser-css.css" 
+media="all" rel="stylesheet" type="text/css" />
+<!--[if gte IE 5.5]>
+<![if lt IE 7]>
+<style type="text/css">
+        #fundraiser-screen {
+        /*
+            This corrects IE not recognizing 'positon:fixed'
+            IE5.5+/Win - this is more specific than the IE 5.0 version
+            IE 7 and above properly display.
+        */
+            position: absolute;
+            left: expression( ( ignoreMe2 = 
+document.documentElement.scrollLeft ? 
+document.documentElement.scrollLeft : document.body.scrollLeft ) + 'px' );
+            top: expression( ( ignoreMe = 
+document.documentElement.scrollTop ? document.documentElement.scrollTop 
+: document.body.scrollTop ) + 'px' );
+        }
+</style>
+<![endif]>
+<![if lt IE 8]>
+<style type="text/css">
+        #fundraiser-head {
+            height: 54px;
+        }
+        #fundraiser-form {
+            padding:0;
+            margin:0;
+            border:0;
+        }
+</style>
+<![endif]>
+<![endif]-->
+<script type="text/javascript" 
+src="http://www.law.cornell.edu/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" 
+src="http://www.law.cornell.edu/js/fundraiser-js.js"></script>
+<div id="fundraiser-screen"></div>
+<div id="fundraiser">
+<div id="fundraiser-head">
+<div id="lii-logo">
+<a name="liinav" href="http://www.law.cornell.edu/">
+<span class="liitmplogo">LII</span> / Legal Information Institute</a>
+</div>
+<div id="lii-right"><a title="close" id="close-button">close [X]</a></div>
+<br class="clear" />
+</div>
+<div id="fundraiser-content">
+
+</div>
+<div id="fundraiser-footer">
+<div id="fundraiser-buttons">
+<button title="Learn More About LII" type="button" id="learn-more">Learn 
+More about LII</button>
+<button title="Donate to LII" type="button" id="do-donation">Support Free Law</button>
+</div>
+<div id="cr_btm_left" class="corners"></div><div id="cr_btm_right" 
+class="corners"></div>
+</div>
+</div>
+<!-- splashover ends here -->

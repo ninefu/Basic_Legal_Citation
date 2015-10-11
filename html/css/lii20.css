@@ -1,0 +1,31 @@
+@import url("//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css");
+@import url("/css/drupal_screen.css");
+
+/* hackery */
+
+body div#cu-identity {
+margin-top: 0;
+}
+
+body .form-item-search-block-form label {
+ font-weight: normal;
+}
+
+body div#icon-search.icon {
+ padding-top: 0;
+}
+
+hr+a { display: block; margin: 1em 0; }
+
+hr+ul > li { margin: 1em 0;  }
+
+@media (max-width:799px) { 
+	ul > li { margin: 1em 0; }
+	pre { 
+		overflow: auto;
+		overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not white-space: pre-wrap; /* css-3 */
+		white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+		word-wrap: break-word; /* Internet Explorer 5.5+ */
+		white-space : normal; /* crucial for IE 6, maybe 7? */
+		}
+}

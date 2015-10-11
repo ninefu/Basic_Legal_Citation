@@ -1,0 +1,723 @@
+@import url("/css/lii10.css");
+
+/*
+   $Id: uscode.css 34 2008-08-29 00:53:41Z sara $
+ */
+
+/* 3-column layout */
+
+DIV.statute { 
+ WIDTH: 540px; 
+ margin-left: 180px; 
+ margin-right: -780px; 
+ float: left; 
+ PADDING: 0 10px;
+}
+DIV.statute DIV.statute {
+ WIDTH: 100%;
+ MARGIN: 0;
+ PADDING: 0;
+ }
+DIV.annot-left { 
+ float: left;
+ width: 160px;
+ margin-left: 0;
+ margin-right: -180px;
+ padding: 0; /* add padding to interior blocks */
+ font-size: 1.2em;
+}
+
+DIV.annot-right { 
+ width: 160px;
+ margin-left: 780px; 
+ margin-right: -960px; 
+ padding: 0; /* add padding to interior blocks */
+ float: left;
+ font-size: 1.2em;
+}
+
+/* ad stuff added */
+
+div.block {
+ padding: 8px;
+ border: solid 2px #ccc;
+ margin: 5px 0;
+}
+
+div#block_sponsor_top {
+}
+div#block_sponsor_mid {
+}
+div#block_sponsor_bottom {
+}
+
+	div.sponsormsg {
+	 background: #fff;
+	} 
+	P.sponsor-fullurl {
+	}
+	P.sponsor-fullurl a, a span.sponsor-fullurl  {
+	display: block;
+	font-weight:bold;
+	font-size:1em;
+	color:#990000;
+	text-decoration:underline;
+	}
+	P.sponsor-tagline1, P.sponsor-tagline2, P.sponsor-tagline-2, a span.sponsor-tagline1, a span.sponsor-tagline2, a span.sponsor-tagline-2 {
+	display: block;
+	font-size:0.9em;
+	color:#000;
+	}
+	P.sponsor-displayurl, a span.sponsor-displayurl{
+	  display: block;
+	  font-size:0.8em;
+	  margin-top:2px;
+	}
+
+div#block_justanswer {
+
+} 
+
+div#block_adsense {
+
+}
+
+	div#block_adsense P.whine { font-size: 1em; }
+
+
+/* clump search, notes, rss, updates, parallel auth table #lii_collection_utils */
+
+div#block_search, div#block_notes, div#block_rss, div#block_update, div#block_plltable, div#block_pdf {
+ padding: 0;
+ border: none;
+ margin: 0;
+}
+
+div.blockgroup {
+ padding: 8px;
+ border: solid 2px #ccc;
+ margin: 5px 0;
+}
+
+/*  */
+
+div#block_addthis {
+ padding: 10px 0 0 0;
+ border: none;
+}
+
+div#block_search {
+ 
+}
+
+div#block_search input {
+ margin-bottom: 5px;
+}
+
+div#block_search input[name="query"] {
+ width: 135px;
+}
+
+div#block_notes {
+
+}
+
+div#block_rss {
+
+} 
+
+div#block_update {
+
+} 
+div#block_plltable {
+
+}
+div#block_pdf {
+
+}
+
+div#justia_find_lawyers {
+
+}
+
+	div#justia_find_lawyers p {
+	font-size: 1em;
+	}
+
+	.lawyer-entry-pic img {
+	 display: block; 
+	 float: left;
+	 clear: left;
+	 padding: 0 10px 5px 0;
+	}
+	
+	div#lawyers_search_results {
+	 clear: both;
+	}
+	
+	div#lawyers_search_results strong.lawyer-profile-head{
+		display: block;
+		clear: both;
+		font-weight: bold;
+		line-height: 1.1;
+	}
+	
+	div#lawyers_search_results div.lawyers-get-listed, div#lawyers_search_results div.lawyers-get-listed{
+		display: block;
+		clear: both;
+		margin-bottom: 5px;
+		font-size: 0.72em;
+	}
+	
+	
+	div#lawyers_search_results div.lawyers {
+	 padding: 0;
+	}
+	
+	div#lawyers_search_results div.lawyers div.lawyer-entry-odd:first-child {
+		border-top: solid 2px #ccc;
+	}
+	
+	div#lawyers_search_results div.lawyers div.lawyer-entry-odd{
+		clear: both;
+		border-bottom: solid 2px #ccc;
+		margin: 0;
+		padding: 10px 0;
+	}
+	div#lawyers_search_results div.lawyers div.lawyer-entry-even{
+		clear: both;
+		border-bottom: solid 2px #ccc;
+		background: #f0f0f0;
+		padding: 10px 0;
+	}
+	div.lawyer-entry-pic{
+	
+	}
+	p.lawyer-entry-name{
+		color: #000066; /* blue */
+		margin: 0;
+		font-size: 1em;
+		line-height: 1.2;
+	}
+	div.lawyer-entry-pa{
+		color: #000; /* black */
+	}
+	div.lawyer-entry-pa-sidebar{
+		color: #000; /* black */
+		text-overflow: ellipsis;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		white-space: nowrap;
+	}
+	div.lawyer-entry-loc{
+		color: #000066; /* blue */
+	}
+	p.lawyer-entry-badge{
+		clear: both;
+		margin-top: 0;
+		margin-bottom: 1px;
+	}
+	p.lawyers-see-all {
+		clear: both;
+	}
+
+
+/* end blocks */
+
+DIV.prevnext {
+ float: right;
+ margin-right: 180px;
+ clear: both;
+}
+
+DIV.statute DIV.prevnext, DIV.statute div.dates {
+ float: right;
+ margin-right: 0;
+ clear: right;
+}
+
+li.tocitem { 
+ font-size: 1.1em;
+ }
+
+DIV.footer { clear: both; }
+
+/* former uscode.css started here */
+
+BODY#indexpage a#indexlink {
+ FONT-WEIGHT: bold;
+}
+
+.swforcesect A {
+ FONT-SIZE: larger;
+ FONT-WEIGHT: bold;
+ PADDING-BOTTOM: 1em;
+}
+
+H1, H2, H3, H4, H5, H6 {
+	FONT-WEIGHT: normal;
+	COLOR: #222255;
+/*	BACKGROUND-COLOR: #ffffff; */
+}
+H1.popnamesbar, DIV.popnamesbar {
+ MARGIN-LEFT: 10%;
+ MARGIN-RIGHT: 10%;
+}
+
+H2.catchline {
+ FONT-SIZE: 1.6em !important;
+}
+
+HR {
+	COLOR: #083194;
+	HEIGHT: 3px;
+	BACKGROUND-COLOR: #ffffff
+}
+
+HR.footsep {
+	HEIGHT: 1px
+}
+
+A:link, A:visited, LI.tocitem A {
+	TEXT-DECORATION: none;
+}
+
+A:link {
+	COLOR: navy
+}
+A:visited {
+	COLOR: maroon
+}
+
+LI.tocitem {
+	MARGIN-TOP: 0.75em
+}
+
+
+DIV.statute {
+	FONT-SIZE: 1.1em;
+}
+
+
+P.catchline {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 1.2em;
+}
+
+DIV.leader{
+	FONT-WEIGHT: bold
+}
+
+P.leader{
+	FONT-WEIGHT: bold
+}
+
+B.labelleader{
+	FONT-WEIGHT: bold
+}
+
+SPAN.backtrail {
+	FONT-WEIGHT: bold;
+/*  FONT-SIZE: 0.8em	*/
+	FONT-SIZE: 1em;
+}
+
+SPAN.prevnext {
+	TEXT-ALIGN: right;
+/*  FONT-SIZE: 0.8em	*/
+	FONT-SIZE: 1em;
+}
+
+SPAN.special-word
+{
+	COLOR: red
+}
+
+TABLE.header{
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-TOP: 10px;
+	PADDING-BOTTOM: 10px;
+	MARGIN-LEFT: auto;
+	WIDTH: 100%;
+	}
+
+TH {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 1.1em;
+	TEXT-ALIGN: left
+}
+
+TD {
+	VERTICAL-ALIGN: top;
+}
+
+TD.backtrail{
+	PADDING-TOP: 10px;
+	FONT-WEIGHT: bold;
+/*  FONT-SIZE: 0.8em	*/
+	FONT-SIZE: 1em;
+	}
+
+TD.prevnext {
+/*  FONT-SIZE: 0.8em; */
+	FONT-SIZE: 1em;
+	TEXT-ALIGN: right
+}
+
+TD.dates {
+	FONT-STYLE: italic;
+/*  FONT-SIZE: 0.75em; 	*/
+	FONT-SIZE: 0.95em;
+	TEXT-ALIGN: right
+}
+
+TABLE.statute {
+	CLEAR: both;
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-TOP: 10px;
+	PADDING-BOTTOM: 10px;
+	MARGIN-LEFT: auto;
+	WIDTH: 100%;
+}
+
+TABLE.statutetoc {
+	CLEAR: both;
+	PADDING-RIGHT: 2px;
+	PADDING-LEFT: 2px;
+	PADDING-TOP: 2px;
+	PADDING-BOTTOM: 2px;
+	WIDTH: 100%;
+}
+
+/*
+TABLE.LII-navigation {
+	WIDTH: 100%;
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 0.8em;
+	PADDING: 4px;
+	COLOR: #ffffff;
+	BACKGROUND-COLOR: #000066;
+}
+*/
+
+TABLE.classification {
+	WIDTH: 90%;
+	FONT-SIZE: 1.0em;
+	PADDING: 4px;
+	COLOR: #000000;
+	BACKGROUND-COLOR: #eeeeee;
+}
+
+TR.classifilight1 {
+	BACKGROUND-COLOR: #f5f5f5;
+}
+TR.classifilight0 {
+	BACKGROUND-COLOR: #eeeeee;
+}
+
+TH.cltop {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 1.1em;
+	TEXT-ALIGN: center
+}
+
+TH.clbot {
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 1.1em;
+	BORDER-BOTTOM: black 1px dashed;
+	TEXT-ALIGN: center
+}
+
+TD.cllft {
+	PADDING-RIGHT: 0em;
+	PADDING-LEFT: 2em;
+	PADDING-BOTTOM: 0.1em;
+	PADDING-TOP: 0.1em;
+	TEXT-ALIGN: left
+}
+
+TD.clcen {
+	PADDING-RIGHT: 1em;
+	PADDING-LEFT: 1em;
+	PADDING-BOTTOM: 0.1em;
+	PADDING-TOP: 0.1em;
+	TEXT-ALIGN: center
+}
+
+TD.clrt {
+	PADDING-RIGHT: 2em;
+	PADDING-LEFT: 0em;
+	PADDING-BOTTOM: 0.1em;
+	PADDING-TOP: 0.1em;
+	TEXT-ALIGN: right
+}
+
+TD.misc {
+	PADDING-RIGHT: 1em;
+	PADDING-LEFT: 1em;
+	PADDING-BOTTOM: 0.1em;
+	PADDING-TOP: 0.1em
+}
+
+TD.section {
+	PADDING-RIGHT: 2em;
+	PADDING-LEFT: 2em;
+	PADDING-BOTTOM: 1em;
+	PADDING-TOP: 1em
+}
+
+TD.supsec {
+	PADDING-RIGHT: 2em;
+	PADDING-LEFT: 2em;
+	PADDING-BOTTOM: 2em;
+	PADDING-TOP: 2em
+}
+
+TD.statlinks {
+	PADDING-RIGHT: 10px;
+	PADDING-LEFT: 10px;
+	PADDING-BOTTOM: 10px;
+	VERTICAL-ALIGN: top;
+	BORDER-LEFT: black 2px solid;
+	PADDING-TOP: 10px;
+	TEXT-ALIGN: left
+}
+
+.pagetitle {
+	TEXT-ALIGN: center
+}
+
+DIV.outdent-1 {
+	MARGIN-LEFT: -5%;
+}
+
+DIV.outdent-2 {
+	MARGIN-LEFT: -10%;
+}
+
+DIV.outdent-3 {
+	MARGIN-LEFT: -12%;
+}
+
+DIV.outdent-4 {
+	MARGIN-LEFT: -16%;
+}
+
+DIV.outdent-5 {
+	MARGIN-LEFT: -20%;
+}
+
+DIV.outdent-6 {
+	MARGIN-LEFT: -24%;
+}
+
+DIV.outdent-7 {
+	MARGIN-LEFT: -28%;
+}
+
+DIV.outdent-8 {
+	MARGIN-LEFT: -32%;
+}
+
+DIV.outdent-9 {
+	MARGIN-LEFT: -36%;
+}
+
+DIV.psection-1 {
+	PADDING: 5pt;
+	MARGIN-LEFT: 4%
+}
+
+SPAN.ptext-1 {
+	MARGIN-LEFT: 0.5em;
+}
+
+DIV.psection-2 {
+	PADDING: 4pt;
+	MARGIN-LEFT: 4%;
+}
+
+SPAN.ptext-2 {
+	MARGIN-LEFT: 0.5em;
+}
+
+DIV.psection-3 {
+	PADDING: 4pt;
+	MARGIN-LEFT: 4%;
+}
+
+SPAN.ptext-3 {
+	MARGIN-LEFT: 0.5em;
+}
+
+DIV.psection-4 {
+	PADDING: 4pt;
+	MARGIN-LEFT: 4%
+}
+
+SPAN.ptext-4 {
+	MARGIN-LEFT: 0.5em;
+}
+
+DIV.psection-5 {
+	PADDING: 4pt;
+	MARGIN-LEFT: 3%
+}
+
+SPAN.ptext-5 {
+	MARGIN-LEFT: 0.5em;
+}
+
+DIV.psection-6 {
+	PADDING: 4pt;
+	MARGIN-LEFT: 4%
+}
+
+SPAN.ptext-6 {
+	MARGIN-LEFT: 0.5em;
+}
+
+DIV.psection-7 {
+	PADDING: 4pt;
+	MARGIN-LEFT: 4%
+}
+
+SPAN.ptext-7 {
+	MARGIN-LEFT: 0.5em;
+}
+
+DIV.psection-8 {
+	PADDING: 4pt;
+	MARGIN-LEFT: 4%
+}
+
+SPAN.ptext-8 {
+	MARGIN-LEFT: 0.5em;
+}
+
+DIV.psection-9 {
+	PADDING: 4pt;
+	MARGIN-LEFT: 4%
+}
+
+SPAN.ptext-9 {
+	MARGIN-LEFT: 0.5em;
+}
+
+DIV.ptext-11 {
+	PADDING: 0.5em;
+}
+DIV.ptext-12 {
+	PADDING: 0.5em;
+}
+DIV.ptext-13 {
+	PADDING: 0.5em;
+}
+
+DIV.ptext-21 {
+	MARGIN-LEFT: 1.0em;
+	PADDING: 0.5em;
+}
+DIV.ptext-22 {
+	MARGIN-LEFT: 2.0em;
+	PADDING: 0.5em;
+}
+DIV.ptext-23 {
+	MARGIN-LEFT: 3.0em;
+	PADDING: 0.5em;
+}
+DIV.ptext-24 {
+	MARGIN-LEFT: 4.0em;
+	PADDING: 0.5em;
+}
+
+DIV.leading-01 {
+	PADDING:  1pt;
+}
+DIV.leading-02 {
+	PADDING:  2pt;
+}
+DIV.leading-03 {
+	PADDING:  3pt;
+}
+DIV.leading-04 {
+	PADDING:  4pt;
+}
+DIV.leading-05 {
+	PADDING:  5pt;
+}
+DIV.leading-06 {
+	PADDING:  6pt;
+}
+DIV.leading-08 {
+	PADDING:  8pt;
+}
+DIV.leading-10 {
+	PADDING: 10pt;
+}
+DIV.leading-11 {
+	PADDING: 11pt;
+}
+DIV.leading-12 {
+	PADDING: 12pt;
+}
+DIV.leading-14 {
+	PADDING: 1.2em;
+}
+DIV.leading-15 {
+	PADDING: 15pt;
+}
+DIV.leading-16 {
+	PADDING: 16pt;
+}
+DIV.leading-18 {
+	PADDING: 18pt;
+}
+DIV.leading-24 {
+	PADDING: 24pt;
+}
+DIV.leading-29 {
+	PADDING: 29pt;
+}
+
+SPAN.srchlead {
+	FONT-STYLE: italic
+}
+
+SPAN.greyout {
+	COLOR: #999999;
+}
+
+SPAN.enum {
+	FONT-WEIGHT: bold
+}
+SPAN.enumbell {
+	FONT-WEIGHT: bold
+}
+SPAN.enumlstr {
+	FONT-WEIGHT: bold;
+	COLOR:       #000066;
+}
+
+@media print {
+
+DIV.annot-right, DIV.prevnext, DIV.dates	{
+	 DISPLAY: none !important;
+	}
+
+DIV.localnav, DIV.backtrail, H2.catchline, DIV.statute {
+	 WIDTH: auto !important;
+	 HEIGHT: auto !important;
+	 MARGIN: auto !important;
+	 BORDER: 0px !important;
+	 FLOAT: none !important;
+	 BACKGROUND: #fff !important;
+	 COLOR: #000;
+	}
+H2.catchline, DIV.statute {
+ 	DISPLAY: block !important;
+}
+} /* end of media print? */
+

@@ -1,0 +1,720 @@
+/* tmp hackery */
+
+body.homepg #lii_collection_utils {
+display: none;
+}
+
+#sidebar-right #lii_collection_utils .block {
+ margin: 0;
+}
+
+.clear-block {
+display: block;
+}
+.clear-block::after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+
+.container-inline div, .container-inline label {
+ display:inline;
+}
+
+p.support  {
+ margin: 0;
+ text-align: center;
+}
+
+body {
+ font-size: 63.125%;
+ line-height: 1.5;
+ font-family: "Lucida Sans Unicode", "Lucida Grande", Verdana, Arial, Helvetica, sans serif;
+/*   background: #fff;
+ */
+ margin: 0;
+ padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6  {
+ font-family: Georgia, Times, "Times New Roman", serif;
+}
+
+div#liinav, div#liifooter {
+ font-family:Arial,Verdana,Helvetica,sans serif;
+}
+
+#main #main-content .content p, #main #main-content .content .toc li, #main #main-content .content dt, #main #main-content .content .statute li  {
+ font-size: 1.1em;
+}
+
+h1, h1.title  {
+ font-size: 1.6em;
+ color: #B31B3B;
+ /* red */
+ text-transform: uppercase;
+}
+
+h2, h2.title  {
+ font-size: 14px;
+ color: #B31B3B;
+ /* red */
+ text-transform: uppercase;
+ margin: 0;
+ padding: 0;
+}
+
+body a, body a:link {
+ color: #005c72;
+ /* turquoise */
+}
+
+html body a:hover {
+/* color: #3d3ea3; */
+}
+html body #navigator .tabbedcontent ul li a:hover {
+/* color: #3d3ea3; */
+}
+
+
+/* for LII HTML */
+div#ours {
+ width: 960px;
+ margin: 5px auto;
+ background: #fff;
+}
+
+a.skipNav, a.skipNav:visited {
+ POSITION: absolute;
+ LEFT: -9000px;
+ TOP: -9000px;
+}
+
+
+div#cu-head {
+ height: 45px;
+ BACKGROUND: #68645B; 
+ width: 100%;
+}
+
+div#cu-identity {
+ width: 960px;
+ margin: 0 auto;
+}
+
+div#cu-logo {
+ FLOAT: left;
+}
+
+div#search-navigation UL {
+ float: right;
+ list-style-type: none;
+}
+div#search-navigation ul li {
+ float: left;
+ padding: 0 0 0;
+ font-size: 11px;
+}
+div#search-navigation ul li a {
+ color: #fff;
+ text-decoration: none;
+ padding: 1em;
+}
+div#search-navigation ul li a:hover {
+ text-decoration: none; 
+ background: #444;
+}
+div#liihead {
+ margin: 0 auto;
+ margin-top: 18px;
+}
+
+
+#liilogo {
+ clear: left;
+ float: left; 
+ width: 460px;
+ margin-right: 10px;
+}
+
+#liidonate {
+ width: 140px;
+ float: left;
+ margin-left: 10px;
+}
+
+div#liiheadersearchbox  {
+ background: #f0f0f0;
+ width: 300px;
+ float: right;
+}
+
+div#liiheadersearchbox div.inner div.icon {
+ float: left;
+ margin-top: -15px;
+}
+
+#liiheadersearchbox div.inner  {
+ border: solid 1px #ccc;
+/* background: #f0f0f0;
+ */
+ padding: 10px;
+ 
+}
+
+div.search-icon {
+ float: left;
+ margin: -15px 0 0 0;
+}
+
+div#liiheadersearchbox input {
+
+}
+
+div#liisearch, div#search-box  {
+/* padding-top: 10px;
+ */
+ padding-left: 60px;
+}
+
+div#liinavandsearch  {
+ border-bottom: 1px solid #D4E0E4;
+ border-top: 1px solid #D4E0E4;
+ margin: 4px 0 10px;
+ padding: 0;
+}
+
+div#liinavandsearch > div.inner {
+
+}
+
+
+div#liinav ul li.first  {
+}
+
+div#liinav ul li.last  {
+
+}
+
+div#liinav {
+ text-transform: uppercase;
+ font-weight: bold;
+ font-size: 11px;
+ color: #8B7F5F;
+ padding: 6px 0 0 0;
+ width: 560px;
+ float: left;
+}
+
+div#liinav ul  {
+  list-style-type: none;
+   color: #8B7F5F;
+   padding: 0;
+}
+
+div#liinav ul li a, div#liinav a  {
+ text-decoration: none;
+ color: #8B7F5F;
+ font-size:11px; 
+line-height: 16px;
+ padding: 2px 6px;
+}
+
+
+div#liinavandsearch div#socialmedia  {
+width: 300px;
+float: right;
+margin: 0;
+padding: 0;
+}
+
+div#socialmedia ul  {
+ list-style-type: none;
+ float: right;
+ margin: 0;
+ padding: 4px 0 0 0;
+}
+
+div#socialmedia ul li  {
+ float: left;
+ margin: 0;
+ padding: 0;
+}
+
+div#main {
+ background: #fff;
+ color: #000;
+}
+
+div#main-content {
+ width: 640px;
+ margin-right: 20px;
+ float: left;
+}
+
+/* breadcrumbs and collection nav */
+
+/* breadcrumbs */
+
+div.bcrumbandprevnext, div.nbcrumbandprevnext {
+  margin-bottom:0;
+ margin-top: -3px;
+ border-bottom:1px solid #ced7d5;
+  background: url(/images/bcrumb_bg.gif) top left repeat-x;
+  border-collapse: separate;
+}
+
+div.bcandpnwrap {
+}
+
+#bcrumbleft, #nbcrumbleft  {
+float:left;
+width:10px;
+height:38px;
+ border-top:3px solid #FFF;
+ background: url(/images/bcrumb_left_edge.gif) top left no-repeat;
+}
+
+#bcrumbleftlogo, #nbcrumbleftlogo{
+float:left;
+width:44px;
+height: 38px;
+background-color:#dae1e0;
+}
+
+#bcrumbleftlogo, #nbcrumbleftlogo.rules, #nbcrumbleftlogo.ucc {
+ background: url(/images/icon_default.jpg);
+}
+
+body.section-cfr #bcrumbleftlogo, #nbcrumbleftlogo.cfr{
+ background: url(/images/icon_cfr.jpg);
+}
+
+body.section-uscode #bcrumbleftlogo, #nbcrumbleftlogo.uscode{
+ background: url(/images/icon_uscode.jpg);
+}
+
+body.section-supremecourt #nbcrumbleftlogo, #nbcrumbleftlogo.supremecourt, body.section-supct #nbcrumbleftlogo, #nbcrumbleftlogo.supct {
+ background: url(/images/icon_supremecourt.jpg);
+}
+
+body.section-wex #nbcrumbleftlogo, #nbcrumbleftlogo.wex{
+ background: url(/images/icon_wex.jpg);
+}
+
+body.section-constitution #nbcrumbleftlogo, #nbcrumbleftlogo.constitution, #nbcrumbleftlogo.anncon{
+ background: url(/images/icon_constitution.jpg);
+}
+body.section-lii #nbcrumbleftlogo, #nbcrumbleftlogo.lii{
+ background: url(/images/icon_lii.jpg);
+}
+
+
+
+div.breadcrumb  {
+ padding: 0 0 10px 0;
+ font-size: 1.1em;
+ width: 380px;
+  height: 44px;
+ float: left;
+ /* from table#breadcrumb */
+}
+
+div.nbreadcrumb  {
+ padding: 0;
+ font-size: 1.1em;
+ /* from table#breadcrumb */
+}
+
+div#bcprevnext, div#nbcprevnext {
+ text-transform:uppercase;
+ letter-spacing:.5px;
+ font-size: 11px !important;
+}
+
+div#bcprevnext {
+ width:100px;
+ background: url(/images/bcrumb_right_edge.gif) top right no-repeat;
+ float: right;
+}
+div#nbcprevnext {
+ width:600px;
+
+}
+
+div#bcprevnext ul, div#nbcprevnext ul {
+margin-top:7px;
+ font-weight:bold;
+ list-style-type: none;
+
+}
+
+div#bcprevnext ul li, div#nbcprevnext ul li {
+ float: left;
+}
+
+div#nbcprevnext ul li a {
+ padding-left: 4px;
+}
+
+div#bcprevnext ul li:first-child {
+}
+div#bcprevnext ul li:first-child:after {
+ content: " |";
+}
+
+div#nbcprevnext ul li:first-child:after {
+
+}
+div#bcprevnext ul li:last-child {
+ padding-left: 5px;
+}
+
+div.breadcrumb, div.nbreadcrumb {
+ padding-top: 10px;
+}
+
+div.breadcrumb a, div.nbreadcrumb a {
+ margin:7px 0 3px;
+ padding: 20px 0;
+ line-height:1;
+ text-decoration: none;
+ color: #005c72;
+ /* turquoise */
+}
+
+div.breadcrumb>a:first-child, div.nbreadcrumb>a:first-child {
+ background: url(/images/bcrumb_arrow_right_edge.jpg) top right no-repeat;
+ background-color:#dae1e0;
+ color:#B31B3B;
+ /* red */
+ font-weight:bold;
+ font-size:15px;
+ line-height: 22.5px;
+ font-family: Georgia, Times, "Times New Roman", serif;
+ margin:-10px 0 0 0;
+ padding: 12px 30px 12px 20px;
+ display: block;
+ float: left;
+}
+
+div.nbreadcrumb>a:first-child {
+ padding-bottom: 16px;
+}
+
+/* home pages */
+.styledbox {
+border:solid 1px #ccc;
+ padding:7px 10px 0 10px;
+ background: url(images/bg_fade_ln.jpg) top left repeat-x;
+/* position:absolute; */
+top:3px;
+z-index:9;
+}
+
+
+/* sidebars */
+
+
+div#sidebar-right {
+ width: 300px;
+ float: right;
+}
+
+div#sidebar-right div.block-inner {
+ border: solid 1px #ccc;
+ background: url(/images/bg_fade_ln.jpg) repeat-x scroll left top transparent;
+ padding: 9px;
+}
+
+#sidebar-right .block {
+ margin-bottom: 15px;
+}
+
+#resources {
+ padding-bottom:10px;
+}
+#resources ul {
+ padding:0;
+}
+
+#resources div.group1, #resources div.group2, #resources div.group3 {
+ float: left;
+ width: 170px;
+ margin-left: 20px;
+}
+
+#resources ul {
+ list-style-type: none;
+}
+
+#resources ul ul {
+ list-style-type: bullet;
+}
+
+#resources ul ul li {
+ padding-left: 20px;
+}
+
+#resources ul.group2 {
+padding:0 27px 0 27px;
+}
+#resources li {
+margin: 5px 0 5px 0;
+ padding-bottom:10px;
+ border-bottom:1px solid #c8d6d8;
+}
+#resources a {
+text-decoration:none;
+ font-size:110%;
+}
+.tone {
+background: url(images/bg_fade_tone.jpg) top left repeat-x;
+}
+
+
+.adUnit {
+width:728px;
+ height:120px;
+ margin:10px auto;
+ clear:both;
+ border:solid 1px #ccc;
+background: url(/images/bg_fade_ln.jpg) top left repeat-x;
+}
+.adUnit div{
+height:90px;
+}
+.adUnit p{
+margin:0;
+}
+.adUnit p a {
+text-decoration:none;
+}
+
+
+div.gfs {
+ margin-left: -11px;
+}
+
+#content-bottom .block  {
+ clear: both;
+}
+
+html div#footer {
+ background: #fff !important;
+ width: 960px;
+ margin: 10px auto;
+}
+
+div#liifooter  {
+ background: #fff;
+ border-top: solid 1px #ccc;
+ clear: both;
+}
+
+div#liifooter div.inner  {
+ width: 940px;
+ padding: 10px 0 10px 20px;
+ margin: 0 auto;
+}
+
+div#liifooter div.liifooterNav {
+ float: left;
+ width: 860px;
+}
+
+div#liifooter ul  {
+ list-style-type: none;
+ padding-left: 0;
+ margin-top: 0;
+}
+
+div#liifooter ul li  {
+float:left;
+text-transform:uppercase;
+font-weight:bold;
+letter-spacing:1px;
+font-size:12px; 
+padding:2px 27px 10px;
+}
+
+div#liifooter ul li.first {
+padding-left: 0;
+}
+
+div#liifooter ul li a  {
+ text-decoration: none;
+ color: #68645b;
+}
+
+div#liifooter .liifooterlogo {
+ width: 70px;
+ float: right;
+}
+
+.justiafooter {
+ width: 960px;
+ margin: 0 auto;
+ background: #ccc;
+}
+#justiapowered {
+	float: right;
+	margin-right: 10px;
+	margin: 10px;
+}
+
+/* block - search form */
+#lii-collection-search-form {
+ 
+}
+
+#lii-collection-search-form label {
+ float: left;
+ 
+ text-transform: uppercase;
+ color: #005C72;
+ /* turquoise */
+}
+
+#lii-collection-search-form input {
+ float: left;
+ margin-left: 10px;
+}
+
+#lii-collection-search-form {
+
+}
+
+/* /block */
+
+/* block - stay involved */
+
+.block ul.blogandsupct, .block ul.dostuff {
+vertical-align:top;
+ text-align:top;
+ list-style-type:none;
+ list-style-position:inside;
+ font-size:1.1em;
+padding-left:0;
+}
+.block ul.blogandsupct a, .block ul.dostuff a {
+vertical-align:top;
+}
+.block ul.dostuff {
+list-style-position:inside;
+ list-style-image: url('images/icon_arrow.jpg');
+font-size:1.1em;
+padding-left:0;
+}
+.block ul.dostuff {
+text-transform:uppercase;
+}
+form#newslettersubscrip {
+width:160px;
+ display:inline;
+}
+input#newsletterID {
+width:100px;
+}
+input#newsletterIDup {
+font-size:1em;
+}
+ul.blogandsupct, ul.dostuff {
+color:#9f8f67;
+}
+#sidebar-right div.block-inner ul.blogandsupct a, #sidebar-right div.block-inner ul.dostuff a {
+color:#9f8f67
+}
+#sidebar-right .toolbox {
+background:url(/images/icon_toolbox.gif) no-repeat top left;
+ padding-left:27px;
+}
+.block ul.blogandsupct li {
+padding-bottom:10px;
+}
+.block ul.blogandsupct li a {
+}
+.block ul.blogandsupct li.bloglink {
+list-style-image: url('images/icon_announce.jpg');
+ 
+}
+.block ul.blogandsupct li.supctlink {
+list-style-image: url('images/icon_supremeCt.jpg');
+}
+.block ul.blogandsupct li.newslettersubscripform {
+list-style-image: url('images/icon_newsletter.jpg');
+}
+
+/* /block - stay involved */
+
+
+/* block - lawyer directory */
+.lawyer-entry-pic img {
+display:block;
+float:left;
+clear:left;
+padding:0 10px 5px 0;
+}
+div#lawyers_search_results {
+clear:both;
+}
+div#lawyers_search_results strong.lawyer-profile-head {
+display:block;
+clear:both;
+font-weight:bold;
+}
+div#lawyers_search_results div.lawyers-get-listed+a,div#lawyers_search_results div.lawyers-get-listed a {
+display:block;
+float:right;
+clear:both;
+margin-bottom:5px;
+}
+div#lawyers_search_results div.lawyers {
+padding:0;
+}
+div#lawyers_search_results div.lawyers div.lawyer-entry-odd:first-child {
+border-top:solid 2px #ccc;
+}
+div#lawyers_search_results div.lawyers div.lawyer-entry-odd {
+clear:both;
+border-bottom:solid 2px #ccc;
+margin:0;
+padding:10px 0;
+}
+div#lawyers_search_results div.lawyers div.lawyer-entry-even {
+clear:both;
+border-bottom:solid 2px #ccc;
+background:#f0f0f0;
+padding:10px 0;
+}
+div.lawyer-entry-pic {
+}
+p.lawyer-entry-name {
+color:#000066;
+margin-top:0;
+margin-bottom:5px;
+}
+div.lawyer-entry-pa {
+color:#000;
+}
+div.lawyer-entry-pa-sidebar {
+color:#000;
+text-overflow:ellipsis;
+overflow-x:hidden;
+overflow-y:hidden;
+white-space:nowrap;
+}
+div.lawyer-entry-loc {
+color:#000066;
+}
+p.lawyer-entry-badge {
+clear:both;
+margin-top:0;
+margin-bottom:1px;
+}
+p.lawyers-see-all {
+clear:both;
+}
+/* / block - lawyer directory */

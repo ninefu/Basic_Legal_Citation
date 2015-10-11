@@ -1,0 +1,395 @@
+/* CSS Document */
+
+/* generic style - sans-serif, black on white, font adjustment so that p { font-size: 1em is 10pt } */
+
+BODY {
+ FONT-FAMILY: verdana, arial, helvetica, sans-serif;
+ COLOR: #000000; 
+ BACKGROUND: #ffffff;
+ FONT-SIZE: 83%;
+}
+
+/* for IE */
+ * HTML BODY {
+ FONT-FAMILY: verdana, arial, helvetica, sans-serif;
+ COLOR: #000000; 
+ BACKGROUND: #ffffff;
+ FONT-SIZE: 75%;
+}	
+/* end IE-only */
+
+A:link {
+ COLOR: navy
+}
+
+P, OL, UL, LI, TD, TH, TR, DIV, DL, DD, DT, SPAN {
+ FONT-WEIGHT: normal;
+}
+
+/* 2005-07-28 */
+LI {
+ display: list-item
+}
+/* end 2005-07-28 */
+
+STRONG, B {
+ FONT-WEIGHT: bold; 
+}
+
+EM, I {
+ FONT-STYLE: italic;
+}
+
+PRE {
+ FONT-FAMILY: courier, monospace;
+} 
+ 
+H1, H2, H3, H4 { 
+ FONT-WEIGHT: normal !important; 
+} 
+
+H1 { 
+ FONT-SIZE: 1.5em; 
+}
+
+H2 { 
+ FONT-SIZE: 1.4em; 
+}
+
+H3 { 
+ FONT-SIZE: 1.3em; 
+}
+
+H4 { 
+ FONT-SIZE: 1.2em; 
+}
+
+H5 { 
+ FONT-SIZE: 1.1em; 
+}
+
+H6 { 
+ FONT-SIZE: 1.0em; 
+}
+ 
+/* nav bar styles */
+H1.nav, H2.nav 	{ 
+ TEXT-ALIGN: center; 
+ COLOR: #000066; 
+}
+
+/* IE hack */
+* html body H2.nav {
+ FONT-WEIGHT: bold;
+}
+
+H3.nav	{ 
+ TEXT-ALIGN: center; 
+ COLOR: #000066; 
+}
+
+H4.nav	{ 
+ COLOR: #000066; 
+}
+
+/* for as-yet de-table-ized text */
+TD, TD A.nav {
+ FONT-SIZE: 0.95em;
+}
+
+UL.nav			{ MARGIN-left:0;  }
+LI.nav			{ MARGIN-left:0; list-style-position: outside;  }
+
+A.nav {
+ COLOR: #ffffff;
+/* FONT-WEIGHT: bold; */
+}
+A.nav:link, A.nav:visited { 
+ COLOR: #ffffff; 
+ TEXT-DECORATION: none; 
+}
+A.nav:hover, A.nav:link:hover, A.nav:visited:hover {
+ COLOR: #ffffff; 
+ TEXT-DECORATION: underline; 
+}
+A.nav:active {  
+ COLOR: #cccccc; 
+ TEXT-DECORATION: underline; 
+}
+
+/* replacements for deprecated stuff */
+
+P.contentIntro { padding: 2px 5px; FONT-SIZE: 0.9em; }
+.indented { MARGIN-left: 20px; MARGIN-right: 20px; }
+.wasBlockquote { MARGIN-left: 5%; MARGIN-right: 5%; }
+.allcaps { text-transform: uppercase; }
+.smallcaps { font-variant: small-caps; }
+
+.extraSpot 	 { FONT-SIZE: 2em; COLOR: yellow; FONT-WEIGHT: bold;}
+.emergency { COLOR: red; }
+
+/* for embedded definitions */
+A.defn_embed { text-decoration: none; }
+A.defn_embed:link:hover { text-decoration: underline; }
+ 
+/* swish-e search result styles */
+.highlight { COLOR: red; }
+H1.hitlist {
+ COLOR: #000000;}
+.speling {
+ FONT-STYLE: italic;}
+TABLE.swhitlist { }
+TR.swhit {}
+.swrank { }
+.swtitle { }
+td.swtitle {
+ PADDING: 0.5em;}
+.swsmallhelp { 
+ FONT-SIZE: 0.9em;
+ MARGIN-LEFT: 30px;}
+.swsearchbox { 
+ FONT-SIZE: 1.2em;}
+.swsearchparrot { 
+ FONT-SIZE: 1.2em;}
+/* hitlist styles */
+
+UL.HITLIST{ MARGIN-left: 10%; }
+DIV.HITLIST UL { MARGIN-left: 10%; }
+LI.HITLIST { MARGIN-left: 0; }
+DIV.HITLIST LI { MARGIN-left: 0; }
+DIV.HITLIST P { MARGIN-left: 0; }
+
+/* de-table-izing for header and footer */
+
+#header { 
+/* CLEAR: both; /* 2004-10-20 */
+ WIDTH: 100%;
+ MARGIN: 0;
+}
+
+#brandBar {
+/* CLEAR: both; /* 2004-10-20 */
+ WIDTH: 100%;
+ MARGIN: 0;
+}
+
+#brand {
+ FLOAT: left;
+ WIDTH: 40%;
+ MARGIN: 0;
+}
+
+#collectionName {
+ FLOAT: left;
+ WIDTH: 20%;
+ HEIGHT: 100%;
+ MARGIN: 0;
+ PADDING-TOP: 1.2em;
+ VERTICAL-ALIGN: bottom;	
+ TEXT-ALIGN: center;
+ COLOR: #000099;
+}
+
+#collectionPic {
+ FLOAT: left;
+ TEXT-ALIGN: right;		
+ WIDTH: 40%;
+ MARGIN: 0;
+}
+ 
+#topNav {
+ CLEAR: both;	
+ FLOAT: left;	
+ WIDTH: 95%;
+ MARGIN: 0;
+ MARGIN-BOTTOM: 2ex;
+ PADDING: 0 2.5%;
+ TEXT-ALIGN: center;
+ VERTICAL-ALIGN: middle;
+ BACKGROUND: #000066;
+ COLOR: #ffffff;
+}
+
+#topNav FORM { 
+ VERTICAL-ALIGN: middle;
+ DISPLAY: inline;
+}
+
+#topNav INPUT {
+ VERTICAL-ALIGN: middle;
+}
+#topNav INPUT.txtbox {
+ MARGIN: 2px;
+}
+#topNav INPUT.btn {
+ MARGIN: 2px;
+ COLOR: #000066;
+}
+
+#middle { 
+ CLEAR: both;
+ WIDTH: 100%;
+ MARGIN: 1% 0;
+}
+/* 2005-06-16 */
+/* arbitrary WIDTH at the moment -- centers the content */
+#middle #midcent {
+/*  WIDTH: 98%;	*/
+ MARGIN: 0 auto; 
+/*	BACKGROUND: #fff; test - 2005-06-21 */
+}	
+HR.clear {
+ clear: both;
+	visibility: hidden
+}
+
+#footer { 
+ CLEAR: both; /* 2004-10-20 */
+ WIDTH: 100%;
+ PADDING: 0;
+ TEXT-ALIGN: center;
+ BACKGROUND: #000066;
+ COLOR: #ffffff;
+}
+
+#footer UL, #header UL {
+ LIST-STYLE-TYPE: none;
+ MARGIN: 0;
+}
+
+#footer LI, #header LI {
+ FLOAT: left;
+ PADDING: 0.5ex 1.5em;
+}
+
+#botNav {
+ WIDTH: 30em;
+ MARGIN: 0 auto;
+}
+
+/* de-table-izing for column-layout */
+
+/* 2005-06-16 */
+/* separating columns from one another and from wide chunks */ 
+DIV.oneColumn, DIV.twoColumns, DIV.threeColumns {
+ CLEAR: both;
+ MARGIN: 1ex auto;
+}
+
+/* max-width doesn't work in ie -- need to adjust */
+.oneColumn {
+ WIDTH: 90%;
+	MARGIN: 0 auto;
+}
+
+.oneColumn DIV#middle {
+ WIDTH: 80%;
+	MARGIN: 1em auto;
+}
+
+/* each of two equal columns */
+DIV.oneOfTwo, UL.oneOfTwo {
+ FLOAT: left;
+ WIDTH: 46%;
+ PADDING: 0 1%;	
+ BACKGROUND: #fff;	
+}
+
+* HTML DIV.oneOfTwo, UL.oneOfTwo {
+ WIDTH: 35% 
+}
+
+/* each of three equal columns */
+DIV.oneOfThree, UL.oneOfThree {
+ FLOAT: left;
+ WIDTH: 31%;
+ PADDING: 0 1%;	
+ BACKGROUND: #fff;
+}
+
+* HTML DIV.oneOfThree, UL.oneOfThree {
+ WIDTH: 25%
+}
+
+.oneOfThree LI, .oneOfTwo LI {
+ LIST-STYLE-TYPE: none;
+}
+
+/* skip nav - an accessibility thing */
+a.skipNav, a.skipNav:visited {
+ POSITION: absolute;
+ LEFT: 0;
+ TOP: 0;
+ Z-INDEX: -1;
+ COLOR: #fff !important;
+ BACKGROUND: #fff;
+}
+
+.smallerOfTwo {
+ float: left;
+ width: 27%;
+ padding: 0 1.5%;
+ background: #f0f0f0
+}
+.largerOfTwo {
+ float: left;
+ width: 66%;
+ padding: 0 1% 0 3%;
+}
+
+.smallOneOfThree {
+ float: left;
+ width: 10em;
+}
+.largeOneOfThree {
+ float: left;
+ width: 25em;
+}
+
+
+/* tmp for supct.css */
+#homepg #leftColumn {
+ FLOAT: left; 
+ WIDTH: 28%;
+ PADDING: 1%;
+ BACKGROUND: #f0f0f0
+}
+
+#homepg #rightColumn {
+ FLOAT: left;
+ WIDTH: 60%;
+ PADDING: 0 1%;
+}
+ 
+	/* 2005-10-06 rationalizing the headers */
+BODY.homepg a#homelink, BODY.hitlist a#searchlink, BODY.tellmore a#tellmore, BODY.donors a#donorlink {
+ visibility: hidden
+	}
+
+@media print {
+BODY, DIV#container, DIV.ours, DIV.collection, DIV#middle, DIV#cu-identity,  DIV#collection-head, DIV#cu-head, DIV#lii-head, DIV#collectionchunk, {
+ FLOAT: none !important;
+ WIDTH: auto !important;
+ MARGIN: 0 auto !important;
+ BACKGROUND: #fff !important;
+ display: block !important;
+ COLOR: #000;
+ BORDER: 0px !important;
+ HEIGHT: auto !important;
+ MIN-HEIGHT: inherit !important;
+ }
+ 
+DIV#collectionchunk, DIV#collection-head, DIV#cu-head, DIV#lii-head, DIV.header, DIV#footer {
+ HEIGHT: auto !important; 
+ MIN-HEIGHT: inherit !important;
+}
+
+DIV#cu-search, DIV#lii-nav, DIV#collection-nav, .smallerOfTwo, .largerOfTwo, .oneOfTwo, .oneOfThree, .smallOneOfThree, .largeOneOfThree {
+ DISPLAY: none !important;
+}  
+
+/* temp for still-in-tables nav */
+TABLE IMG, TABLE FORM, TABLE INPUT, TABLE SELECT, TABLE TD A.nav {
+ DISPLAY: none; 
+} 
+}

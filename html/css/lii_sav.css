@@ -1,0 +1,348 @@
+/* CSS Document */
+
+/* @import url(print.css)print;	*/
+
+/* generic style specs */
+
+BODY {
+	FONT-FAMILY: verdana, "Lucida Grande", arial, helvetica, sans-serif;
+	COLOR: #000; 
+	BACKGROUND-COLOR: #fff;
+	FONT-WEIGHT: normal;
+	FONT-SIZE: 83%; 
+}
+
+/* only for IE */
+/* * HTML BODY {
+	FONT-FAMILY: verdana, "Lucida Grande", arial, helvetica, sans-serif;
+	COLOR: #000; 
+	BACKGROUND-COLOR: #fff;
+	FONT-SIZE: 75%;
+} */	
+/* end IE * HTML hack */
+
+P, OL, UL, LI, TD, TH, TR, DIV, DL, DD, DT, SPAN {
+	FONT-WEIGHT: normal;
+}
+
+STRONG, B {
+	 	FONT-WEIGHT: bold; 
+}
+
+EM, I {
+	FONT-STYLE: italic;
+}
+
+PRE {
+	FONT-FAMILY: courier, monospace;} 
+	
+H1, H2, H3, H4 { 
+	FONT-WEIGHT: normal;
+} 
+
+H1 { FONT-SIZE: 1.5em; }
+H2 { FONT-SIZE: 1.4em; }
+H3 { FONT-SIZE: 1.3em; }
+H4 { FONT-SIZE: 1.2em; }
+H5 { FONT-SIZE: 1.1em; }
+H6 { FONT-SIZE: 1.0em; }
+
+	
+/* nav bar styles */
+H1.nav, H2.nav 	{ 
+	TEXT-ALIGN: center; 
+	COLOR: #000066; 
+	FONT-WEIGHT: normal; 
+}
+
+H3.nav	{ 
+	TEXT-ALIGN: center; 
+	COLOR: #000066; 
+	FONT-WEIGHT: normal;
+}
+
+H4.nav	{ 
+	COLOR: #000066; 
+	FONT-WEIGHT: normal;
+}
+
+/* for as-yet de-table-ized text */
+TD, TD A.nav {
+	FONT-SIZE: 0.95em;
+}
+
+UL.nav			{ 
+	MARGIN-LEFT:0;  
+}
+LI.nav			{ 
+	MARGIN-LEFT:0; 
+	list-style-position: outside;  
+}
+
+A.nav {
+	COLOR: #fff;
+}
+
+A.nav:link, A.nav:visited { 
+	COLOR: #fff; 
+	TEXT-DECORATION: none; 
+}
+
+A.nav:hover, A.nav:link:hover, A.nav:visited:hover {
+	COLOR: #fff; 
+	TEXT-DECORATION: underline; 
+}
+
+A.nav:active {  
+	COLOR: #cccccc; 
+	TEXT-DECORATION: underline; 
+}
+
+/* replacements for deprecated stuff */
+
+p.contentIntro { 
+	PADDING: 2px 5px; 
+	FONT-SIZE: 0.9em; 
+}
+.indented { 
+	MARGIN-LEFT: 20px; 
+	MARGIN-RIGHT: 20px; 
+}
+.wasBlockquote { 
+	MARGIN-LEFT: 5%; 
+	MARGIN-RIGHT: 5%; 
+}
+.allcaps { 
+	TEXT-TRANSFORM: uppercase; 
+}
+.smallcaps { 
+	FONT-VARIANT: small-caps; 
+}
+
+.extraSpot 	 { 
+	FONT-SIZE: 1.6em; 
+	COLOR: red; 
+	FONT-WEIGHT: bold;
+}
+.emergency { 
+	COLOR: red; 
+}
+
+/* for embedded definitions */
+A.defn_embed { 
+	COLOR: navy;
+	TEXT-DECORATION: none; 
+}
+A.defn_embed:link:hover { 
+	TEXT-DECORATION: underline; 
+}
+	
+/* swish-e search result styles */
+.highlight { 
+	COLOR: red; 
+}
+H1.hitlist {
+	COLOR: #000000;
+}
+.speling {
+	FONT-STYLE: italic;
+	}
+TABLE.swhitlist { }
+TR.swhit { }
+.swrank { }
+.swtitle { }
+TD.swtitle {
+	PADDING: 0.5em;
+	}
+.swsmallhelp { 
+	FONT-SIZE: 0.9em;
+	MARGIN-LEFT: 30px;
+	}
+.swsearchbox { 
+	FONT-SIZE: 1.2em;
+	}
+.swsearchparrot { 
+	FONT-SIZE: 1.2em;
+	}
+	
+/* hitlist styles */
+
+UL.HITLIST { 
+	MARGIN-LEFT: 10%; 
+}
+DIV.HITLIST UL { 
+	MARGIN-LEFT: 10%; 
+}
+LI.HITLIST { 
+	MARGIN-LEFT: 0; 
+}
+DIV.HITLIST LI { 
+	MARGIN-LEFT: 0; 
+}
+DIV.HITLIST P { 
+	MARGIN-LEFT: 0; 
+}
+
+/* de-table-izing for header and footer */
+	
+#header { 
+	/* FLOAT: left; */
+	MARGIN: 0;
+	WIDTH: 100%;
+	CLEAR: both; /* 2004-10-20 */
+}
+
+#brandBar {
+	FLOAT: LEFT;
+	WIDTH: 100%;
+	MARGIN-LEFT, MARGIN-RIGHT, MARGIN-TOP: 0;
+	MARGIN-BOTTOM: 0; /* 2005-06-20 */
+	CLEAR: both; /* 2004-10-20 */
+}
+
+#brand {
+	FLOAT: left;
+	WIDTH: 25%;
+	MARGIN: 0;
+}
+
+#collectionName {
+	FLOAT: left;
+	WIDTH: 48%;
+	MARGIN: 0;
+	PADDING-BOTTOM: 1ex;
+	PADDING-LEFT, PADDING-RIGHT: 1em;
+	PADDING-TOP: 4ex;
+	VERTICAL-ALIGN: bottom;	
+	TEXT-ALIGN: center;
+	FONT-SIZE: 1.5em;
+	COLOR: #000099;
+}
+
+#collectionPic {
+	FLOAT: left;
+	TEXT-ALIGN: right;		
+	WIDTH: 25%;
+	MARGIN: 0;
+}
+	
+#topNav {
+	CLEAR: both; /* 2004-10-20 */
+	WIDTH: 100%; /* 2005-06-20 */ 
+	MARGIN: 0 auto; /* 2005-06-20 changed from just 0 */
+	PADDING: 0;
+	BACKGROUND: #000066;
+	COLOR: #fff;
+}
+
+/*2005-06-20 */
+#topNav UL {
+	FLOAT: left; 
+	WIDTH: 100%;
+	MARGIN: 0;
+	PADDING: 0;
+	LIST-STYLE-TYPE: none;
+	BACKGROUND: #000066;
+}
+
+#topNav LI {
+	FLOAT: left;
+	MARGIN: 0;
+	PADDING: 0.5em 2.5em;
+	BACKGROUND: #000066;
+}
+#topNav A {
+	DISPLAY: block; 
+	MARGIN: 0;
+	PADDING: 0 2.5em;
+	BACKGROUND: #000066;
+}
+
+#topNav LI A:hover {
+}
+/* end 2005-06-20 */
+
+#topNav FORM { 
+	VERTICAL-ALIGN: middle;
+	DISPLAY: inline;
+}
+
+#topNav INPUT {
+	VERTICAL-ALIGN: middle;
+}
+#topNav INPUT.txtbox {
+	MARGIN: 2px;
+}
+#topNav INPUT.btn {
+	MARGIN: 2px;
+	COLOR: #000066;
+}
+
+#middle { 
+	CLEAR: both;
+	FLOAT: left;
+	WIDTH: 100%;
+	MARGIN: 0;
+/*	BACKGROUND: #f0f0f0;  test - 2005-06-21 */
+}
+
+/* 2005-06-16 */
+/* arbitrary width at the moment -- centers the content */
+#middle .centered {
+	WIDTH: 98%;
+	MARGIN: 0 auto;
+/*	BACKGROUND: #fff; test - 2005-06-21 */
+}	
+
+#footer { 
+	CLEAR: both; /* 2004-10-20 */
+	FLOAT: left; /* 2005-06-21 */
+	WIDTH: 100%; /* 2005-06-20 */ 
+	MARGIN: 0;
+	PADDING: 0;
+	TEXT-ALIGN: center;
+	BACKGROUND: #000066;
+	COLOR: #fff;
+}
+
+#footer UL {
+	WIDTH: 50%;
+	MARGIN: 0 auto;
+	PADDING: 0;
+	LIST-STYLE-TYPE: none;
+}
+
+#footer LI {
+	FLOAT: left;
+	MARGIN: 0;
+	PADDING: 0.5ex 2.5em;
+}
+
+/* de-table-izing for column-layout */
+
+/* 2005-06-16 */
+/* each of two equal columns */
+DIV.oneOfTwo, UL.oneOfTwo {
+	FLOAT: left;
+	WIDTH: 48%;
+	PADDING: 0 1%;
+	BACKGROUND: #fff;	
+}
+
+/* each of three equal columns */
+DIV.oneOfThree, UL.oneOfThree {
+	FLOAT: left;
+	WIDTH: 28%;
+	PADDING: 0 1%;
+	BACKGROUND: #fff;
+}
+
+/* skip nav - an accessibility thing */
+a.skipNav, a.skipNav:visited {
+	POSITION: absolute;
+	LEFT: 0;
+	TOP: 0;
+	Z-INDEX: -1;
+	COLOR: #fff !important;
+	BACKGROUND: #fff;
+}
