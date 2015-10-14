@@ -1,0 +1,73 @@
+Make the main content with XHTML, CSS, and images.
+
+XHTML
+
+Use XHTML 1.1, but without the following modules:
+
+    Forms
+    Server-side Image Map
+    Intrinsic Events
+    Scripting
+
+Tags such as <b> and <i> are supported, but discouraged, because you can use <span> and CSS to do this. 
+
+Structure Module
+    body, head, html, title
+Text Module
+    abbr, acronym, address, blockquote, br, cite, code, dfn, div, em, h1, h2, h3, h4, h5, h6, kbd, p, pre, q, samp, span, strong, var
+Hypertext Module
+    a
+List Module
+    dl, dt, dd, ol, ul, li
+Object Module
+    object, param
+Presentation Module (supported, but avoid if we can do this using simple CSS)
+    b, big, hr, i, small, sub, sup, tt
+Edit Module
+    del, ins
+Bidirectional Text Module
+    bdo
+Forms Module (not supported, if you wrap your forms in a <form></form> tag we can remove easily with BeautifulSoup)
+    button, fieldset, form, input, label, legend, select, optgroup, option, textarea
+Tables Module (tables are supported, but may convert poorly. Martin uses the List Module in examples instead of them)
+    caption, col, colgroup, table, tbody, td, tfoot, th, thead, tr
+Image Module
+    img
+Client-side Image Map Module
+    area, map
+Server-side Image Map Module (not supported and no idea why to use this)
+    Attribute ismap on img
+Intrinsic Events Module (not supported)
+    Events attributes
+Metainformation Module
+    meta
+Scripting Module (not supported, but we can remove that using BeautifulSoup easily if scripting is necessary)
+    noscript, script
+Style Sheet Module
+    style element
+Style Attribute Module Deprecated
+    style attribute
+Link Module
+    link
+Base Module
+    base 
+
+For maximum epub compatibility:
+
+Include XML declaration and XHTML doctype, at the top:
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" 
+   "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+and xmlns attribute in html:
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+Any unicode character, in UTF-8 or UTF-16, is allowed. But readers may have limited rendering capabilities.
+
+CSS
+
+Only CSS 2.1 is almost fully supported, with few exaceptions. 
+
+For more info on epubs, see: http://www.hxa.name/articles/content/epub-guide_hxa7241_2007.html
