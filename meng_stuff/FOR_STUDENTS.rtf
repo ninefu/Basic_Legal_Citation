@@ -1,0 +1,24 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 I\'92ve included a few things in this .zip for your use:\
+\
+1.  A csv of IAM access keys for your specific user on our AWS account\
+2.  A quick and dirty python script to add your current public IP to the security group.  This script makes a number of assumptions:\
+	A.  You\'92ve installed the AWS CLI.\
+	B.  You\'92ve placed the credentials in the proper format in your AWS CLI config.  It\'92s hard-coded 	into the script (bad I know), but you can see the AWS CLI invocation in the add_security_rule 	function.  The profile assumed to be used is \'93student\'94.\
+You can, of course, just use the AWS CLI command to add your IP manually, but this will speed things up a bit for you.\
+\
+The IP of the instance you\'92ll be using is: ec2-54-159-58-49.compute-1.amazonaws.com\
+\
+I\'92ve stripped down the instance, and set it up to serve only the citation material, at: \
+https://ec2-54-159-58-49.compute-1.amazonaws.com/citation\
+\
+The instance itself is an m3.medium, with a single core cpu and 4 GB of RAM.   I\'92ve created a user for you called: m_eng_fall_2015.  This user has full sudo privileges, so you\'92ve been warned.  I\'92ll be doing bi-weekly snapshot creation of the attached EBS, so be mindful of backups if you need more granularity there.\
+\
+ssh will allow passwords, and your default password at this time is:  cornellmengfall2015.  \
+\
+Further questions?  Email:  nic.ceynowa@liicornell.org  }
