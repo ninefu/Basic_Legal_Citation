@@ -1,0 +1,67 @@
+from subprocess import call
+import os.path
+
+'''
+    HOW TO USE:
+        The computer must have Calibre installed for the program to work correctly.
+        The user needs:
+            a TOC (table of contents) file, which is just an html with links to other pages.
+            a metadata file with info about the author, publisher, year, etc
+            a cover page for the book
+
+    HOW IT WORKS:
+        All of the pages are embedded using the links inside the toc file
+        Using breadth first search on the toc.html file, Calibre finds the links to all other html files and
+        adds them to the .epub
+        If you have a file that MUST be in the epub, but you have no link to it (you'll need to include a link somewhere,
+        preferably in the TOC.html file)
+
+    OPTIONS:
+        -m metadata   --sets the metadata of the ebook
+        --insert-metadata
+        --cover cover.gif  -- iff cover is not specified in metadata
+        --breadth-first    -- analyse the TOC.html in breadth first search order
+        --extra-css style.css  --adds an extra css file
+        --no-default-epub-cover
+        --no-svg-cover   -- to work on iphones correctly
+        --preserve-cover-aspect-ratio
+'''
+
+args = []
+command = "ebook-convert"
+args.append(command)
+
+print "Type the input HTML (Table of Contents) file: "
+arg = raw_input()
+if os.path.isfile(arg):
+    args.append(arg)
+
+    output = "basic-legal-citation.epub"
+    args.append(output)
+    args.append("--breadth-first")
+
+    print "Type the input metadata file (if any): "
+    arg = raw_input()
+    if os.path.isfile(arg):
+        args.append("-m")
+        args.append(arg)
+        args.append("--insert-metadata")
+
+
+    print "Type the cover file (if any): "
+    arg = raw_input()
+    if os.path.isfile(arg):
+        args.append("--cover")
+        args.append(arg)
+        args.append("--preserve-cover-aspect-ratio")
+    else:
+        args.append("--no-default-epub-cover")
+
+
+    print "Type a extra css file (if any): "
+    arg = raw_input()
+    if os.path.isfile(arg):
+        args.append("--extra-css")
+        args.append(arg)
+
+call(args)
