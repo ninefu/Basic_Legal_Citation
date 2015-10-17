@@ -1,0 +1,923 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"dumm",
+				"dummy_pred"
+			],
+			[
+				"x_",
+				"x_train"
+			],
+			[
+				"S",
+				"Sailors"
+			],
+			[
+				"neg",
+				"negcond"
+			],
+			[
+				"pos",
+				"posprob"
+			],
+			[
+				"confus",
+				"confusion_m"
+			],
+			[
+				"x_t",
+				"x_test"
+			],
+			[
+				"pre",
+				"prediction"
+			],
+			[
+				"ave",
+				"average_precision_score"
+			],
+			[
+				"err",
+				"error_rate"
+			],
+			[
+				"tag",
+				"taggable_friends"
+			],
+			[
+				"ego_",
+				"ego_alter"
+			],
+			[
+				"la",
+				"large_id"
+			],
+			[
+				"ego_al",
+				"ego_alter_list"
+			],
+			[
+				"ta",
+				"taggable"
+			],
+			[
+				"eg",
+				"ego_name"
+			],
+			[
+				"ego",
+				"ego_alter"
+			],
+			[
+				"eo",
+				"ego_ego_in"
+			],
+			[
+				"frie",
+				"friend_of"
+			],
+			[
+				"alt",
+				"alter_alter_list"
+			],
+			[
+				"insert",
+				"insert_many"
+			],
+			[
+				"a",
+				"alter_id"
+			],
+			[
+				"small",
+				"small_id"
+			],
+			[
+				"Des",
+				"DESCENDING"
+			],
+			[
+				"use",
+				"user_name"
+			],
+			[
+				"for",
+				"format"
+			],
+			[
+				"tagg",
+				"taggable"
+			],
+			[
+				"friend",
+				"friend_of"
+			],
+			[
+				"e_e",
+				"e_e_field_names"
+			],
+			[
+				"fields",
+				"field_names"
+			],
+			[
+				"fied",
+				"field_names"
+			],
+			[
+				"lar",
+				"large_name"
+			],
+			[
+				"field",
+				"field_names"
+			],
+			[
+				"large",
+				"large_id"
+			],
+			[
+				"ego_ego",
+				"ego_ego"
+			],
+			[
+				"peo",
+				"people_set"
+			],
+			[
+				"people",
+				"people_list"
+			],
+			[
+				"al",
+				"All"
+			],
+			[
+				"user",
+				"user_inter"
+			],
+			[
+				"alter",
+				"alter_alter"
+			],
+			[
+				"write",
+				"writeheader"
+			],
+			[
+				"fiel",
+				"field_names"
+			],
+			[
+				"track",
+				"track_pair"
+			],
+			[
+				"total",
+				"total_friends"
+			],
+			[
+				"ad",
+				"administrator"
+			],
+			[
+				"sta",
+				"story_tags"
+			],
+			[
+				"data",
+				"data"
+			],
+			[
+				"st",
+				"story_tags"
+			],
+			[
+				"statu",
+				"status_type"
+			],
+			[
+				"larg",
+				"large"
+			],
+			[
+				"exis",
+				"existing"
+			],
+			[
+				"us",
+				"user_name"
+			],
+			[
+				"tru",
+				"True"
+			],
+			[
+				"update",
+				"update_all"
+			],
+			[
+				"small_posts",
+				"small_posts_photo_video_to_large_timeline_id"
+			],
+			[
+				"small_posts_pho",
+				"small_posts_photo_video_to_large_id_timeline"
+			],
+			[
+				"small_likes_lar",
+				"small_likes_large_photo_id_timeline"
+			],
+			[
+				"co_t",
+				"co_tagged_photo_id"
+			],
+			[
+				"co_f",
+				"co_friend_count"
+			],
+			[
+				"co_fr",
+				"co_friend_id_app"
+			],
+			[
+				"attend",
+				"attended_by"
+			],
+			[
+				"mutual",
+				"mutual_likes"
+			],
+			[
+				"fri",
+				"friend_of"
+			],
+			[
+				"frien",
+				"friend"
+			],
+			[
+				"fre",
+				"friends_list"
+			],
+			[
+				"fr",
+				"friends_list"
+			],
+			[
+				"pagin",
+				"pagination"
+			],
+			[
+				"co_att",
+				"co_attended_event_count"
+			],
+			[
+				"trac",
+				"track_list"
+			],
+			[
+				"create",
+				"create_index"
+			],
+			[
+				"feeds",
+				"feeds"
+			],
+			[
+				"tagga",
+				"taggable_friends"
+			],
+			[
+				"even",
+				"events"
+			],
+			[
+				"find",
+				"find_people"
+			],
+			[
+				"user_",
+				"user_name"
+			],
+			[
+				"create_",
+				"create_people_one"
+			],
+			[
+				"story",
+				"story_tags"
+			],
+			[
+				"feed",
+				"feeds"
+			],
+			[
+				"cr",
+				"create_index"
+			],
+			[
+				"des",
+				"DESCENDING"
+			],
+			[
+				"as",
+				"ASCENDING"
+			],
+			[
+				"activi",
+				"activities"
+			],
+			[
+				"taggl",
+				"taggable_friends"
+			],
+			[
+				"act",
+				"activities"
+			],
+			[
+				"ac",
+				"activities"
+			],
+			[
+				"next",
+				"next_url"
+			],
+			[
+				"ud",
+				"update_all"
+			],
+			[
+				"like",
+				"like_field"
+			],
+			[
+				"event",
+				"event_field"
+			],
+			[
+				"pag",
+				"pagination"
+			],
+			[
+				"PA",
+				"pagination"
+			],
+			[
+				"up",
+				"update_all"
+			],
+			[
+				"outp",
+				"output_random"
+			],
+			[
+				"colle",
+				"collected_from"
+			],
+			[
+				"collecte",
+				"collected_from"
+			],
+			[
+				"coll",
+				"collected_from"
+			],
+			[
+				"co_lik",
+				"co_liked_music_count"
+			],
+			[
+				"co_like",
+				"co_like_id"
+			],
+			[
+				"co_jo",
+				"co_joined_group_id"
+			],
+			[
+				"co_ga",
+				"co_game_id"
+			],
+			[
+				"co_liked_boo",
+				"co_liked_book_id"
+			],
+			[
+				"com",
+				"comments"
+			],
+			[
+				"co_com",
+				"co_commented_post_id"
+			],
+			[
+				"posts",
+				"posts"
+			],
+			[
+				"friends",
+				"friends"
+			],
+			[
+				"get",
+				"get_coCount"
+			],
+			[
+				"crea",
+				"create_index"
+			],
+			[
+				"fin",
+				"find_people"
+			],
+			[
+				"cre",
+				"create_people"
+			],
+			[
+				"pro",
+				"processing"
+			],
+			[
+				"likes",
+				"likes"
+			],
+			[
+				"comment",
+				"comments_counts"
+			],
+			[
+				"co",
+				"collecton"
+			],
+			[
+				"resu",
+				"result_total"
+			],
+			[
+				"doc",
+				"doc_in_col"
+			],
+			[
+				"photos",
+				"photos_processing"
+			],
+			[
+				"phot",
+				"photos_processing"
+			],
+			[
+				"col",
+				"collected_from"
+			],
+			[
+				"li",
+				"liked_by"
+			],
+			[
+				"stau",
+				"status"
+			],
+			[
+				"status",
+				"statuses"
+			],
+			[
+				"pho",
+				"photo_total"
+			],
+			[
+				"inser",
+				"inser_many"
+			],
+			[
+				"post",
+				"post_total"
+			],
+			[
+				"find_",
+				"find_person"
+			],
+			[
+				"fb",
+				"fb_data"
+			],
+			[
+				"photo",
+				"photo_total"
+			],
+			[
+				"node",
+				"nodeB"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"command_palette":
+	{
+		"height": 374.0,
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"glue",
+				"Glue - Launch"
+			],
+			[
+				"gl",
+				"Glue - Launch"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"TODO",
+				"TodoReview: Project and Open Files"
+			],
+			[
+				"todo",
+				"TodoReview: Project Files"
+			],
+			[
+				"tod",
+				"TodoReview: Project Files"
+			],
+			[
+				"TO",
+				"TodoReview: Project and Open Files"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"oac",
+				"Package Control: Add Channel"
+			],
+			[
+				"pac",
+				"Package Control: Install Package"
+			],
+			[
+				"package control",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 543.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/yihuifu/Documents/workspace/4321_A3/samples/input/db/data/Boats_humanreadable",
+		"/Users/yihuifu/Documents/workspace/4321_A3/samples/input/db/data/BinaryWriterTestBoats",
+		"/Users/yihuifu/GitHub/CS_5150/old_html/citation/index.htm",
+		"/Users/yihuifu/Downloads/html5up-minimaxing/twocolumn1.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/css/bootstrap.min.css",
+		"/Users/yihuifu/GitHub/CS_5150/html/css/justified-nav.css",
+		"/Users/yihuifu/Downloads/html5up-minimaxing/index.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/css/minimaxing/main.css",
+		"/Users/yihuifu/GitHub/CS_5150/html/css/bootstrap-theme.css",
+		"/Users/yihuifu/GitHub/CS_5150/html/css/bootstrap.css",
+		"/Users/yihuifu/Desktop/Google.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/citation/howToCite.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/citation/howTo_ES.html",
+		"/Users/yihuifu/Google Drive/2015 Fall/CS 4740/Project 2/terminal.glue",
+		"/Users/yihuifu/Google Drive/2015 Fall/CS 4740/Project 2/Dictionary.xml",
+		"/Users/yihuifu/Library/Application Support/Sublime Text 2/Packages/Glue/Glue.sublime-settings",
+		"/Users/yihuifu/Library/Application Support/Sublime Text 2/Packages/User/Glue.sublime-settings",
+		"/Users/yihuifu/Google Drive/2015 Fall/CS 4740/Project 2/project2-description.pdf",
+		"/Users/yihuifu/.profile",
+		"/private/etc/bashrc",
+		"/Users/yihuifu/Downloads/meng_stuff/aws_add_ip_for_students.py",
+		"/Users/yihuifu/Documents/workspace/4321 A2/samples/input/queries.sql",
+		"/Users/yihuifu/Google Drive/2015 Fall/CS 4780/yf263/hw03/naivebayesPY.m",
+		"/Users/yihuifu/Google Drive/2015 Fall/CS 4780/yf263/hw03/naivebayesPXY.m",
+		"/Users/yihuifu/Google Drive/2015 Fall/CS 4780/yf263/hw03/naivebayesCL.m",
+		"/Users/yihuifu/Google Drive/2015 Fall/CS 4780/yf263/hw03/naivebayes.m",
+		"/Users/yihuifu/Google Drive/2015 Fall/CS 4780/yf263/hw03/hw03tests.m",
+		"/Users/yihuifu/Google Drive/2015 Fall/CS 4780/yf263/hw03/classifyLinear.m",
+		"/Users/yihuifu/Google Drive/2015 Fall/CS 4780/yf263/hw03/genTrainFeatures.m",
+		"/Users/yihuifu/GitHub/FB NoUse/db.py",
+		"/Users/yihuifu/GitHub/FB NoUse/update_db.py",
+		"/Users/yihuifu/GitHub/FB NoUse/classifier.py",
+		"/Users/yihuifu/GitHub/FB NoUse/ltget.py",
+		"/Users/yihuifu/GitHub/FB NoUse/check_db.txt",
+		"/Users/yihuifu/GitHub/FB NoUse/notes.txt",
+		"/Users/yihuifu/GitHub/FB NoUse/setup_db.py",
+		"/Users/yihuifu/GitHub/FB NoUse/vis_db.py",
+		"/Users/yihuifu/GitHub/FB NoUse/query.py",
+		"/Users/yihuifu/GitHub/FB NoUse/setup_db_log.txt",
+		"/Users/yihuifu/GitHub/FB NoUse/get_training_data.py",
+		"/Users/yihuifu/GitHub/FB NoUse/random_output.py",
+		"/Users/yihuifu/GitHub/FB NoUse/setup_db2.py",
+		"/Users/yihuifu/GitHub/FB NoUse/vis_db",
+		"/Users/yihuifu/GitHub/FB NoUse/DB.py",
+		"/Users/yihuifu/GitHub/FB NoUse/testlogging.py",
+		"/Users/yihuifu/GitHub/FB NoUse/Readme.md",
+		"/Users/yihuifu/GitHub/FB NoUse/check_duplicate.py",
+		"/Users/yihuifu/GitHub/FB NoUse/old/DBV1.py",
+		"/Users/yihuifu/GitHub/FB NoUse/DBV1.py",
+		"/Users/yihuifu/GitHub/FB NoUse/web.py",
+		"/Users/yihuifu/GitHub/FB NoUse/testViz.py",
+		"/Users/yihuifu/GitHub/FB NoUse/new_open.py",
+		"/Users/yihuifu/Library/Application Support/Sublime Text 2/Packages/TodoReview/TodoReview.sublime-settings",
+		"/Users/yihuifu/GitHub/FB NoUse/structure.txt",
+		"/Users/yihuifu/GitHub/FB NoUse/old/createDBv1.py",
+		"/Users/yihuifu/GitHub/FB NoUse/old/get variable.py",
+		"/Users/yihuifu/GitHub/FB NoUse/DB V1.py",
+		"/Users/yihuifu/GitHub/FB NoUse/mytoken.txt",
+		"/Users/yihuifu/GitHub/FB NoUse/individual_output.py",
+		"/Users/yihuifu/GitHub/FB NoUse/neha_output.py",
+		"/Users/yihuifu/GitHub/FB NoUse/query V1.py",
+		"/Users/yihuifu/GitHub/FB NoUse/queryV1.py",
+		"/Users/yihuifu/GitHub/FB NoUse/createDB.py",
+		"/Users/yihuifu/GitHub/FB NoUse/create v1.py",
+		"/Users/yihuifu/GitHub/FB NoUse/DBquery.py",
+		"/Users/yihuifu/GitHub/FB NoUse/new user.py",
+		"/Users/yihuifu/GitHub/FB NoUse/fbgrab.py",
+		"/Users/yihuifu/GitHub/FB NoUse/createDB_Neha.py",
+		"/Users/yihuifu/GitHub/FB NoUse/timing.py",
+		"/Users/yihuifu/GitHub/FB NoUse/test.py",
+		"/Users/yihuifu/GitHub/FB NoUse/Data Pipeline.py",
+		"/Users/yihuifu/GitHub/FB NoUse/V1_trash.py",
+		"/Users/yihuifu/GitHub/FB NoUse/mongoDB shell commands.txt",
+		"/Users/yihuifu/GitHub/FB NoUse/createMongoDB.py",
+		"/Users/yihuifu/GitHub/FB NoUse/getCo.py",
+		"/Users/yihuifu/GitHub/FB NoUse/getDBdata.py",
+		"/Users/yihuifu/GitHub/FB NoUse/FBall.txt",
+		"/Users/yihuifu/GitHub/FB NoUse/token.txt",
+		"/Users/yihuifu/GitHub/FB NoUse/mongo.py",
+		"/Users/yihuifu/GitHub/FB NoUse/yihui.csv",
+		"/Users/yihuifu/GitHub/FB NoUse/variableStructure.txt",
+		"/Users/yihuifu/GitHub/FB NoUse/dict2csv.py",
+		"/Users/yihuifu/Desktop/Data Pipeline.py",
+		"/Users/yihuifu/GitHub/status strcuture.txt",
+		"/Users/yihuifu/GitHub/Data Pipeline.py",
+		"/Users/yihuifu/GitHub/status.strcuture",
+		"/Users/yihuifu/GitHub/pydata-book/ch02Practice.py",
+		"/Users/yihuifu/GitHub/pydata-book/practice.py",
+		"/Users/yihuifu/Downloads/python_basics/test.py",
+		"/Users/yihuifu/Downloads/practice.py",
+		"/Users/yihuifu/Downloads/python_basics/person_class.py",
+		"/Users/yihuifu/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/yihuifu/Downloads/python_basics/fruit.py",
+		"/Users/yihuifu/Downloads/python_basics/foreach.py",
+		"/Users/yihuifu/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 33.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"nav",
+			"section",
+			".left-cont",
+			"nav",
+			"text-transform",
+			"nav",
+			"text-transform",
+			"text",
+			"88,",
+			"prediction",
+			"shlex",
+			"frame",
+			"acltat",
+			"np",
+			"story_tags",
+			"id",
+			"else",
+			"alter_alter",
+			"alter_alter ",
+			"name",
+			"ego_alter",
+			"name",
+			"ego_ego",
+			"print",
+			"person",
+			"id",
+			"friends",
+			"e_e",
+			"count",
+			"field_names",
+			"，",
+			"processing,",
+			"people_processing.find()",
+			"people_processing,",
+			"{\"type\":\"link\"}]}",
+			"{\"type\":{\"$in\":[\"photo\",\"video\"]}}]}",
+			"collected_from",
+			"{\"type\":{\"$in\":[\"photo\",\"video\"]}}]}",
+			"{\"type\":\"link\"}]}",
+			"{\"type\":{\"$in\":[\"photo\",\"video\"]}}]}",
+			"\"}",
+			",\"video\"]",
+			"{\"$in\":[",
+			"photo",
+			"\"link\"",
+			"_app",
+			".count()",
+			"ego",
+			"m[",
+			"m",
+			"nodeB",
+			"nodeA",
+			"output",
+			"id",
+			"\"Neha Deshmukh\"",
+			"information",
+			"small",
+			"large_mutual",
+			"small_mutual",
+			"mutual",
+			"attended_by",
+			"story_tag",
+			"about",
+			"friends",
+			"collected_from",
+			"small",
+			":small",
+			"small",
+			"_large",
+			"small_",
+			"photo_video",
+			"count_timeline",
+			"_id_timeline",
+			"_timeline",
+			"{\"id\":1",
+			"statu",
+			",,",
+			"{\"$in\":[\"status\",\"note\"]}}]}",
+			"{\"$in\":[\"status\",\"note\"]}}]",
+			"photo",
+			"\"photo\",\"video\"",
+			"_large",
+			"small_",
+			"likes",
+			"tagged",
+			"with_tags.data.",
+			"tagged",
+			"with_tags",
+			"status",
+			"photo",
+			"comment_photo",
+			"like",
+			"likes.data.",
+			"with_tags",
+			"tagged",
+			"name",
+			"_timeline",
+			"_large",
+			"small_",
+			"_large",
+			"small_",
+			"_large",
+			"small_",
+			"_large",
+			"large_",
+			"small_",
+			"count_timeline = []",
+			"photo",
+			"tagged",
+			"\n	",
+			"id_",
+			"_timeline",
+			"_large",
+			"small_",
+			"mutual",
+			"comments",
+			"friends",
+			"photo",
+			"like",
+			"friend",
+			"friends",
+			"like",
+			"likes",
+			"person",
+			"doc[key]['id']",
+			"doc['id']",
+			"person['id']",
+			"people."
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 32.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 98.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 184.0,
+	"status_bar_visible": true
+}
