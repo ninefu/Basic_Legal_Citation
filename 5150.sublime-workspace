@@ -523,32 +523,24 @@
 			"file": "html/pages/index.html",
 			"settings":
 			{
-				"buffer_size": 18873,
+				"buffer_size": 19026,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "html/bower_components/bootstrap/dist/css/bootstrap.css",
+			"file": "html/pages/whatAndWhy.html",
 			"settings":
 			{
-				"buffer_size": 141623,
+				"buffer_size": 15019,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "html/dist/css/sb-admin-2.css",
+			"file": "html/pages/eBooks.html",
 			"settings":
 			{
-				"buffer_size": 5688,
+				"buffer_size": 18709,
 				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/Users/yihuifu/Downloads/html5up-minimaxing/index.html",
-			"settings":
-			{
-				"buffer_size": 9611,
-				"line_ending": "Windows"
 			}
 		}
 	],
@@ -628,19 +620,22 @@
 	},
 	"file_history":
 	[
-		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.min.css",
-		"/Users/yihuifu/GitHub/CS_5150/html_workspace/citation/index.html",
-		"/Users/yihuifu/Downloads/html5up-minimaxing/index.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/index.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/js/bootstrap.js",
+		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/js/bootstrap.min.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/dist/css/sb-admin-2.css",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/jquery/dist/jquery.min.js",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/blank.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/eBooks.html",
+		"/Users/yihuifu/Downloads/html5up-minimaxing/index.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.min.css",
+		"/Users/yihuifu/GitHub/CS_5150/html_workspace/citation/index.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/pages/index.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/dist/js/sb-admin-2.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/font-awesome/css/font-awesome.min.css",
-		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/js/bootstrap.min.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/jquery/dist/jquery.js",
-		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/jquery/dist/jquery.min.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/dist/css/timeline.css",
-		"/Users/yihuifu/GitHub/CS_5150/html/index.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/css/bootstrap/bootstrap-theme.css",
 		"/Users/yihuifu/GitHub/CS_5150/html/citation/index2.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/citation/navbar-fixed-top.css",
@@ -761,6 +756,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"side",
+			"menu",
+			"side-menu",
+			"menu",
+			"bar",
+			"menu",
+			"basic leg",
+			"http://www.access-to-law.com/citation/",
 			"header",
 			"media",
 			"page-header",
@@ -880,15 +883,7 @@
 			"like",
 			"likes.data.",
 			"with_tags",
-			"tagged",
-			"name",
-			"_timeline",
-			"_large",
-			"small_",
-			"_large",
-			"small_",
-			"_large",
-			"small_"
+			"tagged"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -906,7 +901,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -914,15 +909,15 @@
 					"file": "html/pages/index.html",
 					"settings":
 					{
-						"buffer_size": 18873,
+						"buffer_size": 19026,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18151,
-								18151
+								2063,
+								1984
 							]
 						],
 						"settings":
@@ -932,96 +927,63 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6713.0,
+						"translation.y": 422.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "html/bower_components/bootstrap/dist/css/bootstrap.css",
+					"file": "html/pages/whatAndWhy.html",
 					"settings":
 					{
-						"buffer_size": 141623,
+						"buffer_size": 15019,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								67189,
-								67195
+								2063,
+								2063
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 2,
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 52357.0,
+						"translation.y": 362.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "html/dist/css/sb-admin-2.css",
+					"file": "html/pages/eBooks.html",
 					"settings":
 					{
-						"buffer_size": 5688,
+						"buffer_size": 18709,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								838,
-								838
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 649.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 3,
-					"file": "/Users/yihuifu/Downloads/html5up-minimaxing/index.html",
-					"settings":
-					{
-						"buffer_size": 9611,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2675,
-								2675
+								2039,
+								2039
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1314.0,
+						"translation.y": 380.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1046,18 +1008,11 @@
 				0,
 				1,
 				1
-			],
-			[
-				1,
-				0,
-				2,
-				1
 			]
 		],
 		"cols":
 		[
 			0.0,
-			0.5,
 			1.0
 		],
 		"rows":
