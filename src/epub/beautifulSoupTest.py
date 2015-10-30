@@ -91,7 +91,7 @@ def replace_spans (a, span, example, count):
         
     a.attrs = [(key,value) for key,value in a.attrs
                if key !="target"]
-    a["href"] = "#"
+    a["href"] = ""
     a.attrs.append(('ng-model',name))
     a.attrs.append(('ng-click',name +" = !" +name ) )
     return;
