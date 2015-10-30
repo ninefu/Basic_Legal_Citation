@@ -89,6 +89,7 @@ def create_toc_file():
         f.write(pretty_html)
         f.close()
 
+
 html = "2-100.htm"       # get the file 2-100.htm
 if os.path.isfile(html): #verify if the file exists
     soup = get_beautiful_file(html)   # create a soup
@@ -96,6 +97,10 @@ if os.path.isfile(html): #verify if the file exists
         a = span.find("a")
         example = a["href"]
         if os.path.isfile(example):
-            print "====== ", str(example), " ======"
             example = get_beautiful_file(example)
-            print example.body.find("ul").prettify()
+            ul = example.body.find("ul")
+            span.append(ul)
+            #a.replaceWith(ul)
+f = open(r'testing.html', "w")
+f.write(soup.prettify())
+f.close()
