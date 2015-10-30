@@ -89,20 +89,13 @@ def create_toc_file():
         f.write(pretty_html)
         f.close()
 
-create_toc_file()
-
-''''for a in soup.findAll("a", href=True):
-    pseudo_link = remove_non_ascii(a.text)
-    pseudo_link = pseudo_link.strip()
-    if os.path.isfile(pseudo_link + '.htm'):
-        a["href"] = pseudo_link + '.htm'
-    else:
-        if os.path.isfile(pseudo_link + '.html'):
-            a["href"] = pseudo_link + '.html'
-        else:
-            a["href"] = ''
-pretty_html = soup.prettify()
-f = open(r'toc.html', "w")
-f.write(pretty_html)
-f.close()
-'''
+html = "2-100.htm"       # get the file 2-100.htm
+if os.path.isfile(html): #verify if the file exists
+    soup = get_beautiful_file(html)   # create a soup
+    for span in soup.findAll("span", {"class": "example_icon"}):
+        a = span.find("a")
+        example = a["href"]
+        if os.path.isfile(example):
+            print "====== ", str(example), " ======"
+            example = get_beautiful_file(example)
+            print example.body.find("ul").prettify()
