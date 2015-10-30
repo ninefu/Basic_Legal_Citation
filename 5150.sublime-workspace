@@ -523,23 +523,7 @@
 			"file": "html/pages/index.html",
 			"settings":
 			{
-				"buffer_size": 19026,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "html/pages/whatAndWhy.html",
-			"settings":
-			{
-				"buffer_size": 15019,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "html/pages/eBooks.html",
-			"settings":
-			{
-				"buffer_size": 18709,
+				"buffer_size": 19044,
 				"line_ending": "Unix"
 			}
 		}
@@ -620,6 +604,17 @@
 	},
 	"file_history":
 	[
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/4_1.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/1_1.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/eBooks.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/resources.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/1_2.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/whatWhy_transition.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/1_6.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/whatWhy_purpose.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/whatWhy_types.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/whatWhy_levels.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/whatAndWhy.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/index.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/js/bootstrap.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/js/bootstrap.min.js",
@@ -627,7 +622,6 @@
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.css",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/jquery/dist/jquery.min.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/pages/blank.html",
-		"/Users/yihuifu/GitHub/CS_5150/html/pages/eBooks.html",
 		"/Users/yihuifu/Downloads/html5up-minimaxing/index.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.min.css",
 		"/Users/yihuifu/GitHub/CS_5150/html_workspace/citation/index.html",
@@ -737,8 +731,7 @@
 		"/Users/yihuifu/Downloads/python_basics/person_class.py",
 		"/Users/yihuifu/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/Users/yihuifu/Downloads/python_basics/fruit.py",
-		"/Users/yihuifu/Downloads/python_basics/foreach.py",
-		"/Users/yihuifu/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+		"/Users/yihuifu/Downloads/python_basics/foreach.py"
 	],
 	"find":
 	{
@@ -746,7 +739,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 91.0,
 		"where_history":
 		[
 		]
@@ -901,7 +894,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -909,15 +902,15 @@
 					"file": "html/pages/index.html",
 					"settings":
 					{
-						"buffer_size": 19026,
+						"buffer_size": 19044,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2063,
-								1984
+								2077,
+								2077
 							]
 						],
 						"settings":
@@ -927,63 +920,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 422.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "html/pages/whatAndWhy.html",
-					"settings":
-					{
-						"buffer_size": 15019,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2063,
-								2063
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 362.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "html/pages/eBooks.html",
-					"settings":
-					{
-						"buffer_size": 18709,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2039,
-								2039
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 380.0,
+						"translation.y": 1174.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
