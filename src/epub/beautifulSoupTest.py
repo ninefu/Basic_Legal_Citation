@@ -3,12 +3,8 @@ import zipfile
 import urllib
 import sys
 import os.path
-import mimetypes
-import time
 import urlparse
 import cgi
-from optparse import OptionParser
-from readability.readability import Document
 from BeautifulSoup import BeautifulSoup,Tag, Comment
 
 
@@ -92,7 +88,9 @@ def create_toc_file():
 
 html = "2-100.htm"       # get the file 2-100.htm
 if os.path.isfile(html): #verify if the file exists
+   
     soup = get_beautiful_file(html)   # create a soup
+   
     for span in soup.findAll("span", {"class": "example_icon"}):
         a = span.find("a")
         example = a["href"]
@@ -101,6 +99,20 @@ if os.path.isfile(html): #verify if the file exists
             ul = example.body.find("ul")
             span.append(ul)
             #a.replaceWith(ul)
+
+    # find all a which are examples and replace them with the standart <span><a></a></span> pattern
+    for a in soup.findAll("a", {"class": "example_icon"}):
+        span = Tag(soup, "span", [("class","example_icon")])
+        soup.insert(0, span)
+        example = a["href"]
+        a["class"] = ""
+        a.replaceWith(span)
+        if os.path.isfile(example):
+            example = get_beautiful_file(example)
+            ul = example.body.find("ul")            
+            span.insert(0, a)
+            span.insert(1, ul)            
+
 f = open(r'testing.html', "w")
 f.write(soup.prettify())
 f.close()
