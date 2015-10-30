@@ -20,8 +20,8 @@ def get_beautiful_file(filename):
 
 def replace_all_iframes(soup):
     for iframe in soup.body('p'):
-        if "class" in iframe.attrs and iframe["class"] == "iframe":
-            iframe.replaceWith('')
+        if ("class","iframe") in iframe.attrs:
+            iframe.replaceWith("")
 
 # replace all <li> with <p> if the class is Example or note for epub compatibility
 def replace_all_li(soup):
@@ -105,7 +105,8 @@ for filename in files:
     html = filename
     if os.path.isfile(html): #verify if the file exists
         soup = get_beautiful_file(html)   # create a soup
-   
+        replace_all_iframes(soup)
+
         for span in soup.findAll("span", {"class": "example_icon"}):
             a = span.find("a")
             example = a["href"]
@@ -132,11 +133,8 @@ for filename in files:
                 count += 1
                 replace_spans(a, span, example, count)
 
-        replace_all_iframes(soup)
         new_filename = filename[:-4]
         new_filename = new_filename +"_new.htm"
-        print new_filename
         f = open(new_filename, "w")
-        print f
         f.write(soup.prettify())
         f.close()
