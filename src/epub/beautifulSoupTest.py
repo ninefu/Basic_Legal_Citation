@@ -7,8 +7,6 @@ import urlparse
 import cgi
 from BeautifulSoup import BeautifulSoup,Tag, Comment
 
-
-
 # remove the comments from a BeautifulSoup file
 def remove_comments(soup):
     comments = soup.findAll(text=lambda text:isinstance(text, Comment))
@@ -21,12 +19,9 @@ def get_beautiful_file(filename):
     return ex_soup
 
 def replace_all_iframes(soup):
-    for iframe in soup.body('iframe'):
-        example = iframe["src"]
-        ex_soup = get_beautiful_file(example)
-        remove_comments(ex_soup)
-        p = ex_soup.body
-        print p.prettify()
+    for iframe in soup.body('p'):
+        if iframe["class"] == "iframe":
+            iframe.replaceWith('')
 
 # replace all <li> with <p> if the class is Example or note for epub compatibility
 def replace_all_li(soup):
@@ -85,8 +80,25 @@ def create_toc_file():
         f.write(pretty_html)
         f.close()
 
+def replace_spans (a, span, example, count):
+    name = "example" + str(count)
+    ul.attrs.append(('ng-show',name))
+    ul.attrs.append(('class',"text-level2"))
+    li_list = ul.findAll("li", {"class" : "text-level2"})
+    for l in li_list:
+        l.attrs = [(key,value) for key,value in l.attrs
+                   if key != "class" or value != "text-level2"]
+        
+    a.attrs = [(key,value) for key,value in a.attrs
+               if key !="target"]
+    a["href"] = "#"
+    a.attrs.append(('ng-model',name))
+    a.attrs.append(('ng-click',name +" = !" +name ) )
+    return;
 
-html = "2-100.htm"       # get the file 2-100.htm
+count = 0
+filename = raw_input('Enter the filename (without .htm extension)')
+html = filename + ".htm"
 if os.path.isfile(html): #verify if the file exists
    
     soup = get_beautiful_file(html)   # create a soup
@@ -98,7 +110,8 @@ if os.path.isfile(html): #verify if the file exists
             example = get_beautiful_file(example)
             ul = example.body.find("ul")
             span.append(ul)
-            #a.replaceWith(ul)
+            count += 1
+            replace_spans(a, span, example, count)
 
     # find all a which are examples and replace them with the standart <span><a></a></span> pattern
     for a in soup.findAll("a", {"class": "example_icon"}):
@@ -111,8 +124,12 @@ if os.path.isfile(html): #verify if the file exists
             example = get_beautiful_file(example)
             ul = example.body.find("ul")            
             span.insert(0, a)
-            span.insert(1, ul)            
+            span.insert(1, ul)
+            count += 1
+            replace_spans(a, span, example, count)
 
-f = open(r'testing.html', "w")
+replace_all_iframes(soup)
+new_filename = filename + "_new.htm"
+f = open(new_filename, "w")
 f.write(soup.prettify())
 f.close()
