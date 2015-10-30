@@ -1,4 +1,4 @@
-
+import glob
 import zipfile
 import urllib
 import sys
@@ -20,7 +20,7 @@ def get_beautiful_file(filename):
 
 def replace_all_iframes(soup):
     for iframe in soup.body('p'):
-        if iframe["class"] == "iframe":
+        if "class" in iframe.attrs and iframe["class"] == "iframe":
             iframe.replaceWith('')
 
 # replace all <li> with <p> if the class is Example or note for epub compatibility
@@ -96,40 +96,47 @@ def replace_spans (a, span, example, count):
     a.attrs.append(('ng-click',name +" = !" +name ) )
     return;
 
+
 count = 0
-filename = raw_input('Enter the filename (without .htm extension)')
-html = filename + ".htm"
-if os.path.isfile(html): #verify if the file exists
+dir_path = '*00.htm'
+files = glob.glob(dir_path)
+for filename in files:
+    print "Working on file " + filename
+    html = filename
+    if os.path.isfile(html): #verify if the file exists
+        soup = get_beautiful_file(html)   # create a soup
    
-    soup = get_beautiful_file(html)   # create a soup
-   
-    for span in soup.findAll("span", {"class": "example_icon"}):
-        a = span.find("a")
-        example = a["href"]
-        if os.path.isfile(example):
-            example = get_beautiful_file(example)
-            ul = example.body.find("ul")
-            span.append(ul)
-            count += 1
-            replace_spans(a, span, example, count)
+        for span in soup.findAll("span", {"class": "example_icon"}):
+            a = span.find("a")
+            example = a["href"]
+            if os.path.isfile(example):
+                example = get_beautiful_file(example)
+                ul = example.body.find("ul")
+                if ul is not None:
+                    span.append(ul)
+                    count += 1
+                    replace_spans(a, span, example, count)
 
     # find all a which are examples and replace them with the standart <span><a></a></span> pattern
-    for a in soup.findAll("a", {"class": "example_icon"}):
-        span = Tag(soup, "span", [("class","example_icon")])
-        soup.insert(0, span)
-        example = a["href"]
-        a["class"] = ""
-        a.replaceWith(span)
-        if os.path.isfile(example):
-            example = get_beautiful_file(example)
-            ul = example.body.find("ul")            
-            span.insert(0, a)
-            span.insert(1, ul)
-            count += 1
-            replace_spans(a, span, example, count)
+        for a in soup.findAll("a", {"class": "example_icon"}):
+            span = Tag(soup, "span", [("class","example_icon")])
+            soup.insert(0, span)
+            example = a["href"]
+            a["class"] = ""
+            a.replaceWith(span)
+            if os.path.isfile(example):
+                example = get_beautiful_file(example)
+                ul = example.body.find("ul")            
+                span.insert(0, a)
+                span.insert(1, ul)
+                count += 1
+                replace_spans(a, span, example, count)
 
-replace_all_iframes(soup)
-new_filename = filename + "_new.htm"
-f = open(new_filename, "w")
-f.write(soup.prettify())
-f.close()
+        replace_all_iframes(soup)
+        new_filename = filename[:-4]
+        new_filename = new_filename +"_new.htm"
+        print new_filename
+        f = open(new_filename, "w")
+        print f
+        f.write(soup.prettify())
+        f.close()
