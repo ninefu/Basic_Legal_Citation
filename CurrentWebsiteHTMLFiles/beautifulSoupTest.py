@@ -135,7 +135,7 @@ for filename in files:
                 replace_spans(a, span, example, count)
 
         new_filename = filename[:-4]
-	folder = "Results"
+	folder = "../ParsedHTMLAngularJSSite"
 	if not os.path.exists(folder):
 		os.makedirs(folder)
         new_filename = folder+"/"+new_filename +"_new.htm"
