@@ -17,7 +17,7 @@ Website :
 
 ------------------
 
-##### Subteam 2: (Sania + Joao + 2 more opening)
+##### Subteam 2: (Sania + Joao + Brenda + 1 more opening)
 
 Scripting + XHTML:
 ------------------
