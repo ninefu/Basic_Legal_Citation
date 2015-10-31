@@ -1,6 +1,6 @@
 # CS_5150
 subteam 1:
-Tasks to complete (me + yihui + 1 more opening)
+Tasks to complete (me + yihui + 2 more opening)
 -----------------
 Website :
 1. replace the layouting format with ng-view. Only main layout in index.html. Individual pages to be fetched and plugged in dynamically
@@ -49,4 +49,5 @@ tasks to complete:
 
 2. XHTML tagging research
 
+3. conversion to pdf... on new site - STRICTLY witheld until all other tasks are complete
 target : sunday!!
