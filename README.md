@@ -1,7 +1,9 @@
 # CS_5150
 #### subteam 1:
+
 Tasks to complete (me + yihui + 2 more opening)
 -----------------
+
 Website :
 
 1. replace the layouting format with ng-view. Only main layout in index.html. Individual pages to be fetched and plugged in dynamically
@@ -13,9 +15,11 @@ Website :
 7. ensure that css styling is perfectly done
 
 ##### subteam 2:
+
 scripting + xhtml:
 ------------------
-inconsistencies found:
+
+Inconsistencies found:
 
 * a. sara's html folder has diff. content from LII site
    - currently using s/w discovered by akshay to crawl the lii site and extract html pages
@@ -37,18 +41,18 @@ inconsistencies found:
    - **LIIWebsiteHTMLFiles** - contains files extractd from hosted LII site. Generated from akshays tool. Also contains `beautifulSoupTest.py`
    - **ParsedHTMLAngularJSSite** - the `beautifulSoupTest.py` output
 
-##### tasks to complete:
+##### Tasks to complete:
 
-1. proof read
+1. Proofread
    45 output files: 
     (if you manually edit a file, leave a comment in google doc link - 
     https://docs.google.com/document/d/1OQBlbDOuCzkb7qIepXyJuvxfE6vr9wXVmUYQcPm5fXA/edit?usp=sharing
     )
      - check if content is same as hosted LII site
-     - check if all e.g. tags are working as expected (user must click on each e.g. and manually check that things work. we found corner case scenarios by manual testing today)
+     - check if all `<<e.g.>>` tags are working as expected (user must click on each `<<e.g.>>` and manually check that things work. we found corner case scenarios by manual testing today)
      - check that styling is readable. (edit stray . " , etc)
 
 2. XHTML tagging research
-3. conversion to pdf... on new site - STRICTLY witheld until all other tasks are complete
+3. Conversion to pdf... on new site - STRICTLY witheld until all other tasks are complete
 
-**target : sunday!!**
+**Target : Sunday!!**
