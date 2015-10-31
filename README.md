@@ -11,14 +11,15 @@ Website :
 - 6. check notes for usability comments from prof. martin
 - 7. ensure that css styling is perfectly done
 
-subteam 2:
+##### subteam 2:
 scripting + xhtml:
 ------------------
 inconsistencies found:
-a. sara's html folder has diff. content from LII site
-   currently using s/w discovered by akshay to crawl the lii site and extract html pages
-   some pages could not be extracted from hosted site.
-   some example pages may be missing too.
+
+* sara's html folder has diff. content from LII site
+   - currently using s/w discovered by akshay to crawl the lii site and extract html pages
+   - some pages could not be extracted from hosted site.
+   - some example pages may be missing too.
 b. some tags are like <a href="6-200.html#string">
     This is used to jump to a particular location in an external link
     such tags mustn't be converted into angular js ng-show (6-200.html is too big to be displayed under an <<e.g.>>)
