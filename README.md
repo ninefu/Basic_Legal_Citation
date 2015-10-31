@@ -14,6 +14,8 @@ Website :
 6. check notes for usability comments from prof. martin
 7. ensure that css styling is perfectly done
 
+------------------
+
 ##### subteam 2: (Sania + Joao + 2 more opening)
 
 Scripting + XHTML:
@@ -44,13 +46,14 @@ Inconsistencies found:
 ##### Tasks to complete:
 
 1. Proofread
-   45 output files: 
+   
+   - 45 output files: 
     (if you manually edit a file, leave a comment in google doc link - 
     https://docs.google.com/document/d/1OQBlbDOuCzkb7qIepXyJuvxfE6vr9wXVmUYQcPm5fXA/edit?usp=sharing
     )
-     - check if content is same as hosted LII site
-     - check if all `<<e.g.>>` tags are working as expected (user must click on each `<<e.g.>>` and manually check that things work. we found corner case scenarios by manual testing today)
-     - check that styling is readable. (edit stray . " , etc)
+   - check if content is same as hosted LII site
+   - check if all `<<e.g.>>` tags are working as expected (user must click on each `<<e.g.>>` and manually check that things work. we found corner case scenarios by manual testing today)
+   - check that styling is readable. (edit stray . " , etc)
 
 2. XHTML tagging research
 3. Conversion to pdf... on new site - STRICTLY witheld until all other tasks are complete
