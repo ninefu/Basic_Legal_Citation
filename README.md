@@ -1,7 +1,7 @@
 # CS_5150
-#### subteam 1:
+#### subteam 1: (Harish + Yihui + 2 more opening)
 
-Tasks to complete (me + yihui + 2 more opening)
+Tasks to complete 
 -----------------
 
 Website :
@@ -14,9 +14,9 @@ Website :
 6. check notes for usability comments from prof. martin
 7. ensure that css styling is perfectly done
 
-##### subteam 2:
+##### subteam 2: (Sania + Joao + 2 more opening)
 
-scripting + xhtml:
+Scripting + XHTML:
 ------------------
 
 Inconsistencies found:
@@ -30,14 +30,14 @@ Inconsistencies found:
    - such tags mustn't be converted into angular js ng-show (`6-200.html` is too big to be displayed under an `<<e.g.>>`)
    - the current script can now handle this condition
    - possible that more such corner cases exist. ensure that the `beautifulSoupTest.py` correctly converts all such corner case `<<e.g.>>` tags.
-   - what if there is no `<ul>` tag in `<a href="...">`. Currently, we will retain this as normal hyperlink. Must we copy the example to current page and use `ng-show`? must we change script so that ng-show is added only if `target="iframe"` or can this be ignored?
+   - what if there is no `<ul>` tag in `<a href="...">`. Currently, we will retain this as normal hyperlink. Must we copy the example to current page and use `ng-show`? must we change script so that `ng-show` is added only if `target="iframe"` or can this be ignored?
 
-* c. the hosted LII site has all pages ending with .html. Saras files had .htm extension. The href in new site stopped working as our script has hardcoded .htm extension. Fixed the bug in script. New generated files are now .html
+* c. the hosted LII site has all pages ending with *.html*. Sara's files had *.htm* extension. The `href` in new site stopped working as our script has hardcoded *.htm* extension. Fixed the bug in script. New generated files are now *.html*.
 
 * d. too messy folder structure. Edited structure as:
    - **converterSrc** - all the calibre stuff (John's domain)
    - **oldLIIHtmlFiles** - Saras files
-   - **html** - AngularJS files. (my + Yihui domain)
+   - **html** - AngularJS files. (Harish + Yihui domain)
    - **LIIWebsiteHTMLFiles** - contains files extractd from hosted LII site. Generated from akshays tool. Also contains `beautifulSoupTest.py`
    - **ParsedHTMLAngularJSSite** - the `beautifulSoupTest.py` output
 
