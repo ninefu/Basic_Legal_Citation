@@ -3,6 +3,7 @@
 Tasks to complete (me + yihui + 2 more opening)
 -----------------
 Website :
+
 - 1. replace the layouting format with ng-view. Only main layout in index.html. Individual pages to be fetched and plugged in dynamically
 - 2. Add scroll bar to left navigation menu
 - 3. remove search bar (unless we plan to implement it)
@@ -37,7 +38,8 @@ inconsistencies found:
    - **ParsedHTMLAngularJSSite** - the `beautifulSoupTest.py` output
 
 ##### tasks to complete:
-- 1. proof read
+
+1. proof read
    45 output files: 
     (if you manually edit a file, leave a comment in google doc link - 
     https://docs.google.com/document/d/1OQBlbDOuCzkb7qIepXyJuvxfE6vr9wXVmUYQcPm5fXA/edit?usp=sharing
@@ -46,8 +48,7 @@ inconsistencies found:
      - check if all e.g. tags are working as expected (user must click on each e.g. and manually check that things work. we found corner case scenarios by manual testing today)
      - check that styling is readable. (edit stray . " , etc)
 
-- 2. XHTML tagging research
-
-- 3. conversion to pdf... on new site - STRICTLY witheld until all other tasks are complete
+2. XHTML tagging research
+3. conversion to pdf... on new site - STRICTLY witheld until all other tasks are complete
 
 **target : sunday!!**
