@@ -138,7 +138,7 @@ for filename in files:
 	folder = "../ParsedHTMLAngularJSSite"
 	if not os.path.exists(folder):
 		os.makedirs(folder)
-        new_filename = folder+"/"+new_filename +"htm"
+        new_filename = folder+"/"+new_filename +"html"
         f = open(new_filename, "w")
         f.write(soup.prettify())
         f.close()
