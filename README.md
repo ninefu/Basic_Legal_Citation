@@ -3,13 +3,13 @@ subteam 1:
 Tasks to complete (me + yihui + 2 more opening)
 -----------------
 Website :
-1. replace the layouting format with ng-view. Only main layout in index.html. Individual pages to be fetched and plugged in dynamically
-2. Add scroll bar to left navigation menu
-3. remove search bar (unless we plan to implement it)
-4. add a "download button" for epub, mobi in top right corner navi tab
-5. use ng-filter for dynamic content rendering in the list of states page
-6. check notes for usability comments from prof. martin
-7. ensure that css styling is perfectly done
+1 replace the layouting format with ng-view. Only main layout in index.html. Individual pages to be fetched and plugged in dynamically
+2 Add scroll bar to left navigation menu
+3 remove search bar (unless we plan to implement it)
+4 add a "download button" for epub, mobi in top right corner navi tab
+5 use ng-filter for dynamic content rendering in the list of states page
+6 check notes for usability comments from prof. martin
+7 ensure that css styling is perfectly done
 
 subteam 2:
 scripting + xhtml:
