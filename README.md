@@ -14,6 +14,7 @@ Website :
 6. check notes for usability comments from Prof. Martin
 7. ensure that css styling is perfectly done
 8. add a purchase button for amazon e-book purchase
+9. add xmlns attribute to `<html>` in new website, and add an XHTML compatible `<!DOCTYPE>`. 
 
 ------------------
 
