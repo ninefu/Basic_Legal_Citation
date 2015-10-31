@@ -89,8 +89,10 @@ def replace_spans (a, span, example, count):
         l.attrs = [(key,value) for key,value in l.attrs
                    if key != "class" or value != "text-level2"]
         
+    #<a href="..." target="..."> remove the target part
     a.attrs = [(key,value) for key,value in a.attrs
                if key !="target"]
+    #remove the link from <a href="....">, point it to a null location
     a["href"] = "#"
     a.attrs.append(('ng-model',name))
     a.attrs.append(('onclick',"return false"))
@@ -98,6 +100,7 @@ def replace_spans (a, span, example, count):
     return;
 
 
+#main
 count = 0
 dir_path = '*00.html'
 files = glob.glob(dir_path)
@@ -111,10 +114,15 @@ for filename in files:
         for span in soup.findAll("span", {"class": "example_icon"}):
             a = span.find("a")
             example = a["href"]
+            if(filename == "6-200.html"):
+                print(filename + " href: " + example)
             if os.path.isfile(example):
+                print("trying to open ahref target for file: " + filename + " href : " + example)
                 example = get_beautiful_file(example)
                 ul = example.body.find("ul")
                 if ul is not None:
+                    #if the example file isn't an ordered list, chances are that it's a very big HTML file
+                    #in that case, don't replace with dynamic ng-show command
                     span.append(ul)
                     count += 1
                     replace_spans(a, span, example, count)
@@ -123,10 +131,15 @@ for filename in files:
         for a in soup.findAll("a", {"class": "example_icon"}):
             span = Tag(soup, "span", [("class","example_icon")])
             soup.insert(0, span)
+            #get the value <a href="link.html">, store link.html into example
             example = a["href"]
             a["class"] = ""
             a.replaceWith(span)
+            if(filename == "6-200.html"):
+                print(filename + " href: " + example)
+            #open the target link of <a href="...">
             if os.path.isfile(example):
+                print("trying to open ahref target for file: " + filename + " href : " + example)
                 example = get_beautiful_file(example)
                 ul = example.body.find("ul")            
                 span.insert(0, a)
