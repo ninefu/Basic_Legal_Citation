@@ -10,7 +10,7 @@ Website :
 2. add scroll bar to left navigation menu(aish adds: done, but will look for better ways)
 3. remove search bar (unless we plan to implement it)(aish adds: done)
 4. add a "download button" for epub, mobi in top right corner navi tab
-5. use ng-filter for dynamic content rendering in the list of states page
+5. use ng-filter for dynamic content rendering in the list of states page(aish adds: done)
 6. check notes for usability comments from Prof. Martin
 7. ensure that css styling is perfectly done
 8. add a purchase button for amazon e-book purchase
