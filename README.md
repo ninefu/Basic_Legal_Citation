@@ -1,5 +1,5 @@
 # CS_5150
-##### Subteam 1: (Harish + Yihui + 2 more opening)
+##### Subteam 1: (Harish + Yihui + Aish + Akshay)
 
 Tasks to complete 
 -----------------
