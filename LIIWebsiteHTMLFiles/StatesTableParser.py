@@ -101,57 +101,25 @@ def replace_spans (a, span, example, count):
 
 
 #main
-count = 0
-dir_path = '*00.html'
-files = glob.glob(dir_path)
-for filename in files:
+dir_path = '7-500.html'
+filename = glob.glob(dir_path)
+outputJson = "{{"
+
+if os.path.isfile(filename):
     print "Working on file " + filename
     html = filename
-    if os.path.isfile(html): #verify if the file exists
-        soup = get_beautiful_file(html)   # create a soup
-        replace_all_iframes(soup)
+    soup = get_beautiful_file(html)   # create a soup
 
-        for span in soup.findAll("span", {"class": "example_icon"}):
-            a = span.find("a")
-            example = a["href"]
-            if(filename == "6-200.html"):
-                print(filename + " href: " + example)
-            if os.path.isfile(example):
-                print("trying to open ahref target for file: " + filename + " href : " + example)
-                example = get_beautiful_file(example)
-                ul = example.body.find("ul")
-                if ul is not None:
-                    #if the example file isn't an ordered list, chances are that it's a very big HTML file
-                    #in that case, don't replace with dynamic ng-show command
-                    span.append(ul)
-                    count += 1
-                    replace_spans(a, span, example, count)
+    for span in soup.findAll("td"):
+       a = span.find("href")
+       example = a["href"] #value of href= ""
+       outputJson += example
 
-    # find all a which are examples and replace them with the standart <span><a></a></span> pattern
-        for a in soup.findAll("a", {"class": "example_icon"}):
-            span = Tag(soup, "span", [("class","example_icon")])
-            soup.insert(0, span)
-            #get the value <a href="link.html">, store link.html into example
-            example = a["href"]
-            a["class"] = ""
-            a.replaceWith(span)
-            if(filename == "6-200.html"):
-                print(filename + " href: " + example)
-            #open the target link of <a href="...">
-            if os.path.isfile(example):
-                print("trying to open ahref target for file: " + filename + " href : " + example)
-                example = get_beautiful_file(example)
-                ul = example.body.find("ul")            
-                span.insert(0, a)
-                span.insert(1, ul)
-                count += 1
-                replace_spans(a, span, example, count)
+    new_filename = "outputJsonContentsFile"
+    folder = "../ParsedHTMLAngularJSSite"
+    if not os.path.exists(folder):
+      os.makedirs(folder)
 
-        new_filename = filename[:-4]
-	folder = "../ParsedHTMLAngularJSSite"
-	if not os.path.exists(folder):
-		os.makedirs(folder)
-        new_filename = folder+"/"+new_filename +"html"
-        f = open(new_filename, "w")
-        f.write(soup.prettify())
-        f.close()
+    f = open(new_filename, "w")
+    f.write(soup.prettify())        
+    f.close()

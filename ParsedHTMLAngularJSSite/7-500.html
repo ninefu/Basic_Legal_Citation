@@ -14,21 +14,37 @@
   <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
   <script>
   $(window).load(function(){
-var $rows = $('#table tr');
-$('#search').keyup(function() {
-    
+  var $rows = $('#table tr');
+  $('#search').keyup(function() {
     var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
     
     $rows.show().filter(function() {
         var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
         return !~text.indexOf(val);
     }).hide();
-});
-});
+  });
+  });
   </script>
  </head>
  <body bgcolor="#FFFFFF" class="Normal">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>    
+    <script src="https://code.angularjs.org/1.4.5/angular-route.js"></script>
+
+    <!-- include the angular ctrls -->
+    <script src="../html/js/dynamicExamplesCtrl.js"> </script>
+    <script src="../html/js/mainCtrl.js"> </script>
+ </head>
+ <body bgcolor="#FFFFFF" class="Normal">
   
+  <p class="Section">
+   &sect; 7-500.
+   <a name="7-500">
+   </a>
+   Table of State-Specific Citation 
+
+  Norms and Practices
+  </p>
+
   <p class="text-level1">
    The following table provides links to the citation forms 
 
@@ -40,14 +56,10 @@ $('#search').keyup(function() {
 
   rules governing briefs and memoranda submitted to it.
   </p>
+
   <input type="text" id="search" placeholder="Search states">
   <br></br>
-
-
   <table id="table" class="Text-level1" border="1" cellspacing="0" width="80%">
-
-  
-
    <tr>
     <td width="30%" valign="top" class="heading" height="16">
      <a name="7-500_Alabama">
@@ -1651,48 +1663,6 @@ $('#search').keyup(function() {
    </tr>
   </table>
 
-  
-
-  <p>
-   &nbsp;
-  </p>
-  <table width="100%" border="0">
-   <tr bgcolor="#CCCCCC">
-    <td>
-     <div align="right">
-      <font size="-1" face="Arial, Helvetica, sans-serif">
-       <a href="index-2.html" target="_top">
-        Home
-       </a>
-       |
-       <a href="full_toc.html#7-500" target="_self">
-        Contents
-       </a>
-       |
-       <a href="topics.html" target="_self">
-        Index
-       </a>
-       |
-       <a href="help.html" target="_blank">
-        Help
-       </a>
-       |
-       <a href="7-500.html" target="_blank">
-        Remove frame
-       </a>
-       |
-       <a href="7-400.html" target="_self">
-        &lt;
-       </a>
-       | &gt;&nbsp;&nbsp;
-      </font>
-     </div>
-    </td>
-   </tr>
-  </table>
-  <p>
-   &nbsp;
-  </p>
   <p class="Section">
    &nbsp;
   </p>
