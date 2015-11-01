@@ -10,336 +10,25 @@
   </title>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <link rel="stylesheet" href="citation.css" />
+
+  <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.1.min.js'></script>
+  <script>
+  $(window).load(function(){
+var $rows = $('#table tr');
+$('#search').keyup(function() {
+    
+    var val = $.trim($(this).val()).replace(/ +/g, ' ').toLowerCase();
+    
+    $rows.show().filter(function() {
+        var text = $(this).text().replace(/\s+/g, ' ').toLowerCase();
+        return !~text.indexOf(val);
+    }).hide();
+});
+});
+  </script>
  </head>
  <body bgcolor="#FFFFFF" class="Normal">
-  <table width="100%" border="0">
-   <tr bgcolor="#CCCCCC">
-    <td height="41">
-     <div align="right">
-      <font size="-1" face="Arial, Helvetica, sans-serif">
-       <a href="index-2.html" target="_top">
-        Home
-       </a>
-       |
-       <a href="full_toc.html#7-500" target="_self">
-        Contents
-       </a>
-       |
-       <a href="topics.html" target="_self">
-        Index
-       </a>
-       |
-       <a href="help.html" target="_blank">
-        Help
-       </a>
-       |
-       <a href="7-500.html" target="_blank">
-        Remove frame
-       </a>
-       |
-       <a href="7-400.html" target="_self">
-        &lt;
-       </a>
-       | &gt;&nbsp;&nbsp;
-      </font>
-     </div>
-    </td>
-   </tr>
-  </table>
-  <p class="Section">
-   &sect; 7-500.
-   <a name="7-500">
-   </a>
-   Table of State-Specific Citation 
-
-  Norms and Practices
-  </p>
-  <table width="80%" class="Text-Level1" border="0">
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Alabama">
-      Alabama
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Illinois">
-      Illinois
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Montana">
-      Montana
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Rhode_Island">
-      Rhode Island
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Alaska">
-      Alaska
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Indiana">
-      Indiana
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Nebraska">
-      Nebraska
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_South_Carolina">
-      South Carolina
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Arizona">
-      Arizona
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Iowa">
-      Iowa
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Nevada">
-      Nevada
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_South_Dakota">
-      South Dakota
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Arkansas">
-      Arkansas
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Kansas">
-      Kansas
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_New_Hampshire">
-      New Hampshire
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Tennessee">
-      Tennessee
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_California">
-      California
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Kentucky">
-      Kentucky
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_New_Jersey">
-      New Jersey
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Texas">
-      Texas
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Colorado">
-      Colorado
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Louisiana">
-      Louisiana
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_New_Mexico">
-      New Mexico
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Utah">
-      Utah
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Connecticut">
-      Connecticut
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Maine">
-      Maine
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_New_York">
-      New York
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Vermont">
-      Vermont
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Delaware">
-      Delaware
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Maryland">
-      Maryland
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_North_Carolina">
-      North Carolina
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Virginia">
-      Virginia
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_District_of_Columbia">
-      District of Columbia
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Massachusetts">
-      Massachusetts
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_North_Dakota">
-      North Dakota
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Washington">
-      Washington
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Florida">
-      Florida
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Michigan">
-      Michigan
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Ohio">
-      Ohio
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_West_Virginia">
-      West Virginia
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Georgia">
-      Georgia
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Minnesota">
-      Minnesota
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Oklahoma">
-      Oklahoma
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Wisconsin">
-      Wisconsin
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Hawaii">
-      Hawaii
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Mississippi">
-      Mississippi
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Oregon">
-      Oregon
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Wyoming">
-      Wyoming
-     </a>
-    </td>
-   </tr>
-   <tr>
-    <td class="Normal">
-     <a href="#7-500_Idaho">
-      Idaho
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Missouri">
-      Missouri
-     </a>
-    </td>
-    <td class="Normal">
-     <a href="#7-500_Pennsylvania">
-      Pennsylvania
-     </a>
-    </td>
-    <td class="Normal">
-     &nbsp;
-    </td>
-   </tr>
-  </table>
+  
   <p class="text-level1">
    The following table provides links to the citation forms 
 
@@ -351,7 +40,14 @@
 
   rules governing briefs and memoranda submitted to it.
   </p>
-  <table class="Text-level1" border="1" cellspacing="0" width="80%">
+  <input type="text" id="search" placeholder="Search states">
+  <br></br>
+
+
+  <table id="table" class="Text-level1" border="1" cellspacing="0" width="80%">
+
+  
+
    <tr>
     <td width="30%" valign="top" class="heading" height="16">
      <a name="7-500_Alabama">
@@ -383,6 +79,8 @@
      </a>
     </td>
    </tr>
+
+
    <tr>
     <td width="30%" valign="top" class="heading" height="21">
      <a name="7-500_Alaska">
@@ -1952,6 +1650,9 @@
     </td>
    </tr>
   </table>
+
+  
+
   <p>
    &nbsp;
   </p>
