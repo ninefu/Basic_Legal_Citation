@@ -519,14 +519,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "html/pages/index.html",
-			"settings":
-			{
-				"buffer_size": 19044,
-				"line_ending": "Unix"
-			}
-		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
@@ -604,6 +596,11 @@
 	},
 	"file_history":
 	[
+		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/Users/yihuifu/GitHub/CS_5150/html/dist/css/sb-admin-2.css",
+		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.css.map",
+		"/Users/yihuifu/GitHub/CS_5150/html/js/flot-data.js",
+		"/Users/yihuifu/GitHub/CS_5150/html/js/dynamicExamplesCtrl.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/pages/4_1.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/pages/1_1.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/pages/eBooks.html",
@@ -618,8 +615,6 @@
 		"/Users/yihuifu/GitHub/CS_5150/html/index.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/js/bootstrap.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/js/bootstrap.min.js",
-		"/Users/yihuifu/GitHub/CS_5150/html/dist/css/sb-admin-2.css",
-		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.css",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/jquery/dist/jquery.min.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/pages/blank.html",
 		"/Users/yihuifu/Downloads/html5up-minimaxing/index.html",
@@ -728,10 +723,7 @@
 		"/Users/yihuifu/GitHub/pydata-book/practice.py",
 		"/Users/yihuifu/Downloads/python_basics/test.py",
 		"/Users/yihuifu/Downloads/practice.py",
-		"/Users/yihuifu/Downloads/python_basics/person_class.py",
-		"/Users/yihuifu/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
-		"/Users/yihuifu/Downloads/python_basics/fruit.py",
-		"/Users/yihuifu/Downloads/python_basics/foreach.py"
+		"/Users/yihuifu/Downloads/python_basics/person_class.py"
 	],
 	"find":
 	{
@@ -739,7 +731,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 91.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -749,6 +741,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			" class=\"Example\"",
 			"side",
 			"menu",
 			"side-menu",
@@ -875,8 +868,7 @@
 			"comment_photo",
 			"like",
 			"likes.data.",
-			"with_tags",
-			"tagged"
+			"with_tags"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -894,37 +886,8 @@
 	"groups":
 	[
 		{
-			"selected": 0,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "html/pages/index.html",
-					"settings":
-					{
-						"buffer_size": 19044,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2077,
-								2077
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1174.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

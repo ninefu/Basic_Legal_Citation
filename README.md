@@ -6,6 +6,19 @@ Tasks to complete
 
 Website :
 
+Prof Martin's comments:
+
+First as to the rendition of "How to Cite ... Case Documents":
+>> * For this and similar pages where currently propositions are illustrated through an "Examples Window" I strongly favor having the propositions preceded by a box that contains an initial set of examples that the user causes to change by selecting an "e.g." button next to one or more of those propositions (and can also clear back to the original content)
+[I would also consider having, as an option, examples appearing in a popup triggered by selecting the "e.g." button.  A popup that the user would have to close before moving on.] In other words, I don't think inserting the example text after the proposition when the button is selected works as well.
+>> * As for the "e.g." button, I've thought that it might be good to have it appear more buttonish
+>> * As for the highlighting of text within the "Examples Window" I would like fresh thinking about what background color should be used.  You'll note that in the ebook versions I go for a stronger color.
+
+Next as to the rendition of the home page:
+>> * It appears to me that the menu, which appears as a sidebar on the left when viewed on a large screen, disappears altogether on a small screen.  Perhaps, I am wrong, but it needs to redeploy and not disappear. **[Solved]**
+>> * "Resources" should be "Additional Resources"
+>> * The three videos should be listed by name as "Additional Resources". 
+
 1. replace the layouting format with ng-view. Only main layout in `index.html`. Individual pages to be fetched and plugged in dynamically
 2. add scroll bar to left navigation menu(aish adds: done, but will look for better ways)
 3. remove search bar (unless we plan to implement it)(aish adds: done)
