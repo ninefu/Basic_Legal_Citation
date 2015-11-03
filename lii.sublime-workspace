@@ -519,6 +519,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "html/pages/2_8.html",
+			"settings":
+			{
+				"buffer_size": 17183,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html/pages/index.html",
+			"settings":
+			{
+				"buffer_size": 14617,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Python/Python.sublime-build",
 	"command_palette":
@@ -886,8 +902,65 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "html/pages/2_8.html",
+					"settings":
+					{
+						"buffer_size": 17183,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								17183,
+								17183
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1182.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "html/pages/index.html",
+					"settings":
+					{
+						"buffer_size": 14617,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
