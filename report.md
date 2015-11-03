@@ -11,7 +11,7 @@ Report 2
 	- the first letter in author is capitalized
 	- In 1.2 we have three items 1), 2), 3) in a single line... change that to a proper itemized style. 
 
-2. **Section 1: introduction** - add an intro to the problem and a context to the problem. We need to explain more clearly what's the issue we're address to solve with our system.
+2. **Section 1: introduction** - add an intro to the problem and a context to the problem. We need to explain more clearly what's the issue we're trying to address with our system.
 	- I find the first sentence very hard to read
 	- We're talking about configuration files in section 1, are we going to implement that?
 	- Explain the current system more efficiently in subsection 1.2
