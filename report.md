@@ -23,7 +23,8 @@ Report 2
 
 4. **Section 5: Project Progress**
 	- Change the second paragraph in section 2 and add a paragraph for iteration 3. 
-	- Explain the pop-ups, large tables were not implemented yet, and we didn't test the consistency of file generator (calibre)
+	- Explain the pop-ups; add information about the tagging for search (maybe the HTML parser?). 
+	- large tables were not implemented yet, and we didn't test the consistency of file generator (calibre)
 	- Update the Gantt Table and Gantt Chart
 	- The first part of the Gantt Chart has its dates cluttered together - fix that. 
 	- Review of what've done since last iteration
@@ -38,3 +39,5 @@ Presentation
 4. Don't use small font size, and light colours for font. 
 5. Demo of the website (if possible) to show how it works
 6. Try to sound knowledgeable about how a law student would use the website. 
+
+**That's it guys**
