@@ -16,14 +16,14 @@ First as to the rendition of "How to Cite ... Case Documents":
 
 Next as to the rendition of the home page:
 >> * It appears to me that the menu, which appears as a sidebar on the left when viewed on a large screen, disappears altogether on a small screen.  Perhaps, I am wrong, but it needs to redeploy and not disappear. **[Solved]**
->> * "Resources" should be "Additional Resources"
->> * The three videos should be listed by name as "Additional Resources". 
+>> * "Resources" should be "Additional Resources" **[Solved]**
+>> * The three videos should be listed by name as "Additional Resources".  **[Solved]**
 
 1. replace the layouting format with ng-view. Only main layout in `index.html`. Individual pages to be fetched and plugged in dynamically
-2. add scroll bar to left navigation menu(aish adds: done, but will look for better ways)
-3. remove search bar (unless we plan to implement it)(aish adds: done)
+2. add scroll bar to left navigation menu**(aish adds: done, but will look for better ways)**
+3. remove search bar (unless we plan to implement it)**(aish adds: done)**
 4. add a "download button" for epub, mobi in top right corner navi tab
-5. use ng-filter for dynamic content rendering in the list of states page(aish adds: done)
+5. use ng-filter for dynamic content rendering in the list of states page**(aish adds: done)**
 6. check notes for usability comments from Prof. Martin
 7. ensure that css styling is perfectly done
 8. add a purchase button for amazon e-book purchase
