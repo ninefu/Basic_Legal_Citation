@@ -30,7 +30,7 @@ Report 2
 	- Review of what've done since last iteration
 
 
-Presentation
+Presentation 2
 ---
 
 1. Create easy to read Gantt Chart and Use Case Diagram
