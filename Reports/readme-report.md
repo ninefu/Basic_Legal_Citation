@@ -4,7 +4,7 @@ Report 2
 ### What needs to be fixed?
 
 1.  **General Styling**
-	- Paragraphs are not justified (1.1.1, 1.1.2, 1.2, 2, 3, 4, 5)
+	- ~~Paragraphs are not justified (1.1.1, 1.1.2, 1.2, 2, 3, 4, 5)~~
 	- ~~The cover page has "Feasibility Study" in it, it was supposed to be Report.~~
 	- ~~Fix the date on the cover page~~
 	- ~~Add a space between the title "Table of contents" and the actual TOC~~
@@ -13,20 +13,20 @@ Report 2
 
 2. **Section 1: introduction** - add an intro to the problem and a context to the problem. We need to explain more clearly what's the issue we're trying to address with our system.
 	- ~~I find the first sentence very hard to read~~
-	- We're talking about configuration files in section 1, are we going to implement that?
-	- Explain the current system more efficiently in subsection 1.2
+	- ~~We're talking about configuration files in section 1, are we going to implement that?~~
+	- ~~Explain the current system more efficiently in subsection 1.2~~
 
 3. **Section 4: Preliminary Design**
-	- Are we still using XHTML or HTML 4?
-	- Add information about the interactivity in 4.3?
+	- ~~Are we still using XHTML or HTML 4?~~
+	- ~~Add information about the interactivity in 4.3?~~
 
 
 4. **Section 5: Project Progress**
-	- Change the second paragraph in section 2 and add a paragraph for iteration 3. 
-	- Explain the pop-ups; add information about the tagging for search (maybe the HTML parser?). 
+	- ~~Change the second paragraph in section 2 and add a paragraph for iteration 3.~~ 
+	- ~~Explain the pop-ups; add information about the tagging for search (maybe the HTML parser?).~~ 
 	- large tables were not implemented yet, and we didn't test the consistency of file generator (calibre)
-	- Update the Gantt Table and Gantt Chart
-	- The first part of the Gantt Chart has its dates cluttered together - fix that. 
+	- ~~Update the Gantt Table and Gantt Chart~~
+	- ~~The first part of the Gantt Chart has its dates cluttered together - fix that.~~ 
 	- Review of what've done since last iteration
 
 
