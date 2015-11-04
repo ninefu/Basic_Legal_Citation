@@ -10,7 +10,7 @@ body {
 
 mark {
   color: #000;
-  background: #ff9900;
+  background-color: #f90!important;
 }
 
 #wrapper {
