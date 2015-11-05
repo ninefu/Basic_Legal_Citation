@@ -101,6 +101,9 @@ app.config(function($routeProvider) {
     .when('/4-800', {
         templateUrl : '../pages/4-800.html'
     })
+    .when('/5-000', {
+        templateUrl : '../pages/5-000.html'
+    })
     .when('/5-100', {
         templateUrl : '../pages/5-100.html'
     })
