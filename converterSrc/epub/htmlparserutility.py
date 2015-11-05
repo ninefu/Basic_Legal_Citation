@@ -107,7 +107,7 @@ for filename in files:
     if os.path.isfile(html): #verify if the file exists
         soup = get_beautiful_file(html)   # create a soup
         replace_all_iframes(soup)
-        #remove_all_navbars(soup)
+        remove_all_navbars(soup)
 
         for span in soup.findAll("span", {"class": "example_icon"}):
             a = span.find("a")
