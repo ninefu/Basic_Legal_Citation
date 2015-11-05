@@ -1,0 +1,46 @@
+.Normal	{font-size:10pt; font-family:Arial, Helvetica, sans-serif;	color:black;; margin-top: 0px; margin-left: 0px; margin-right: 0px}
+
+.Section {font-size:12pt; font-family:Arial; color:black; font-weight:bold;; text-align: left; margin-left: 12%; margin-right: 12%}
+
+.Subsection {text-align:left; margin-left: 12%; font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:black; font-weight:bold;; background-color: #CCCCCC; margin-right: 12%}
+
+.Example {font-size:10pt; font-family:Verdana, Arial, Helvetica, sans-serif; color:#0000CC;; font-style: normal}
+
+.casename {  font-style: italic}
+
+.text-level1 { font-family: "Times New Roman", Times, serif; margin-right: 12%; margin-left: 12% ; font-size: 12pt}
+
+.text-level2 { font-family: "Times New Roman", Times, serif; margin-right: 12%; margin-left: 15%; font-size: 12pt}
+
+.Subsubsection { text-align:left; margin-left: 12%; font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:black; font-weight:bold; ; font-style: italic}
+
+.highlight {  background-color: #F90}
+
+.example_icon {  font-size: 10pt; color: #0000FF; background-color: #F90; font-style: italic}
+
+.Examplewindow {  font-size: 10pt; font-weight: bold; font-family: Arial, Helvetica, sans-serif}
+
+.text-level3 { font-family: "Times New Roman", Times, serif; margin-right: 12%; margin-left: 18%; font-size: 12pt}
+
+.principle {  font-weight: bold; color: #CC9900}
+
+.difference {  font-size: larger; font-weight: bold; color: #CC0033}
+
+.butsee {  font-style: italic}
+
+.ITALICSORUNDERLINE {  font-style: italic}
+
+.BOLD {  font-weight: bold}
+
+.in-state {  background-color: #CCCCCC}
+
+.note {  font-family: Arial, Helvetica, sans-serif; font-size: 10pt}
+
+.heading {  font-family: Verdana, Arial, Helvetica, sans-serif; font-weight: normal}
+
+.illustration {  font-size: large; background-color: #FFFF66}
+
+.text-level2_large { font-family: "Times New Roman", Times, serif; margin-right: 12%; margin-left: 15% ; font-size: large}
+
+.Subsubsubsection { text-align:left; margin-left: 12%; font-size:12pt; font-family:"Tms Rmn"; color:black; font-weight:bold; ; font-style: normal}
+

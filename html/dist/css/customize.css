@@ -26,6 +26,10 @@ mark {
     background-color: #fff;
 }
 
+div {
+    text-align: justify;
+}
+
 .text-level1.center {
     text-align: center!important;
 }
