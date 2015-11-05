@@ -56,11 +56,13 @@
    Citations to arbitration decisions or awards take the same form as administrative 
 
   adjudications if the adversarial parties are not named
+  <div ng-controller="dynamicExamplesCtrl" class="container">
    <span class="example_icon">
     <a href="#" ng-model="example90" onclick="return false" ng-click="example90 = !example90">
-     &laquo;e.g.&raquo;.
+    <button ng-click="toggleModal('Success')" class="btn btn-default">&laquo;e.g.&raquo;.</button>
     </a>
-    <ul ng-show="example90" class="text-level2">
+    <modal visible="showModal">
+    <ul class="text-level2">
      <li class="Example">
       <span class="highlight">
        United States - Tax Treatment for 
@@ -72,7 +74,9 @@
       (Falconer, Chambovey &amp; Seung Wha Chang, Arbs.).
      </li>
     </ul>
+    </modal>
    </span>
+   </div>
    <span class="ITALICSORUNDERLINE">
     See
    </span>
@@ -92,11 +96,11 @@
    In either case the citation should include one additional information item &#150; 
 
   the arbitrator's last name &#150; in parentheses at the end of the citation
+  <div ng-controller="dynamicExamplesCtrl" class="container">
    <span class="example_icon">
-    <a href="#" ng-model="example91" onclick="return false" ng-click="example91 = !example91">
-     &laquo;e.g.&raquo;.
-    </a>
-    <ul ng-show="example91" class="text-level2">
+     <button ng-click="toggleModal('Success')" class="btn btn-default">&laquo;e.g.&raquo;.</button>
+    <modal visible="showModal">
+    <ul class="text-level2">
      <li class="Example">
       United States - Tax Treatment for &quot;Foreign Sales Corporations,&quot; 
 
@@ -109,7 +113,9 @@
       .
      </li>
     </ul>
+    </modal>
    </span>
+   </div>
   </p>
   <p class="Text-Level1">
    &nbsp;
