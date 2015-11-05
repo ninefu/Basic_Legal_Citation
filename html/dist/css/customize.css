@@ -26,6 +26,14 @@ mark {
     background-color: #fff;
 }
 
+.text-level1.center {
+    text-align: center!important;
+}
+
+.text-level1 {
+    text-align: justify;
+}
+
 @media(min-width:768px) {
     #page-wrapper {
         position: inherit;
