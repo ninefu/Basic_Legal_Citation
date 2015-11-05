@@ -1,0 +1,102 @@
+p {
+	margin: 2pt; 
+	border: 2pt; 
+	text-indent: 0em;
+}
+
+.principle {  
+    font-weight: bold; 
+    color: #CC9900;
+}
+
+.highlight {  
+    background-color: #ffa500;
+}
+
+.text-level1{
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 12pt;
+    margin: 12pt; 
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.big{
+    font-size: 2em;
+}
+
+li.spaced{
+    list-style: none;
+    margin: 12pt; 
+}
+
+.text-level2{
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 12pt;
+}
+
+.left{
+    margin-left: 30pt;
+}
+
+.italics, .ITALICSORUNDERLINE{
+    font-style: italic;
+}
+
+.medium{
+    font-size: 1.3em;
+}
+
+.underline{
+    color: #0B0080;
+    text-decoration: underline;
+}
+
+.justified{
+    text-align: justify;
+}
+
+body.center {
+    display: block;
+    line-height: 1.2;
+    text-align: center;
+}
+
+span.center {
+    display: block;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+
+h1.center {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0.67em 0
+}
+
+hr.row {
+    border: 0;
+    width: 100%;
+    color: #999;
+    background-color: #999;
+    height: 2px;
+}
+
+hr.smallrow {
+    border: 0;
+    width: 50%;
+    color: #999;
+    background-color: #999;
+    height: 2px;
+}
+
+hr.tinyrow {
+    width: 35%;
+}
+

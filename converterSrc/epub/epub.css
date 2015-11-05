@@ -1,0 +1,17 @@
+p {
+	margin: 2pt; 
+	border: 2pt; 
+	text-indent: 0em;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    display: block;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+}
+

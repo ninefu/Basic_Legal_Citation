@@ -26,30 +26,20 @@ import os.path
         --no-svg-cover   -- to work on iphones correctly
         --preserve-cover-aspect-ratio
 '''
-
-args = []
-command = "ebook-convert"
-args.append(command)
-
-print "Type the input HTML (Table of Contents) file: "
-arg = raw_input()
-if os.path.isfile(arg):
-    args.append(arg)
-
+def epub_conversion(args):
     output = "basic-legal-citation.epub"
     args.append(output)
-    args.append("--breadth-first")
 
-    print "Type the input metadata file (if any): "
-    arg = raw_input()
+    args.append("--insert-blank-line-size")
+    args.append("5")    
+
+    arg = raw_input("Type the input metadata file (if any): ")
     if os.path.isfile(arg):
         args.append("-m")
         args.append(arg)
         args.append("--insert-metadata")
 
-
-    print "Type the cover file (if any): "
-    arg = raw_input()
+    arg = raw_input("Type the cover file (if any): ")
     if os.path.isfile(arg):
         args.append("--cover")
         args.append(arg)
@@ -58,10 +48,53 @@ if os.path.isfile(arg):
         args.append("--no-default-epub-cover")
 
 
-    print "Type a extra css file (if any): "
-    arg = raw_input()
+    arg = raw_input("Type a extra css file (if any): ")
     if os.path.isfile(arg):
         args.append("--extra-css")
         args.append(arg)
+    return args
 
-call(args)
+def pdf_conversion(args):
+    output = "basic-legal-citation.pdf"
+    args.append(output)
+    
+    args.append("--breadth-first")
+    args.append("--margin-bottom")
+    args.append("50")
+    args.append("--margin-top") 
+    args.append("50")
+    args.append("--margin-left")
+    args.append("50")
+    args.append("--margin-right")
+    args.append("50")
+    args.append("--insert-blank-line-size")
+    args.append("5")    
+
+    arg = raw_input("Type the input metadata file (if any): ")
+    if os.path.isfile(arg):
+        args.append("-m")
+        args.append(arg)
+        args.append("--insert-metadata")
+
+    arg = raw_input("Type the cover file (if any): ")
+    if os.path.isfile(arg):
+        args.append("--cover")
+        args.append(arg)
+        args.append("--preserve-cover-aspect-ratio")
+
+    arg = raw_input("Type a extra css file (if any): ")
+    if os.path.isfile(arg):
+        args.append("--extra-css")
+        args.append(arg)
+    return args
+
+args = []
+command = "ebook-convert"
+args.append(command)
+
+arg = raw_input("Type the input HTML (Table of Contents) file: ")
+if os.path.isfile(arg):
+    args.append(arg)
+    args = epub_conversion(args)
+    call(args)
+    
