@@ -6,7 +6,7 @@ app.config(function($routeProvider) {
 
      // route for the home page
      .when('/', {
-        templateUrl : '../pages/1-100.html',
+        templateUrl : '../pages/intro.html',
         controller  : 'dynamicExamplesCtrl'
     })   
      .when('/1-100', {
