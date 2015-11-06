@@ -5,7 +5,7 @@
 		[
 			[
 				"pad",
-				"padding-top"
+				"padding-right"
 			],
 			[
 				"margin-",
@@ -520,10 +520,26 @@
 	"buffers":
 	[
 		{
-			"file": "html/pages/2_8.html",
+			"file": "html/bower_components/bootstrap/dist/css/bootstrap.css",
 			"settings":
 			{
-				"buffer_size": 17183,
+				"buffer_size": 141623,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html/dist/css/customize.css",
+			"settings":
+			{
+				"buffer_size": 6263,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html/pages/2-900.html",
+			"settings":
+			{
+				"buffer_size": 3412,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +547,15 @@
 			"file": "html/pages/index.html",
 			"settings":
 			{
-				"buffer_size": 14617,
+				"buffer_size": 16578,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "html/js/controllers.js",
+			"settings":
+			{
+				"buffer_size": 2327,
 				"line_ending": "Unix"
 			}
 		}
@@ -612,8 +636,62 @@
 	},
 	"file_history":
 	[
-		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.css",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/1-100.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/intro.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/index.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/index.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/toc.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/author.html",
+		"/Users/yihuifu/GitHub/CS_5150/LIIWebsiteHTMLFiles/front.html",
+		"/Users/yihuifu/GitHub/CS_5150/LIIWebsiteHTMLFiles/toc_0.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/2-100.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/1-200.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/1-300.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/1-400.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/1-500.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/1-600.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/2-200.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/2-300.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/2-400.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/2-500.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/2-600.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/2-700.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/2-800.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/3-100.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/3-200.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/3-300.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/3-400.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/3-500.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/3-600.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/3-700.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/3-800.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/4-100.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/4-200.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/4-300.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/4-400.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/4-500.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/4-600.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/4-700.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/4-800.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/4-900.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/5-000.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/6-100.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/6-200.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/6-300.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/6-400.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/6-500.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/6-600.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/6-700.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/7-000.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/7-100.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/7-200.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/7-300.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/7-400.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/7-500.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/2-900.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/dist/css/sb-admin-2.css",
+		"/Users/yihuifu/GitHub/CS_5150/html/pages/2_8.html",
+		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.css",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.css.map",
 		"/Users/yihuifu/GitHub/CS_5150/html/js/flot-data.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/js/dynamicExamplesCtrl.js",
@@ -628,7 +706,6 @@
 		"/Users/yihuifu/GitHub/CS_5150/html/pages/whatWhy_types.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/pages/whatWhy_levels.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/pages/whatAndWhy.html",
-		"/Users/yihuifu/GitHub/CS_5150/html/index.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/js/bootstrap.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/js/bootstrap.min.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/jquery/dist/jquery.min.js",
@@ -636,7 +713,6 @@
 		"/Users/yihuifu/Downloads/html5up-minimaxing/index.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/bootstrap/dist/css/bootstrap.min.css",
 		"/Users/yihuifu/GitHub/CS_5150/html_workspace/citation/index.html",
-		"/Users/yihuifu/GitHub/CS_5150/html/pages/index.html",
 		"/Users/yihuifu/GitHub/CS_5150/html/dist/js/sb-admin-2.js",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/font-awesome/css/font-awesome.min.css",
 		"/Users/yihuifu/GitHub/CS_5150/html/bower_components/jquery/dist/jquery.js",
@@ -687,59 +763,7 @@
 		"/Users/yihuifu/GitHub/FB NoUse/setup_db.py",
 		"/Users/yihuifu/GitHub/FB NoUse/vis_db.py",
 		"/Users/yihuifu/GitHub/FB NoUse/query.py",
-		"/Users/yihuifu/GitHub/FB NoUse/setup_db_log.txt",
-		"/Users/yihuifu/GitHub/FB NoUse/get_training_data.py",
-		"/Users/yihuifu/GitHub/FB NoUse/random_output.py",
-		"/Users/yihuifu/GitHub/FB NoUse/setup_db2.py",
-		"/Users/yihuifu/GitHub/FB NoUse/vis_db",
-		"/Users/yihuifu/GitHub/FB NoUse/DB.py",
-		"/Users/yihuifu/GitHub/FB NoUse/testlogging.py",
-		"/Users/yihuifu/GitHub/FB NoUse/Readme.md",
-		"/Users/yihuifu/GitHub/FB NoUse/check_duplicate.py",
-		"/Users/yihuifu/GitHub/FB NoUse/old/DBV1.py",
-		"/Users/yihuifu/GitHub/FB NoUse/DBV1.py",
-		"/Users/yihuifu/GitHub/FB NoUse/web.py",
-		"/Users/yihuifu/GitHub/FB NoUse/testViz.py",
-		"/Users/yihuifu/GitHub/FB NoUse/new_open.py",
-		"/Users/yihuifu/Library/Application Support/Sublime Text 2/Packages/TodoReview/TodoReview.sublime-settings",
-		"/Users/yihuifu/GitHub/FB NoUse/structure.txt",
-		"/Users/yihuifu/GitHub/FB NoUse/old/createDBv1.py",
-		"/Users/yihuifu/GitHub/FB NoUse/old/get variable.py",
-		"/Users/yihuifu/GitHub/FB NoUse/DB V1.py",
-		"/Users/yihuifu/GitHub/FB NoUse/mytoken.txt",
-		"/Users/yihuifu/GitHub/FB NoUse/individual_output.py",
-		"/Users/yihuifu/GitHub/FB NoUse/neha_output.py",
-		"/Users/yihuifu/GitHub/FB NoUse/query V1.py",
-		"/Users/yihuifu/GitHub/FB NoUse/queryV1.py",
-		"/Users/yihuifu/GitHub/FB NoUse/createDB.py",
-		"/Users/yihuifu/GitHub/FB NoUse/create v1.py",
-		"/Users/yihuifu/GitHub/FB NoUse/DBquery.py",
-		"/Users/yihuifu/GitHub/FB NoUse/new user.py",
-		"/Users/yihuifu/GitHub/FB NoUse/fbgrab.py",
-		"/Users/yihuifu/GitHub/FB NoUse/createDB_Neha.py",
-		"/Users/yihuifu/GitHub/FB NoUse/timing.py",
-		"/Users/yihuifu/GitHub/FB NoUse/test.py",
-		"/Users/yihuifu/GitHub/FB NoUse/Data Pipeline.py",
-		"/Users/yihuifu/GitHub/FB NoUse/V1_trash.py",
-		"/Users/yihuifu/GitHub/FB NoUse/mongoDB shell commands.txt",
-		"/Users/yihuifu/GitHub/FB NoUse/createMongoDB.py",
-		"/Users/yihuifu/GitHub/FB NoUse/getCo.py",
-		"/Users/yihuifu/GitHub/FB NoUse/getDBdata.py",
-		"/Users/yihuifu/GitHub/FB NoUse/FBall.txt",
-		"/Users/yihuifu/GitHub/FB NoUse/token.txt",
-		"/Users/yihuifu/GitHub/FB NoUse/mongo.py",
-		"/Users/yihuifu/GitHub/FB NoUse/yihui.csv",
-		"/Users/yihuifu/GitHub/FB NoUse/variableStructure.txt",
-		"/Users/yihuifu/GitHub/FB NoUse/dict2csv.py",
-		"/Users/yihuifu/Desktop/Data Pipeline.py",
-		"/Users/yihuifu/GitHub/status strcuture.txt",
-		"/Users/yihuifu/GitHub/Data Pipeline.py",
-		"/Users/yihuifu/GitHub/status.strcuture",
-		"/Users/yihuifu/GitHub/pydata-book/ch02Practice.py",
-		"/Users/yihuifu/GitHub/pydata-book/practice.py",
-		"/Users/yihuifu/Downloads/python_basics/test.py",
-		"/Users/yihuifu/Downloads/practice.py",
-		"/Users/yihuifu/Downloads/python_basics/person_class.py"
+		"/Users/yihuifu/GitHub/FB NoUse/setup_db_log.txt"
 	],
 	"find":
 	{
@@ -747,9 +771,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 91.0,
 		"where_history":
 		[
+			"/Users/yihuifu/GitHub/CS_5150/html/pages"
 		]
 	},
 	"find_state":
@@ -757,6 +782,30 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"p {",
+			"h1",
+			"htm",
+			"class=\"Subsubsection\"",
+			"</li>",
+			"<li>",
+			"li>",
+			"head",
+			"text",
+			"row",
+			"div",
+			"menu",
+			"+",
+			"fw",
+			"media",
+			"section",
+			"7_",
+			"_",
+			"5_",
+			"4_",
+			"3_",
+			".html",
+			"<!-- <link rel=\"stylesheet\" href=\"citation.css\" /> -->",
+			"<link rel=\"stylesheet\" href=\"citation.css\" />",
 			" class=\"Example\"",
 			"side",
 			"menu",
@@ -860,31 +909,7 @@
 			":small",
 			"small",
 			"_large",
-			"small_",
-			"photo_video",
-			"count_timeline",
-			"_id_timeline",
-			"_timeline",
-			"{\"id\":1",
-			"statu",
-			",,",
-			"{\"$in\":[\"status\",\"note\"]}}]}",
-			"{\"$in\":[\"status\",\"note\"]}}]",
-			"photo",
-			"\"photo\",\"video\"",
-			"_large",
-			"small_",
-			"likes",
-			"tagged",
-			"with_tags.data.",
-			"tagged",
-			"with_tags",
-			"status",
-			"photo",
-			"comment_photo",
-			"like",
-			"likes.data.",
-			"with_tags"
+			"small_"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -892,6 +917,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			"",
+			"<!-- <link rel=\"stylesheet\" href=\"citation.css\" /> -->"
 		],
 		"reverse": false,
 		"show_context": true,
@@ -902,23 +929,107 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "html/pages/2_8.html",
+					"file": "html/bower_components/bootstrap/dist/css/bootstrap.css",
 					"settings":
 					{
-						"buffer_size": 17183,
+						"buffer_size": 141623,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								17183,
-								17183
+								21340,
+								21343
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 18822.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "html/dist/css/customize.css",
+					"settings":
+					{
+						"buffer_size": 6263,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								293,
+								293
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "html/pages/2-900.html",
+					"settings":
+					{
+						"buffer_size": 3412,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2097,
+								2097
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "html/pages/index.html",
+					"settings":
+					{
+						"buffer_size": 16578,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15880,
+								15884
 							]
 						],
 						"settings":
@@ -928,17 +1039,17 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1182.0,
+						"translation.y": 4391.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 1,
-					"file": "html/pages/index.html",
+					"buffer": 4,
+					"file": "html/js/controllers.js",
 					"settings":
 					{
-						"buffer_size": 14617,
+						"buffer_size": 2327,
 						"regions":
 						{
 						},
@@ -951,7 +1062,7 @@
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1024,6 +1135,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 184.0,
+	"side_bar_width": 290.0,
 	"status_bar_visible": true
 }
