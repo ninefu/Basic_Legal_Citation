@@ -11,7 +11,7 @@
 
 # Tags
 ---
-Document defining all tags added to the HTML5 files in the Legal Citation Website. 
+Document defining all tags added to the HTML5 files in the Legal Citation Website. All attributes and tags must not use plural form. 
 
 ```
 <abbreviation>
@@ -35,7 +35,17 @@ Tag used to encapsule anything that's related to a citation and citation example
   * **book =** book style used in the citation example, which can be either *BB*, bluebook, *ALWD* or *undefined*. 
     - *example:* ``<citation book = "BB"> </citation>``
   * **type =** type of citation (agency, attorney, treaty...) in case we have multiple citation types worth highlighting.
-    - *example:* ``<citation type = "agency" > </citation>``
+    - *example:* ``<citation type = "electronic" > </citation>``
+    - *types identified:* 
+        - 'electronic': used for electronic sources;
+        - 'judicial' or 'case': used for judicial opinions. Cases might require attributes such as 'unpublished' and 'neutral';
+        - 'constitution': used to cite constitutions;
+        - 'statute': used to cite all statutes, and might need attributes such as 'session', 'bill', 'revenue';
+        - 'ordinance': used to cite local ordinance citations;
+        - 'treaty': used to cite treaty citation;
+        - 'regulation': used to cite all regulation citations;
+        - 'adjudication': used to cite agency adjudication citations;
+        - 'report': used to cite agency report citations;
 
 ```
 <state>
@@ -73,12 +83,49 @@ Explains briefly where each tags come from and which pages must (![ok](http://ic
     
         > N.D. R. Ct. 11.6 (b). 
 
-*  ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 1-600:* .    
+*  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 1-600:* explains that citations are not centralized and there are a few books; may not need tagging.   
+    * **Comments:**  There's a  citation example, but I don't consider that's important enough for a tag ``citation``.
+    
+        > Butner  v.  United States  , 440 U.S. 48, 55 (1979)  
     
 #### §2-000:
- 
+
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 2-100:* add tags ``citation`` to the examples in the page. 
+    * **Comments:** This is probably the only tag necessary
+        > ``<citation type = "electronic"></citation>``
+
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 2-200:* add tags ``citation`` to the examples in the page. 
+    * **Comments:**  This is probably the only tag necessary, the attribute type can be either "judicial" or "case", followed by space and another attribute such as 'unpublished' or 'neutral'. 
+        > ``<citation type = "case unpublished"></citation>``
+
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 2-300:* add tags ``citation`` to the examples in the page. 
+    * **Comments:**  Add a tag ``citation`` with the attributes treaty, statute, constitution, and ordinance. The citation with statute attribute may contain a second attribute such as bill, session, act, revenue, etc.  
+        > ``<citation type = "statute bill"></citation>``
+
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 2-400:* add tags ``citation`` to the examples in the page. 
+    * **Comments:**  Identify the attributes regulation, attorney, agency etc. 
+        > ``<citation type = "regulation"></citation>``
+
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 2-500:* add tags ``citation`` to the examples in the page. 
+    * **Comments:**  Identify the attribute 'arbitration'. 
+        > ``<citation type = "arbitration"></citation>``
+
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 2-600:* add tags ``citation`` to the examples in the page. 
+    * **Comments:**  Identify the attributes 'court' and 'rule'. 
+        > ``<citation type = "court rule"></citation>``
+
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 2-700:* add tags ``citation`` to the examples in the page. 
+    * **Comments:**  Identify the attribute 'journal' and its special cases. 
+        > ``<citation type = "journal"></citation>``
+
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 2-800:* add tags ``citation`` to the examples in the page. 
+    * **Comments:**  Identify the attribute 'self' used to indicate the citation is an earlier from the same case. 
+        > ``<citation type = "case self"></citation>``
+
 #### §3-000:
- 
+
+ * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ All:* add tags ``citation`` to the examples in each page. 
+
 #### §4-000:
  
 #### §5-000:
