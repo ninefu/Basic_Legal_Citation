@@ -4,7 +4,7 @@
 
     - Tags created: 3
     - Tags documented: 3
-    - Tags review: 
+    - Tags reviewed: 
         - By team: 3
         - By Sylvia: 0
     - Tags added to HTML: 0
