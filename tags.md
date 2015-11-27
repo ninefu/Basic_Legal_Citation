@@ -26,6 +26,7 @@ Tag used to be a generalized placeholder for abbreviations (excluding states abb
 Tag used to encapsule anything that's related to a citation and citation examples. This includes, but it's not limited to, the citations used in the example boxes. 
 
 > Attributes:
+
   * **book =** book style used in the citation example, which can be either *BB*, bluebook, *ALWD* or *undefined*. 
     - *example:* ``<citation book = "BB"> </citation>``
   * **type =** type of citation (agency, attorney, treaty...) in case we have multiple citation types worth highlighting.
@@ -37,6 +38,7 @@ Tag used to encapsule anything that's related to a citation and citation example
 
 Tag used for states names and it's different types of state-related citations. 
 >  Attributes:
+
   * **name =** full name of the U.S. state
     - *example:* ``<state name = "District of Columbia"> </state>``    
   * **abbr =** abbreviation of the state name in uppercase letters (optional)
