@@ -1,3 +1,11 @@
+![HTML5 TAGS](https://github.com/johncurcio/fluffy-rainbow-colored-unicorn/blob/master/tags.jpg?raw=true)
+
+**Status:**
+
+    - Tags created: 3
+    - Tags documented: 3
+    - Tags added to HTML: 0
+
 # Tags
 ---
 Document defining all tags added to the HTML5 files in the Legal Citation Website. 
@@ -29,3 +37,22 @@ Tag used for states names and it's different types of state-related citations.
 ```
 
 Tag used to be a generalized placeholder for abbreviations a reader must remember in the text. All abbreviations must be surrounded by this tag.
+
+# Pages overview
+---
+
+ >  **§1-000:**
+    
+* 
+    
+ >  **§2-000:**
+ 
+ >  **§3-000:**
+ 
+ >  **§4-000:**
+ 
+ >  **§5-000:**
+ 
+ >  **§6-000:**
+ 
+ >  **§7-000:**
