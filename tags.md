@@ -47,7 +47,7 @@ Tag used for states names and it's different types of state-related citations.
 # Pages overview
 ---
 
- ##### §1-000:
+#### §1-000:
     
 * ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 1-100:* introductory text, no need for tagging. 
     * **Comments:** Each citation has a book name (Bluebook or ALWD) associated with it. 
