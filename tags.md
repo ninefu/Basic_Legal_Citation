@@ -4,11 +4,21 @@
 
     - Tags created: 3
     - Tags documented: 3
+    - Tags review: 
+        - By team: 3
+        - By Sylvia: 0
     - Tags added to HTML: 0
 
 # Tags
 ---
 Document defining all tags added to the HTML5 files in the Legal Citation Website. 
+
+```
+<abbreviation>
+```
+
+Tag used to be a generalized placeholder for abbreviations a reader must remember in the text. All abbreviations must be surrounded by this tag.
+
 ```
 <citation>
 ```
@@ -31,12 +41,6 @@ Tag used for states names and it's different types of state-related citations.
     - *example:* ``<state name = "District of Columbia"> </state>``    
   * **abbr =** abbreviation of the state name in uppercase letters (optional)
     - *example:* ``<state name = "Detroit" abbr = "DT" > </state>``
-
-```
-<abbreviation>
-```
-
-Tag used to be a generalized placeholder for abbreviations a reader must remember in the text. All abbreviations must be surrounded by this tag.
 
 # Pages overview
 ---
