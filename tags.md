@@ -21,6 +21,13 @@ Tag used to be a generalized placeholder for abbreviations (excluding states abb
 
 > Attributes:
 
+  * **type =** type of abbreviation.
+    - nothing: it's just an abbreviation
+    - 'omission': the abbreviation is an omission;     
+        > *example:* ``<abbreviation omission> </abbreviation>``
+    
+    - 'state', 'month', 'journal', 'spacing', 'period'. 
+
 Refer to page 1-400 for a full set of attributes that may be needed for the HTML files. 
 
 
@@ -46,6 +53,14 @@ Tag used to encapsule anything that's related to a citation and citation example
         - 'regulation': used to cite all regulation citations;
         - 'adjudication': used to cite agency adjudication citations;
         - 'report': used to cite agency report citations;
+        - 'attorney': used in citations to attorney general and other advisory opinions. 
+        - 'executive': used to cite executive orders citations;
+        - 'proclamation': used to cite proclamation citations;
+        - 'arbitration': used to cite arbitration decisions;
+        - 'court': used to cite court rules;
+        - 'books': used to cite books, it might be necessary to add attributes for the different kinds of books, such as 'annotations';
+        - 'journal': used to cite journal article citations;
+        - 'document': used to cite case document citations.
 
 ```
 <state>
@@ -126,10 +141,20 @@ Explains briefly where each tags come from and which pages must (![ok](http://ic
 
  * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ All:* add tags ``citation`` to the examples in each page. 
 
+ * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 3-200 to 3-400:* add tags ``state`` and ``abbreviation`` to each part of the examples they apply to. 
+
 #### §4-000:
- 
+
+ * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 4-100:* add tags ``abbreviation`` to the table in the page. Also add tags ``citation`` to the examples each abbreviation links to.  
+ * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 4-200:* add tags ``abbreviation`` to the table in the page.
+ * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 4-300:* add tags ``abbreviation`` with the attribute 'type' associated with it in the examples that include omission. 
+ * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 4-400 to 4-800:* add tags ``abbreviation`` with the attribute 'type' associated with it. 
+
 #### §5-000:
- 
+
+*  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 5-000:* explains how to create a citation and apply styling to it. No need for tagging.   
+
+
 #### §6-000:
  
 #### §7-000:
