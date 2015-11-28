@@ -3,6 +3,11 @@
  <!-- Added by HTTrack -->
  <meta http-equiv="content-type" content="text/html;charset=utf-8" />
  <!-- /Added by HTTrack -->
+ <script>
+ $scope.selectedTemplate = {
+    "path":"2-600_ex0.html"
+}; 
+ </script>
  <head>
   <title>
    Basic Legal Citation: &sect; 2-600 (2015)
@@ -30,6 +35,15 @@
     </font>
    </sup>
   </h3>
+  <div style="text-align:center">
+  <p class="iframe"><a name="2-600_frame_1"></a><span class="Examplewindow">&sect; 
+  2-600 Examples Window (<a href="" ng-click="selectedTemplate.path = '2-600_ex0.html'">restore</a>)</span><br></p>
+  <div style="border:1px solid black;display:inline-block;width:24em;text-align:left" ng-init = "selectedTemplate.path = '2-600_ex0.html'" data-ng-include="selectedTemplate.path" ></div>
+  </br>
+  	<a href="" ng-click="selectedTemplate.path = '2-600_ex1.html'">Eg1</a>
+	<a href="" ng-click="selectedTemplate.path = '2-600_ex2.html'">Eg2</a>
+    </div>
+   
   <p class="Text-Level1">
    <span class="principle">
     Principle:
@@ -41,7 +55,10 @@
     <a href="#" ng-model="example92" onclick="return false" ng-click="example92 = !example92">
      &laquo;e.g.&raquo;
     </a>
-    <ul ng-show="example92" class="text-level2">
+	<div style="text-align:center" ng-show="example92">
+  <div style="border:1px solid black;display:inline-block;width:24em;text-align:left" >
+ 
+    <ul class="text-level2">
      <li class="Example">
       <span class="highlight">
        Fed. R. Civ. P.
@@ -67,13 +84,18 @@
       3:8-3.
      </li>
     </ul>
+	</div>
+	</div>
    </span>
    and the rule number
    <span class="example_icon">
     <a href="#" ng-model="example93" onclick="return false" ng-click="example93 = !example93">
      &laquo;e.g.&raquo;.
     </a>
-    <ul ng-show="example93" class="text-level2">
+	<div style="text-align:center" ng-show="example93">
+  <div style="border:1px solid black;display:inline-block;width:24em;text-align:left" >
+ 
+    <ul class="text-level2">
      <li class="Example">
       Fed. R. Civ. P.
       <span class="highlight">
@@ -103,6 +125,8 @@
       .
      </li>
     </ul>
+	</div>
+	</div>
    </span>
    The name is abbreviated. According to
    <span class="ITALICSORUNDERLINE">
