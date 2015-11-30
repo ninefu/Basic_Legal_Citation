@@ -69,7 +69,8 @@ Inconsistencies found:
    - check if all `<<e.g.>>` tags are working as expected (user must click on each `<<e.g.>>` and manually check that things work. we found corner case scenarios by manual testing today)
    - check that styling is readable. (edit stray . " , etc)
 
-2. XHTML tagging research
+2. XHTML tagging research **(done)**
 3. Conversion to pdf... on new site - STRICTLY witheld until all other tasks are complete
+4. Add tags to the HTML5 files
 
 **Target : Sunday!!**
