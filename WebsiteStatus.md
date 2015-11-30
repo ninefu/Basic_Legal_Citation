@@ -31,6 +31,8 @@ To do:
 1. Merging of the earlier parser with the new parser so that all changes can be seen on the website. 
 2. CSS has to be applied to center align the example boxes and content of the popups.
 3. Manual changes, to remove misplaced dots (.) and commas (,) has to be done. 
+4. Click on a few <<e.g>> will open new tabs. Write code to copy those files as well into this directory.
+5. Example window names, everything in the bracket is remove to delete (restore) but (1) and (2) are also removed. Update regex. 
 
 
 
