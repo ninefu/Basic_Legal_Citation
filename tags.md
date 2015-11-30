@@ -2,10 +2,10 @@
 
 **Status:**
 
-    - Tags created: 3
-    - Tags documented: 3
+    - Tags created: 5
+    - Tags documented: 5
     - Tags reviewed: 
-        - By team: 3
+        - By team: 5
         - By Sylvia: 0
     - Tags added to HTML: 0
 
@@ -19,7 +19,7 @@ Document defining all tags added to the HTML5 files in the Legal Citation Websit
 
 Tag used to be a generalized placeholder for abbreviations (excluding states abbreviations) a reader may search in the text. All abbreviations must be surrounded by this tag.
 
-> Attributes:
+> **Attributes:**
 
   * **type =** type of abbreviation.
     - nothing: it's just an abbreviation
@@ -37,7 +37,7 @@ Refer to page 1-400 for a full set of attributes that may be needed for the HTML
 
 Tag used to encapsule anything that's related to a citation and citation examples. This includes, but it's not limited to, the citations used in the example boxes. 
 
-> Attributes:
+> **Attributes:**
 
   * **book =** book style used in the citation example, which can be either *BB*, bluebook, *ALWD* or *undefined*. 
     - *example:* ``<citation book = "BB"> </citation>``
@@ -80,7 +80,7 @@ Citations may have signals. We can use this tag to identify those signals separe
 ```
 
 Tag used for states names and it's different types of state-related citations. 
->  Attributes:
+>  **Attributes:**
 
   * **name =** full name of the U.S. state
     - *example:* ``<state name = "District of Columbia"> </state>``    
