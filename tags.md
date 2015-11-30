@@ -174,16 +174,16 @@ Explains briefly where each tags come from and which pages must (![ok](http://ic
 
 * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 6-100:* Identify tag ``quote``. The section explains how to quote a citation. We have a few examples that need to be tagged. 
 * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 6-200:* Examples need to be tagged using the ``citation`` tag.  
- * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 6-300:* Identify tag ``signals``. Used in citation examples that contain signals and in the signals themselves. 
- * ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 6-400:* No need for tagging. Only explains the order in which signals should be considered. 
- * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 6-500:* Identify the attributes ``short`` and ``full`` used in the ``citation`` tag to indentify whether the citation is in the Short form or the Full form. 
- * ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 6-600:* Citation examples need to be properly tagged using ``citation`` and ``quote``.
- * ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 6-700:* No need for tagging. Explains what's a table of authorities and gives a very short example. 
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 6-300:* Identify tag ``signals``. Used in citation examples that contain signals and in the signals themselves. 
+* ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 6-400:* No need for tagging. Only explains the order in which signals should be considered. 
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 6-500:* Identify the attributes ``short`` and ``full`` used in the ``citation`` tag to indentify whether the citation is in the Short form or the Full form. 
+* ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 6-600:* Citation examples need to be properly tagged using ``citation`` and ``quote``.
+* ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 6-700:* No need for tagging. Explains what's a table of authorities and gives a very short example. 
 
 #### §7-000:
- * ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 7-000:* No need for tagging. Explains the differences in Bluebook and ALWD.
- *  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 7-100:* No need for tagging. Introduction to the theme.
- *  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 7-200:* No need for tagging. Explains the differences in Bluebook's editions. 
- *  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 7-300:* No need for tagging. However the cross reference table **might be important** to determine which book the citation is from.
- *  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 7-400:* No need for tagging. However the cross reference table **might be important** to determine which book the citation is from.
- *  ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 7-500:* It should be already tagged at this point.
+* ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 7-000:* No need for tagging. Explains the differences in Bluebook and ALWD.
+*  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 7-100:* No need for tagging. Introduction to the theme.
+*  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 7-200:* No need for tagging. Explains the differences in Bluebook's editions. 
+*  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 7-300:* No need for tagging. However the cross reference table **might be important** to determine which book the citation is from.
+*  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 7-400:* No need for tagging. However the cross reference table **might be important** to determine which book the citation is from.
+*  ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 7-500:* It should be already tagged at this point.
