@@ -44,3 +44,4 @@
 
 .Subsubsubsection { text-align:left; margin-left: 12%; font-size:12pt; font-family:"Tms Rmn"; color:black; font-weight:bold; ; font-style: normal}
 
+.ExampleBox { border:1px solid black;display:inline-block;width:30em;text-align:left }
