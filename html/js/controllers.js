@@ -161,15 +161,23 @@ app.config(function($routeProvider) {
 
 });
 
-
 app.controller('mainCtrl', ['$scope', function($scope) {
   console.log("In mainCtrl");
 }]);
 
 
 app.controller('dynamicExamplesCtrl', ['$scope', function($scope) {
-  console.log("In dynamicExamplesCtrl");
-
+    console.log("In dynamicExamplesCtrl");
+    $scope.$on('$routeChangeSuccess',function(angularEvent,next,current) {
+      //do you work here
+        var url = window.location.hash.replace("/","");
+        $('.nav-second-level').find('li').removeClass("active")
+        var element = $('ul.nav a').filter(function() {
+            return $(this).attr("href") == url;
+        }).closest('li')[0]
+        $(element).addClass("active")
+        console.log(element)
+    });
   //to enable popups
    $scope.showModal = false;
     $scope.buttonClicked = "";
