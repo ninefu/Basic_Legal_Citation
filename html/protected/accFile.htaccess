@@ -1,0 +1,9 @@
+AuthType Basic
+AuthName Authentication Required
+AuthUserFile /etc/.htpasswd
+Authname ByPassword
+AuthType Basic
+
+
+Require valid-user
+

@@ -20,17 +20,16 @@
 
  </body>
  <body bgcolor="#FFFFFF" class="Normal">
-  <p class="Section">
+  <h1 align = "left" >
    &sect; 7-500.
-   <a name="7-500">
-   </a>
    Table of State-Specific Citation 
 
 
 
   Norms and Practices
-  </p>
-  <p class="text-level1">
+  </h1>
+  
+  <p>
    The following table provides links to the citation forms 
 
 
@@ -51,31 +50,30 @@
   </p>
   
   <div class="container" ng-app="LegalCitationApp" ng-controller="mainController">
-  <form>
-       <input type="text" class="form-control" placeholder="Search States" ng-model="searchCountries">
-   </form>
-  
-  <table class="table table-bordered table-striped" width = "80%" laceholder="Search States" ng-model="searchCountries">
+  <div class = "col-xs-9">
+  <input type="text" class="form-control" placeholder="Search States" ng-model="searchCountries">
+  <br>
+  <table class="table table-bordered table-striped table-condensed" width = "80%" laceholder="Search States" ng-model="searchCountries">
     
     <thead>
       <tr>
         <td class = "col-sm-0">
-            States 
+            <b>States 
           </a>
         </td>
         <td class = "col-sm-1">
-          Cases          
+          <b>Cases          
         </td>
         <td class = "col-sm-1">
-          Statutes
+          <b>Statutes
         </td>
         
          <td class = "col-sm-1">
-           Regulations
+           <b>Regulations
         </td>
         
          <td class = "col-sm-1">
-          Examples and Rules
+          <b>Examples and Rules
         </td>
         
       </tr>
@@ -92,7 +90,7 @@
     </tbody>
     
   </table>
-  
+</div> 
 </div>
 
 

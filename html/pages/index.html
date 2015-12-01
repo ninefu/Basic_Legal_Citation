@@ -23,6 +23,7 @@
     <link href="../dist/css/customize.css" rel="stylesheet">
     <link href="../dist/css/citation.css" rel="stylesheet">
 
+
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
@@ -45,6 +46,10 @@
 	<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 -->
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+
 </head>
 
 <body ng-controller="mainCtrl">
@@ -129,7 +134,7 @@
                         <li>
                             <a href="#"><i class="fa fa-fw"></i> WHAT AND WHY?<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li>
+                                <li >
                                     <a href="#1-100">Introduction</a>
                                 </li>
                                 <li>
@@ -148,6 +153,7 @@
                                     <a href="#1-600">Who Sets Citation Norms</a>
                                 </li>
                             </ul>
+
                             <!-- /.nav-second-level -->
                         </li>
                         <!-- <li>
@@ -336,5 +342,20 @@
 <navbar-fixed-bottom align="center">
     <h5>All Rights Reserved | &copy; 2015 by Peter W. Martin</h5>
 </navbar-fixed-bottom>
+<head>
 
+<script type = "text/javascript">
+$('.nav .nav-second-level li a').click(function() {
+
+    $(this).parent().parent().find('.active').css('color', '#337ab7');
+    $(this).parent().parent().find('.active').css('font-weight', 'normal');
+    $(this).parent().parent().find('.active').removeClass('active');
+    $(this).addClass('active');
+    $(this).addClass('active').css('font-weight', 'bold');
+    $(this).addClass('active').css('color', '#395D06');
+
+});
+</script>
+
+</head>
 </html>

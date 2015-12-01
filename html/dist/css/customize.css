@@ -26,6 +26,7 @@ mark {
     background-color: #fff;
 }
 
+
 div {
     text-align: justify;
 }
@@ -129,6 +130,8 @@ div {
 .sidebar ul li a.active {
     background-color: #eee;
     text-align: center!important;
+    
+
 }
 
 .sidebar .arrow {
@@ -373,6 +376,7 @@ table.dataTable thead .sorting:after {
 
 .panel-red a:hover {
     color: #b52b27;
+    font-weight: bold;
 }
 
 .panel-yellow {
@@ -391,12 +395,4 @@ table.dataTable thead .sorting:after {
 
 .panel-yellow a:hover {
     color: #df8a13;
-}
-
-
-.nav>li.active>a:focus, .nav>li.active>a:hover{
-    background-color: blue;
-}
-li li.active{
-    background-color:blue;
 }
