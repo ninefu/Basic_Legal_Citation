@@ -86,6 +86,7 @@ def replace_all_iframes(soup):
     
         new_div = soup.new_tag('div')
         new_div['style'] = "text-align: center;"
+        new_div['class'] = "ignore-on-convert"
         replace_spans(span,new_div)
 
 
@@ -109,6 +110,7 @@ def replace_all_iframes(soup):
         
         new_div = soup.new_tag('div')
         new_div['style'] = "text-align: center;"
+        new_div['class'] = "ignore-on-convert"
         new_div.append(new_tag)
         soup.iframe.replace_with(new_div)
 
@@ -117,7 +119,7 @@ def replace_all_iframes(soup):
 def convertToButton(tag):
     new_tag = soup.new_tag('button')
     new_tag['ng-click'] = "toggleModal('Success')"
-    new_tag['class'] = "btn btn-default"
+    new_tag['class'] = "btn btn-default ignore-on-convert"
     new_tag.string = tag.string
 
     return new_tag
@@ -130,10 +132,9 @@ def replacePopUp(span):
     button = convertToButton(a)
     span.a.replace_with(button)
            
-    #if(filename == "6-200.html"):
-        #print(filename + " href: " + example)
     if os.path.isfile(example):
         #print("trying to open ahref target for file: " + filename + " href : " + example)
+        
         ex_file = example
         example = get_beautiful_file(example)
         ul = example.body.find("ul")
@@ -204,7 +205,7 @@ for filename in files:
             #Add modal popup
             popup = addModalPopUp(soup)
 
-        soup = getHTMLBody(soup)
+        #soup = getHTMLBody(soup)
 
     new_filename = filename[:-3] #remove .htm
 
