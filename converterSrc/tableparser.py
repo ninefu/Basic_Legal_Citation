@@ -293,6 +293,7 @@ def sub_table(soup, subtable):
             if ''.join(td.findAll(text=True)) != '&nbsp;':
                 string += ''.join(td.findAll(text=True)) 
                 string += ', '
+        string = string.strip().rstrip(',')
     li.append(BeautifulSoup(string))
     ul.append(li)
     return ul 
@@ -325,6 +326,48 @@ def linearize_bb(soup, table):
             div.append(ul)
         table.replaceWith(div)
 
+def sub_table2(soup, subtable):
+    ul = Tag(soup, "ul")
+    li = Tag(soup, "li")
+    string = '<i>ALWD Guide to Legal Citation: </i>'
+    for tr in subtable.findAll("tr"):
+        for td in tr.findAll("td"):
+            if ''.join(td.findAll(text=True)) != '&nbsp;':
+                string += ''.join(td.findAll(text=True)) 
+                string += ', '
+        string = string.strip().rstrip(',')
+    li.append(BeautifulSoup(string))
+    ul.append(li)
+    return ul 
+
+def linearize_alwd(soup, table):
+    if table.get('id') == "linearize-alwd":
+        div = Tag(soup, "div")
+        first = 1
+        lista = table.findAll("tr")
+        tr1 = lista[0]
+        div.append(tr1)
+        for tr in lista[1:]:
+            ul = Tag(soup, "ul")
+            li = Tag(soup, "li")
+            for td in tr.findAll("td"):
+                for p in td.findAll("p"):
+                    p.name = "span"
+                if ''.join(td.findAll(text=True)) != '&nbsp;': 
+                    if first == 1:
+                        li.append(td)
+                        first = 0
+                    else:
+                        td.replaceWith("")
+                for subtable in td.findAll("table"):
+                    sub = sub_table2(soup, subtable)
+                    if ''.join(td.findAll(text=True)) != '&nbsp;': 
+                        li.append(sub)
+            first = 1
+            if li.contents: ul.append(li)
+            div.append(ul)
+        table.replaceWith(div)
+
 def linearize_tables(soup):
     for table in soup.findAll("table"):
         linearize_cols_1(soup, table)
@@ -336,9 +379,10 @@ def linearize_tables(soup):
         linearize_cols_3(soup, table)
         linearize_rows_1_cols(soup, table)
         linearize_bb(soup, table)
+        linearize_alwd(soup, table)
         
 count = 0
-dir_path = '*7-300.htm'
+dir_path = '*7-400.htm'
 files = glob.glob(dir_path)
 for filename in files:
     print "Working on file " + filename
