@@ -4,6 +4,8 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+
 body {
     background-color: #f8f8f8;
 }
@@ -48,12 +50,17 @@ div {
     }
 }
 
-@media(max-width:767px) {
-    .page-header {
-    padding-top: 120px !important;
-}
+@media(min-width: 504px) and (max-width: 767px){
+    .Normal{
+        padding-top: 50px;
+    }
 }
 
+@media(min-width: 320px) and (max-width: 503px){
+    .Normal{
+        padding-top: 95px;
+    }
+}
 
 .navbar-top-links {
     margin-right: 0;
@@ -68,7 +75,7 @@ div {
 }
 
 .navbar-top-links li a {
-    padding: 15px 5px;
+    padding: 15px 0px;
     min-height: 50px;
 }
 
