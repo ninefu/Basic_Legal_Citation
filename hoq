@@ -1,0 +1,1100 @@
+[33mcommit e49bea32fd4a846cd6cf3f4fd73649461f20ec09[m
+Author: DeviSnigdhaM <dm754@cornell.edu>
+Date:   Sat Nov 28 23:34:37 2015 -0500
+
+    2-900 page updated with solution 3 for iframes
+    
+    Change-Id: I5b3ecbd5589f0b676f7d5c7d285b397e6915b8ef
+    Signed-off-by: DeviSnigdhaM <dm754@cornell.edu>
+
+[33mcommit b23ab40d24e50b8e8b33a49470312a94721a95f7[m
+Author: DeviSnigdhaM <dm754@cornell.edu>
+Date:   Sat Nov 28 18:50:00 2015 -0500
+
+    Modified 2-500.html and 2-600.html - iframes alternatives.
+    
+    Change-Id: Ie3c561da5866472964c41350a59ed9f8b997f802
+    Signed-off-by: DeviSnigdhaM <dm754@cornell.edu>
+
+[33mcommit 0d14113f954fb63ab0da6868306593bebc821bbd[m
+Author: Akshay Tata <at758@cornell.edu>
+Date:   Sat Nov 28 03:58:32 2015 -0500
+
+    added angular js table
+
+[33mcommit 2c0c5f070d07c6d7da28a1686945e81de6cee025[m
+Author: DeviSnigdhaM <dm754@cornell.edu>
+Date:   Fri Nov 27 19:07:15 2015 -0500
+
+    Changed Picture in the introduction page.
+    
+    Change-Id: Iead7b6e3c2a209cd90d363ebeeab43f9361cdd6d
+    Signed-off-by: DeviSnigdhaM <dm754@cornell.edu>
+
+[33mcommit 39b41e2d2435b8e596cf4e0fead0b82a0631197c[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Fri Nov 27 18:42:00 2015 -0500
+
+    Update tags.md
+
+[33mcommit 1390a7226ea84f3461ce196d6b359cf44d69d617[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Fri Nov 27 18:22:15 2015 -0500
+
+    Update tags.md
+
+[33mcommit 7dbefe342c3e82bdb939f4412a473ea3f08fffd7[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Fri Nov 27 17:42:32 2015 -0500
+
+    Update tags.md
+
+[33mcommit cdbe39f214b3a9efb1c12f440186748295dd71dc[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Fri Nov 27 17:22:25 2015 -0500
+
+    Fix styling
+
+[33mcommit c2e2568509f47ac4c32e88ab35aafbd4315c2023[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Fri Nov 27 17:22:01 2015 -0500
+
+    Fix styling
+
+[33mcommit a553c78f1b457d0a76160266c14d8e8456153037[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Fri Nov 27 17:20:51 2015 -0500
+
+    Fix styling
+
+[33mcommit f486759b318fb37adf247e507960dc1be9b3cb35[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Fri Nov 27 17:20:23 2015 -0500
+
+    Add pages info
+
+[33mcommit 19110d359bcd50662e647b2603de6193c6857556[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Fri Nov 27 16:54:40 2015 -0500
+
+    Update status
+
+[33mcommit ea2a47371d177454b931bfcc9e856fac1ae31c4f[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Fri Nov 27 16:54:08 2015 -0500
+
+    Add status to tags
+
+[33mcommit 88753dead2959980365c026644aa09001f3d9dfc[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Fri Nov 27 16:52:07 2015 -0500
+
+    Modify tags.md
+
+[33mcommit 0fc6db664909cf6734ab1f912f872879a656243e[m
+Merge: dc8563c c741c39
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Wed Nov 25 18:59:55 2015 -0500
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit dc8563c8cc4117945105a3299706648a46236a24[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Wed Nov 25 18:59:22 2015 -0500
+
+    Updated copyright
+
+[33mcommit c741c396f9b075867a7791982e1b5cd679a9d483[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Sat Nov 21 17:14:03 2015 -0500
+
+    Add tags.md with a few of the tags we're using for the website
+
+[33mcommit 2ef336c563f73e1e27afeca7beff8bc3f8aa7d35[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Fri Nov 6 22:32:12 2015 -0500
+
+    Edited report 3
+
+[33mcommit 347d4c52c084b2fb84796740f26b90a05ae478bc[m
+Author: monova <monovafu@gmail.com>
+Date:   Fri Nov 6 11:53:31 2015 -0500
+
+    updated Progress
+
+[33mcommit ede3abf6b31f11d30d63390daec639962042dc9d[m
+Author: DeviSnigdhaM <dm754@cornell.edu>
+Date:   Fri Nov 6 00:48:09 2015 -0500
+
+    Updated the report with screenshots and Gantt Chart.
+    Added a few comments wherever not sure of what to add.
+    
+    Change-Id: Ifb3afb855afe187177c0e81000f43477a584f4c6
+    Signed-off-by: DeviSnigdhaM <dm754@cornell.edu>
+
+[33mcommit 447db89b68d070a2af3dd5bfdb614588e27c8319[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Nov 5 22:46:42 2015 -0500
+
+    Add converter resources
+
+[33mcommit b6e63f84d4385eb8a6feb18f01809af6150a1e3c[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 12:49:39 2015 -0500
+
+    Update fixtable
+
+[33mcommit eb261b780a5ab18bb0f1414406bb4dff70ace17c[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Thu Nov 5 08:31:22 2015 -0500
+
+    Fixed 7-500.html to run jquery on standalone page
+
+[33mcommit a6300efe5d90bc05683458058c79577bb9683189[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Thu Nov 5 07:32:26 2015 -0500
+
+    Fixed broken link for 5-000.html
+
+[33mcommit 4ca3266c7abc56b91dbea096feeb32e2e08aefef[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Thu Nov 5 07:03:24 2015 -0500
+
+    Fixed all broken links, links embedded in contents need to be converted still
+
+[33mcommit a8d89d1bb9863579b5ea1b8754a4eb6a106c7a0d[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Thu Nov 5 05:56:32 2015 -0500
+
+    Manually added popup to 2-500.html
+
+[33mcommit 97fb360ce30279c1b5abf4ace9655efec7d5d020[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Thu Nov 5 05:26:35 2015 -0500
+
+    Fixing justify, div are justify, left navbar is centered, bottom additional resources are left
+
+[33mcommit 52d4175fdfaa80b33d0f50c87963adde0a926b17[m
+Merge: 5e6a1df c8f2ffc
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Thu Nov 5 05:03:30 2015 -0500
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit 5e6a1df27a528ae1050a5f9c30868f762749c6f9[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Thu Nov 5 05:03:19 2015 -0500
+
+    Fixed justify by adding it to div. Might have to refix this to allow certain sections in 1-200.html
+
+[33mcommit c8f2ffc2423ad923d73400e6ec44d576e04bc73d[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Nov 5 03:08:35 2015 -0500
+
+    Add pdf caveats
+
+[33mcommit aa8e93a73d6751edd539f41178b32cee5f6329d1[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 02:20:30 2015 -0500
+
+    Modify styles in toc.html
+
+[33mcommit 71890ca91a3172a3a3e22230812f34628455d03a[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 02:20:11 2015 -0500
+
+    Why doesn't git recognize my changes to html
+
+[33mcommit 2f2039d122a43457dee36043d1d129ca67f0119d[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Nov 5 02:19:31 2015 -0500
+
+    Improve toc.html
+
+[33mcommit 9a7d8034592166d5291315ea6d7f796e47f09c6d[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 02:03:37 2015 -0500
+
+    Add table of contents to epub
+
+[33mcommit 667b735a4bf47353927b9b55d18fda9c32b9828d[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 02:03:18 2015 -0500
+
+    Add preface to epub files
+
+[33mcommit 1bef55b4e496960ce8ac908583ebcd282bb126a0[m
+Merge: f46f341 2edc4b1
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Nov 5 02:01:52 2015 -0500
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit f46f3412c6982f94c0fa21b79b624605e12239bf[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Nov 5 02:01:28 2015 -0500
+
+    AAAAA
+
+[33mcommit 2edc4b1a18ec2aa1ec564eba0aa1d35d470e6d93[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 01:58:46 2015 -0500
+
+    Delete toc
+
+[33mcommit e71cb9a434545dfdfb2e21e4e666a45a058f45f3[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 01:58:31 2015 -0500
+
+    Delete preface
+
+[33mcommit 3adc495f78d7ffc7e833dfbd2581e17c6af22cbd[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 01:57:46 2015 -0500
+
+    Just go
+
+[33mcommit ec116b4530f918aacc940be0d074c8a8b03aa381[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 01:57:17 2015 -0500
+
+    Go to hell
+
+[33mcommit 718b4c606d2cb9b22fb8cb799a5d9e60bf256ee3[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Nov 5 01:56:42 2015 -0500
+
+    Come on
+
+[33mcommit cf2629c72ede3b201134d2e5317a832f06ed7437[m
+Merge: e243490 51dd71b
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Nov 5 01:40:43 2015 -0500
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit e2434907fb9de9bcb3c168f52b87ce4f76a57983[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Nov 5 01:38:24 2015 -0500
+
+    Add folder pdf
+
+[33mcommit 51dd71bfdcc8f4031430e0692111057ba67befe2[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Thu Nov 5 01:31:35 2015 -0500
+
+    Justified align
+
+[33mcommit 5705154a7dead86acd844ed346514324b774b65b[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 00:21:34 2015 -0500
+
+    Rename toc.html
+
+[33mcommit 321134a9e6a1f9c891a5033f48ab406138721b9a[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Thu Nov 5 00:21:21 2015 -0500
+
+    Delete old toc.html
+
+[33mcommit d1d0b7fc2d68559f3c6c4b87942563584befbaf8[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Nov 5 00:20:42 2015 -0500
+
+    Add the right toc.html file
+
+[33mcommit 2121c848a482d3e07587e88e14aefef6e2d191a6[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Nov 5 00:18:19 2015 -0500
+
+    Add required files for toc.html
+
+[33mcommit afcca15ce189f727262def9b0c569f8e421ff4e5[m
+Merge: 1ecee09 4ea5ffa
+Author: monova <monovafu@gmail.com>
+Date:   Wed Nov 4 23:17:14 2015 -0500
+
+    Mark color fixed. Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit 1ecee099d5c3030ec807e76bd4bc9a455d6d5eb8[m
+Author: monova <monovafu@gmail.com>
+Date:   Wed Nov 4 23:17:06 2015 -0500
+
+    mark color fixed
+
+[33mcommit 4ea5ffad2c5478e26358fd63dd9d3c3869587a00[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Wed Nov 4 23:06:28 2015 -0500
+
+    Fix name order
+
+[33mcommit fadb9c3aea3373e96df892bc598c8f544b7925ad[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Wed Nov 4 23:03:13 2015 -0500
+
+    Fix toc.html for parser
+
+[33mcommit 942180911aa50f2df97c88290c151b254e6a0993[m
+Author: monova <monovafu@gmail.com>
+Date:   Wed Nov 4 22:55:51 2015 -0500
+
+    added downloading
+
+[33mcommit 2b42c0cef2add5218003f38f28f20564e56392ba[m
+Merge: 2cd5dca 3ceed76
+Author: monova <monovafu@gmail.com>
+Date:   Wed Nov 4 22:32:11 2015 -0500
+
+    Table of content. Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit 2cd5dca4f5d8419ef669ac5e438fe81da1273844[m
+Author: monova <monovafu@gmail.com>
+Date:   Wed Nov 4 22:31:50 2015 -0500
+
+    table of contents
+
+[33mcommit 3ceed76b0f29fca3b19feab564e31fb29a463821[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Wed Nov 4 21:34:17 2015 -0500
+
+    Add updated files for report.docx
+
+[33mcommit 418b3e5f7fb592692f89b5bc4a1c004a238961ec[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Wed Nov 4 19:53:42 2015 -0500
+
+    Removed page-wrapper from intro page
+
+[33mcommit 832e0b25a3f2aaef96a74b0cd09176fc1478b418[m
+Merge: de4233f 987642e
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Wed Nov 4 19:51:09 2015 -0500
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit de4233f74a50dc766e205a12c56e70781309add1[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Wed Nov 4 19:51:01 2015 -0500
+
+    Re-Added intro page and few href on left nav pane
+
+[33mcommit 987642e360d9544fbe4a3326f3af090a2d3899ce[m
+Author: monova <monovafu@gmail.com>
+Date:   Wed Nov 4 19:22:30 2015 -0500
+
+    deleted Prof Arm's css sheet
+
+[33mcommit d2749973a26ddc2868c654674c41a137a0cf645e[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Wed Nov 4 15:52:41 2015 -0500
+
+    added popups to 2-900.html and added pages without header and footers to html/pages
+
+[33mcommit d3cb27886ec1c9779c54b2d1f5f59e34f3626e70[m
+Merge: c7cf6f1 923bbbf
+Author: Akshay Tata <at758@cornell.edu>
+Date:   Wed Nov 4 05:01:29 2015 -0500
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit c7cf6f17d4a8f4513967d6e676e511c8c841ea7a[m
+Author: Akshay Tata <at758@cornell.edu>
+Date:   Wed Nov 4 05:01:21 2015 -0500
+
+    Fixed the CSS indentation issues
+
+[33mcommit 923bbbf82413c85933d0ee32ff51e12aa3bc3120[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Wed Nov 4 02:52:47 2015 -0500
+
+    Add new pages with no header and footer
+
+[33mcommit cac082f55fb75514cacf4dab7069ddf9c520158d[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Wed Nov 4 02:48:34 2015 -0500
+
+    Update what's been fixed
+
+[33mcommit cfa5d81679acc3bcdd9630be9e1e67f6ac6e4e40[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Wed Nov 4 02:45:34 2015 -0500
+
+    Create new report files
+
+[33mcommit d302c52257e57d63ab15f3b93e841a2f83b57aef[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Tue Nov 3 16:24:18 2015 -0500
+
+    Update report.md with completed tasks
+
+[33mcommit 735255b49c3d63a74cb1f908320025ed3e6b1a74[m
+Merge: 4897377 b48bcae
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Tue Nov 3 12:26:09 2015 -0500
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit 489737748477c4a77eebb57ff577310fd33e144c[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Tue Nov 3 12:25:38 2015 -0500
+
+    Add changes made to tagging
+
+[33mcommit b1fbf54d9ff8a5e4878e39ad3fb40f83d5416b2c[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Tue Nov 3 10:46:19 2015 -0500
+
+    Add comments for future changes in tagging
+
+[33mcommit b48bcae3608200e7bbb44eb156570407e2e1dc79[m
+Merge: 60e0110 f7645c5
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Tue Nov 3 05:46:16 2015 -0500
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit 60e011015f36c355827170ee14e877ff40499a16[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Tue Nov 3 05:45:41 2015 -0500
+
+    Added a jQuery home page template, moved around folder so that all web pages are now inside html folder
+
+[33mcommit f7645c540dc7f2f72b51480290175b5a9f141bbd[m
+Author: DeviSnigdhaM <dm754@cornell.edu>
+Date:   Tue Nov 3 02:49:54 2015 -0500
+
+    SubTeam2: Tags added to 7 series
+    
+    Change-Id: I8811b94f3c808036f52985b6d9b86eecbfd6898c
+    Signed-off-by: DeviSnigdhaM <dm754@cornell.edu>
+
+[33mcommit ed406a2505f12a72a7d9fed0fe7ec4a62dfbc0ae[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Tue Nov 3 01:52:28 2015 -0500
+
+    Rename report.md to readme-report.md
+
+[33mcommit f47218cb920ce3fed5ddff29eef11589f6b1c0d1[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Tue Nov 3 01:51:48 2015 -0500
+
+    Delete report.md
+
+[33mcommit 9827d410a5aef9d999986836b1c5376f8d1db09c[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Tue Nov 3 01:51:21 2015 -0500
+
+    Add report.md to reports
+
+[33mcommit 0f6b806104b43db063add53f1bb27edc8611939e[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Tue Nov 3 01:47:44 2015 -0500
+
+    Add tagging criteria
+
+[33mcommit 734facede93ef07182bcde57143460ab749d050c[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Tue Nov 3 01:45:34 2015 -0500
+
+    Fix spelling
+
+[33mcommit f7ae4139c420c4b784a5d54624fbba63a86a98d5[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Tue Nov 3 01:44:20 2015 -0500
+
+    Add report and presentation fix list
+
+[33mcommit 56df93b566f5b2bf2bbc761523aa1db20035cb94[m
+Author: monova <monovafu@gmail.com>
+Date:   Mon Nov 2 23:28:07 2015 -0500
+
+    pop up
+
+[33mcommit 4c077b494899091c9bd0a84daef1d7417a6da57c[m
+Author: monova <monovafu@gmail.com>
+Date:   Mon Nov 2 22:37:07 2015 -0500
+
+    updated resources on nav bar and intro
+
+[33mcommit da9efcfa4f1c418fbfdb8c511c93290e64a43dd3[m
+Author: monova <monovafu@gmail.com>
+Date:   Mon Nov 2 21:57:21 2015 -0500
+
+    updated ReadMe.md
+
+[33mcommit 3c7530a02405acfdc7dce68783c4c38aec01ab65[m
+Author: monova <monovafu@gmail.com>
+Date:   Mon Nov 2 21:56:12 2015 -0500
+
+    updated readMe.md
+
+[33mcommit 1a1568e46794ac94d995daa0442236f16db8fe0f[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Mon Nov 2 17:27:38 2015 -0500
+
+    Add tags to html files
+
+[33mcommit ce9fc8a8fa4890a5bf22b19916bc8f6a3c029c83[m
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Sun Nov 1 22:00:30 2015 -0500
+
+    1-* series done, DTD to be done
+
+[33mcommit 8286c87f8ce891b56a97832beb7cd400229fce4b[m
+Merge: df326ba d435e11
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Sun Nov 1 21:24:50 2015 -0500
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit df326bad436edf86ff14817ebc7a442b30f6f217[m
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Sun Nov 1 21:24:18 2015 -0500
+
+    tags added, snigdha will add DTD
+
+[33mcommit d435e1160df10482319888ed8a20c36b7197beb8[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sun Nov 1 21:00:31 2015 -0500
+
+    Rename new_toc.html
+
+[33mcommit dffe62c5b982445c32b7312c5b94a8ebf8d69704[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sun Nov 1 20:59:34 2015 -0500
+
+    Delete toc.html
+
+[33mcommit 6df0200f12cdc4fb5b74071134242979f127ce53[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Sun Nov 1 20:58:52 2015 -0500
+
+    Update sublinks
+
+[33mcommit bd94ae08c33441908de64f466a9b44732dc90edb[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sun Nov 1 20:14:53 2015 -0500
+
+    Remove beautifulSoupTest.py
+
+[33mcommit 357c28c5fd406c44dd200ab644307624be37601a[m
+Merge: dc1d50c f17d520
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Sun Nov 1 20:09:40 2015 -0500
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit dc1d50c0a0cc6cd791395de5663ee3d0d5fcc1cc[m
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Sun Nov 1 20:07:12 2015 -0500
+
+    An example of xhtml tags, DTD yet to be put
+
+[33mcommit f17d5204d439b199c72170449813b01195a16d7b[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Sun Nov 1 20:01:51 2015 -0500
+
+    Add function to remove navigation headers and footers
+
+[33mcommit 73f89c17da1ecc013fd7f84bbd0189a10876f6f1[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sun Nov 1 15:39:36 2015 -0500
+
+    Mark proofread as done
+
+[33mcommit b36e7a68ae491cbc43a68157015d852f5217ff2f[m
+Author: aiswaryajami <aj493@cornell.edu>
+Date:   Sun Nov 1 13:18:20 2015 -0500
+
+    Update README.md
+
+[33mcommit f87eeee7ac04c1cfb2bd28d8f74c645d2eaefe35[m
+Author: aiswaryajami <aj493@cornell.edu>
+Date:   Sun Nov 1 13:17:49 2015 -0500
+
+    Update README.md
+
+[33mcommit cf2d87892c4e9bcd2ead4aceea09e27417db1db3[m
+Author: aiswaryajami <aj493@cornell.edu>
+Date:   Sun Nov 1 13:16:22 2015 -0500
+
+    Update README.md
+
+[33mcommit c6fa9c962669ea4e1e0d42bc8e528019912045f6[m
+Author: Aiswarya Jami <aiswaryajami@gmail.com>
+Date:   Sun Nov 1 05:39:11 2015 -0500
+
+    removed search and added scroll v1
+
+[33mcommit 214673e95fabf236847acdccf4cfaa2f9778790e[m
+Author: Akshay Tata <at758@cornell.edu>
+Date:   Sun Nov 1 04:33:28 2015 -0500
+
+    Changes in the state sample folder
+
+[33mcommit c2624fa248b9413917813c8000c1b86bec3b08b2[m
+Merge: a076ace ddd60c7
+Author: Akshay Tata <at758@cornell.edu>
+Date:   Sun Nov 1 04:01:44 2015 -0500
+
+    fixing merge conflicts
+
+[33mcommit a076acebe2b5ca480c72c62d556e315254f5fb01[m
+Author: Akshay Tata <at758@cornell.edu>
+Date:   Sun Nov 1 03:49:58 2015 -0500
+
+    Added seach box
+
+[33mcommit ddd60c7dfa8549815c6aef2d6dd18a1fcbd230e6[m
+Author: Aiswarya Jami <aiswaryajami@gmail.com>
+Date:   Sun Nov 1 03:08:09 2015 -0500
+
+    test code for state search
+
+[33mcommit 2ff4b561776b8cff40c1d7c2fe5ccb093fc187eb[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 15:38:18 2015 -0400
+
+    Add item to subteam 1
+
+[33mcommit 85f359a8120a8e66bd0164f9404d444da92fa085[m
+Author: DeviSnigdhaM <dm754@cornell.edu>
+Date:   Sat Oct 31 15:15:43 2015 -0400
+
+    SubTeam2: Proof Read done until 5-*.html
+    
+    Change-Id: I592b385448add8e600744cf6126a1392befd7159
+    Signed-off-by: DeviSnigdhaM <dm754@cornell.edu>
+
+[33mcommit 1e387e665a766c90b4290a2eddc00b33cf6e78a9[m
+Author: DeviSnigdhaM <dm754@cornell.edu>
+Date:   Sat Oct 31 14:57:08 2015 -0400
+
+    SubTeam2 : Proof reading until 3-*.html done.
+    
+    Change-Id: I2ce90327869177664ea81e88f76619972cdd28f2
+    Signed-off-by: DeviSnigdhaM <dm754@cornell.edu>
+
+[33mcommit 5cc57dfdf3980315c99d457f774ab1f62a14ee97[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 11:40:36 2015 -0400
+
+    Add Brenda
+
+[33mcommit b928ca22242a5ca201064b864713a139ba55ba15[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:33:28 2015 -0400
+
+    Fix styles
+
+[33mcommit b55953fc02573a7034042a608fb5c56c6a0fc1b0[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:31:12 2015 -0400
+
+    Fix styles and add amazon ebook purchase criteria
+
+[33mcommit e6c2dd1793ec9e34c7fcb969b64926e6fb56e1c3[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:28:29 2015 -0400
+
+    Fix styles
+
+[33mcommit 2bdd68eb3e30d2a3d7b405c063785296ffb59751[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:27:21 2015 -0400
+
+    Fix names and identations
+
+[33mcommit 7abd290652619b38d8df4c453ae6c1e4064e3b87[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:24:53 2015 -0400
+
+    Fix all styles in the text
+
+[33mcommit 0de80c8082b2fffbea423b171a1b858ccf78f6fd[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:22:28 2015 -0400
+
+    Fix styles
+
+[33mcommit 8988b62d30d73fe1f90fb42eaf67e98b5a0a202c[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:22:02 2015 -0400
+
+    Add styles
+
+[33mcommit ae1458a5db840afad36d93b2aab67d5352dd5632[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:21:37 2015 -0400
+
+    Add styles
+
+[33mcommit 1e3e89b63460382efb20a967dcafd627a4770de9[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:20:54 2015 -0400
+
+    Add styles
+
+[33mcommit 99469afac7c63a6da81033ce9143369d7c74f2fd[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:19:29 2015 -0400
+
+    Add styles
+
+[33mcommit bbfcee7a1bb1b3aa0998c67e60bb6b788c52afe3[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:19:01 2015 -0400
+
+    Add styles to the file
+
+[33mcommit 15cedeb2a9fe29672f0d673ca2170b714350c3a9[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:18:19 2015 -0400
+
+    Add styles to the file
+
+[33mcommit 5411cef777630847dfb5fef2b2fbba49095cfd45[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:16:58 2015 -0400
+
+    Add styles to the file
+
+[33mcommit fc8ae5a5d438a0975f01d8e18856cdaeb6f50178[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:16:10 2015 -0400
+
+    Add styles to the file
+
+[33mcommit 90de29f83eed9f8a4537a86718eec6a1a3e296b6[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:15:36 2015 -0400
+
+    Add styles to the file
+
+[33mcommit 81f922b3343017ff8d95b90b609786d22f15bb05[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:14:58 2015 -0400
+
+    Add styles to the file
+
+[33mcommit a74958727d6ed14cae84233bdc1fab523af81691[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:13:51 2015 -0400
+
+    Add styles to the file
+
+[33mcommit 9e4a32864b12d61804879a960c7e661218a95fb8[m
+Author: Joao Felipe Curcio da Silva <johncurcio@users.noreply.github.com>
+Date:   Sat Oct 31 10:12:10 2015 -0400
+
+    Add styles to the text
+
+[33mcommit 4a1d22ae3b94e23200feaa0cdca89e599abac6fc[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Sat Oct 31 06:44:42 2015 -0400
+
+    edited readme
+
+[33mcommit bd29eed4d837c6acbf5e04e6ce5a309567e376e0[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Sat Oct 31 06:41:38 2015 -0400
+
+    Added tasks to complete inw README.md
+
+[33mcommit d9021996c4c0a1c79662207a824e0c53ab0770b4[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Sat Oct 31 06:03:59 2015 -0400
+
+    added comments and debug prints to beautiful soup script.
+
+[33mcommit c3cee44ff2226fc3893919a0508a02b4f1958840[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Sat Oct 31 04:59:36 2015 -0400
+
+    the beautiful site output files are named .html instead of .htm. Difference between Saras and actual LII website
+
+[33mcommit 33ff83d8a02c6832298123fd9d1558199190a1b4[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Sat Oct 31 04:30:41 2015 -0400
+
+    fixed bug - beautiful soup generates *.htm
+
+[33mcommit 743e6ef48a79b53d1958f74613fe09850a9369cc[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Sat Oct 31 04:23:11 2015 -0400
+
+    removed _new.html name from generated files. was messing up href links in exsiting pages
+
+[33mcommit 1bcdd34835a398d15cf300a9b057e26b2343cd9b[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Sat Oct 31 03:54:15 2015 -0400
+
+    Renamed folders
+
+[33mcommit e58d147c82c67771a2e91d1a90315fcb3cf8c6ae[m
+Author: Akshay Tata <at758@cornell.edu>
+Date:   Sat Oct 31 03:38:19 2015 -0400
+
+    Rechanged folder structure again
+
+[33mcommit 38af150bd5f5f2c7ebe05ab1319364ce989a3848[m
+Author: Akshay Tata <at758@cornell.edu>
+Date:   Sat Oct 31 03:11:10 2015 -0400
+
+    Rearranged folder structure
+
+[33mcommit d25a6ee932019a36db16b3f7c3a1c87efa853291[m
+Author: DeviSnigdhaM <devi.snigdha@gmail.com>
+Date:   Sat Oct 31 01:29:35 2015 -0400
+
+    Parsed new HTML files from the website
+
+[33mcommit 81f2462f2178da128a00e1ef4e27b6062959eb87[m
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Fri Oct 30 18:13:04 2015 -0400
+
+    more changes
+
+[33mcommit 0a04f897ce84168076ccd6851ef654b8bf265d39[m
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Fri Oct 30 17:27:13 2015 -0400
+
+    corrected iframes removal code in the script
+
+[33mcommit 87d9bc49b5b0b3c3b95e21087c7bd97926c50ecf[m
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Fri Oct 30 17:22:54 2015 -0400
+
+    new files new location :P
+
+[33mcommit 760b082325ddda07485b101b7e7ec69444ae41be[m
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Fri Oct 30 17:20:51 2015 -0400
+
+    changed location of new files
+
+[33mcommit bcd65b46b10a3d20f7bead56b474b18c92645f15[m
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Fri Oct 30 13:00:00 2015 -0400
+
+    Inserted ng-view in all the files, they are now in*_new.htm
+
+[33mcommit 4cd5f3eee922042b8533ca4571c329fbb8097b50[m
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Fri Oct 30 12:55:45 2015 -0400
+
+    some more changes in beautifulsoul
+
+[33mcommit 457f149234ed07ba4331e95cc7070d3fd976de45[m
+Author: sanianagpal <sn579@cornell.edu>
+Date:   Fri Oct 30 11:05:01 2015 -0400
+
+    added ng-view replacement
+
+[33mcommit 5e9fa9d6ed4cefa4371402912a19bd2acb28659d[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Fri Oct 30 00:37:53 2015 -0400
+
+    Add example_icon to e.g. tags
+
+[33mcommit ad1a024292c4c40d9a837afc43ed6dbbe02f00be[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Oct 29 23:34:17 2015 -0400
+
+    Add replacement procedure for examples
+
+[33mcommit 57d8ffcf4056a38570a70c7243b94e088af1cfd7[m
+Merge: e408140 6bfcb1a
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Oct 29 22:58:56 2015 -0400
+
+    Merge branch 'master' of https://github.com/ninefu/CS_5150
+
+[33mcommit e40814094e52bc2f91875d09491ae5ffee0ba12f[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Oct 29 22:56:43 2015 -0400
+
+    Add procedure to get example_icon content
+
+[33mcommit 6bfcb1aee1d241e5ad4df3a39c8a8d571c7bcce8[m
+Author: monova <monovafu@gmail.com>
+Date:   Thu Oct 29 22:25:45 2015 -0400
+
+    added 2.9
+
+[33mcommit fb4f5dbbe1986a71434ede635bd6acaa4d16b5e7[m
+Author: monova <monovafu@gmail.com>
+Date:   Thu Oct 29 22:04:16 2015 -0400
+
+    one example
+
+[33mcommit a9551942f448958d3c1d71b04a00be3e0ed67632[m
+Author: madhavanharish <madhavanharish@gmail.com>
+Date:   Thu Oct 29 19:52:42 2015 -0400
+
+    Added the example toggling
+
+[33mcommit a3dc0648f27766427a41a09af84493dbcc613773[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Thu Oct 29 18:53:21 2015 -0400
+
+    Add extract contents from page function
+
+[33mcommit 71493a274233b612fd2a4fbee3ace3054a4d37f4[m
+Author: monova <monovafu@gmail.com>
+Date:   Thu Oct 29 17:57:44 2015 -0400
+
+    v7
+
+[33mcommit 43abce8813d742c53fab6bc407adb515c8bcf1ae[m
+Author: monova <monovafu@gmail.com>
+Date:   Thu Oct 29 00:27:57 2015 -0400
+
+    some update on the website
+
+[33mcommit 80ff377469d9fa13a2b8377974ad668689cafc27[m
+Author: monova <monovafu@gmail.com>
+Date:   Thu Oct 22 13:54:51 2015 -0400
+
+    report 2
+
+[33mcommit fb36bc815c0898d8efe485d6e9c5392a3295673a[m
+Author: monova <monovafu@gmail.com>
+Date:   Thu Oct 22 13:52:52 2015 -0400
+
+    presentation 2
+
+[33mcommit a909f9efc2cd8bbbd5ef84f3066a21a5072e68b4[m
+Author: monova <monovafu@gmail.com>
+Date:   Sat Oct 17 22:31:34 2015 -0400
+
+    v5 homepage halfway
+
+[33mcommit 28acd7d792859060daef7a237c2421187f19e604[m
+Author: monova <monovafu@gmail.com>
+Date:   Sat Oct 17 21:05:27 2015 -0400
+
+    v4
+
+[33mcommit 5f781d54c7a81e6ae208144e4d6cde2284683964[m
+Author: monova <monovafu@gmail.com>
+Date:   Sat Oct 17 18:30:37 2015 -0400
+
+    v3
+
+[33mcommit 9913c5e0cb1033898165b0ec60a9ab399a179a2b[m
+Author: monova <monovafu@gmail.com>
+Date:   Sat Oct 17 18:22:53 2015 -0400
+
+    v2
+
+[33mcommit 2faa822e6bc2bc5897cff6e2a397c78fe23ce3a0[m
+Author: monova <monovafu@gmail.com>
+Date:   Sat Oct 17 18:05:08 2015 -0400
+
+    v1
+
+[33mcommit 7100cb37a4e0081a5d3672e89ffda31b2d65dffe[m
+Author: monova <monovafu@gmail.com>
+Date:   Sat Oct 17 17:18:07 2015 -0400
+
+    new template
+
+[33mcommit e501ad9233fcb1c77382c6b2259afb543aed3187[m
+Merge: 1ec8c43 ab2b515
+Author: monova <monovafu@gmail.com>
+Date:   Sat Oct 17 17:12:25 2015 -0400
+
+    Merge branch 'master' of github.com:ninefu/CS_5150
+
+[33mcommit 1ec8c4369fb5e85c097a6f0531bd5a9c536aa6c1[m
+Author: monova <monovafu@gmail.com>
+Date:   Sat Oct 17 17:12:12 2015 -0400
+
+    web template
+
+[33mcommit ab2b515f653af2ca7725e6fda26f3210aab1fd02[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Sat Oct 17 00:42:20 2015 -0400
+
+    Simple Converter Using Calibre
+
+[33mcommit 1c9f860f0e83afc609cb2fdb1a27573a368df270[m
+Merge: 081d3db 4b6379d
+Author: monova <monovafu@gmail.com>
+Date:   Fri Oct 16 11:55:56 2015 -0400
+
+    add AWS credentials
+    Merge branch 'master' of github.com:ninefu/CS_5150
+
+[33mcommit 081d3db2b98405cb4a60d11cb71f4f17152cdbd9[m
+Author: monova <monovafu@gmail.com>
+Date:   Fri Oct 16 11:55:24 2015 -0400
+
+    add credentials for AWS
+
+[33mcommit a1bcc26ca4f51579315038f5d176c5e3d3a3ca55[m
+Author: monova <monovafu@gmail.com>
+Date:   Fri Oct 16 11:54:53 2015 -0400
+
+    reorganized
+
+[33mcommit 4b6379d35edd1ad60a6b1b9883399bb8181ec07d[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Wed Oct 14 16:47:53 2015 -0400
+
+    Update files and tests for epub conversion
+
+[33mcommit 1742c443ef4bfafa893e9b2448fe7f020b60e4bb[m
+Author: monova <monovafu@gmail.com>
+Date:   Wed Oct 14 16:25:06 2015 -0400
+
+    add epub supported tags
+
+[33mcommit c5720d015c35d0125526a69aeffa3907d74d3b72[m
+Author: monova <monovafu@gmail.com>
+Date:   Wed Oct 14 15:28:16 2015 -0400
+
+    added bootstrap and angularJS files
+
+[33mcommit 64259cc5002354238ec7a6a59e449b4ddf0dfa7b[m
+Author: johncurcio <jfc293@cornell.edu>
+Date:   Mon Oct 12 15:39:52 2015 -0400
+
+    Add simple html to epub converter
+
+[33mcommit 50f7bd1dfafd46609e02bfdefa6d223a61b729f8[m
+Author: monova <monovafu@gmail.com>
+Date:   Sun Oct 11 14:37:26 2015 -0400
+
+    add website files
+
+[33mcommit 074964c57da7623b8c09f3296ca9218f33860952[m
+Author: monova <monovafu@gmail.com>
+Date:   Sat Oct 10 22:07:27 2015 -0400
+
+    updated requirements
+
+[33mcommit a99af5d94642e93e6edb04b6a7caa5cb01fd3b32[m
+Author: monova <monovafu@gmail.com>
+Date:   Sat Oct 10 20:40:30 2015 -0400
+
+    added some documents
+
+[33mcommit ade18d61dd63bd8aa3fda7d9d6b81d6d6d63accf[m
+Author: monova <monovafu@gmail.com>
+Date:   Wed Oct 7 21:28:52 2015 -0400
+
+    bold part is the difference from the course website
+
+[33mcommit f6fe4b7aadb352ddd0a2389d75469dac23b154e3[m
+Author: monova <monovafu@gmail.com>
+Date:   Wed Oct 7 21:16:01 2015 -0400
+
+    add the legal agreement
+
+[33mcommit 83303cf37a0889a401ba2fb6f1c0241a55145335[m
+Author: Yihui Fu <yf263@cornell.edu>
+Date:   Wed Oct 7 20:43:30 2015 -0400
+
+    Initial commit
