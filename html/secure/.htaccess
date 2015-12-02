@@ -1,0 +1,5 @@
+AuthUserFile "/Library/WebServer/Documents/.htpasswd"
+AuthName "This is a secure login"
+AuthType Basic
+require valid-user
+        
