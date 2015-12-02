@@ -22,7 +22,6 @@ def remove_all_navbars(soup):
 
 def linearize_cols_1(soup, table):
     if table.get('id') == "linearize-cols-1":
-            c = 0
             ul = Tag(soup,"ul")
             ul["class"] = "linearized"
             for td in table.findAll("td"):
@@ -30,14 +29,11 @@ def linearize_cols_1(soup, table):
                     p.name = "span"
                 if ''.join(td.findAll(text=True)) != '&nbsp;' and ''.join(td.findAll(text=True)) != '':
                     td.name = "li"
-                    ul.insert(c, td)
-                c += 1
+                    ul.append(td)
             table.replaceWith(ul)
 
 def linearize_cols_2_bold(soup, table):
     if table.get('id') == "linearize-cols-2-bold":
-        c = 0
-        d = 2
         ul = Tag(soup,"ul")
         ul["class"] = "linearized"
         for tr in table.findAll("tr"):
@@ -48,13 +44,11 @@ def linearize_cols_2_bold(soup, table):
                     td.name = "li"
                     tag = td
                 else:
-                    tag.insert(d, td)
-                    d += 1
+                    tag.append(td)
                     td.name = "ul"
                 for p in td.findAll("p", { "class" : "Example"}):
                     p.name = "li"
-            ul.insert(c, tr)
-            c += 1
+            ul.append(tr)
         table.replaceWith(ul)
 
 def get_first_three(soup, table):
@@ -303,7 +297,7 @@ def linearize_tables(soup):
         linearize_rows_1_cols(soup, table)
         
 count = 0
-dir_path = '*7-500.htm'
+dir_path = '*00.html'
 files = glob.glob(dir_path)
 for filename in files:
     print "Working on file " + filename
