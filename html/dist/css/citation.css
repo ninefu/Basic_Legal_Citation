@@ -4,7 +4,7 @@
 
 .Subsection {text-align:left; margin-left: 12%; font-size:12pt; font-family:Arial, Helvetica, sans-serif; color:black; font-weight:bold;; background-color: #CCCCCC; margin-right: 12%}
 
-.Example {font-size:10pt; font-family:Verdana, Arial, Helvetica, sans-serif; color:#0000CC;; font-style: normal}
+.Example {font-size:10pt; font-family:Verdana, Arial, Helvetica, sans-serif; color:#0000CC; font-style: normal; text-align:initial;}
 
 .casename {  font-style: italic}
 
