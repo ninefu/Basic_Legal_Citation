@@ -30,6 +30,7 @@ def epub_conversion(args):
     output = "basic-legal-citation.epub"
     args.append(output)
 
+    args.append("--breadth-first")
     args.append("--insert-blank-line-size")
     args.append("5")    
 
