@@ -62,6 +62,7 @@ Tag used to encapsule anything that's related to a citation and citation example
         - 'books': used to cite books, it might be necessary to add attributes for the different kinds of books, such as 'annotations';
         - 'journal': used to cite journal article citations;
         - 'document': used to cite case document citations.
+        - 'standard':
 
 ```
 <quote>
