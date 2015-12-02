@@ -10,6 +10,42 @@ import os.path
 import urllib
 import cgi
 from bs4 import BeautifulSoup, Tag, Comment
+from BeautifulSoup import NavigableString
+
+# remove those navigation headers and footers from every page.
+def remove_all_navbars(soup):
+    for table in soup.findAll("table"):
+        for a in table.findAll('a'):
+            if a.text == "Home":
+                table.replaceWith("")
+    return soup
+
+def strip_body_tag(soup):
+
+    for tag in soup.findAll(True):
+        if tag.name == 'body':
+            s = ""
+
+            for c in tag.contents:
+                if not isinstance(c, NavigableString):
+                    print c
+                    c = strip_body_tag(c)
+                s += c
+
+            tag.replaceWith(s)
+
+    return soup
+
+# Get only the body of each HTML file
+def getHTMLBody(soup):
+    #contents = soup.body.contents    
+    new_div = soup.new_tag('div')
+    new_div['name'] = "body"
+
+    content = soup.body
+    content.name = 'div'
+
+    return content
 
 # remove the comments from a BeautifulSoup file
 def remove_comments(soup):
@@ -43,22 +79,38 @@ def replace_all_iframes(soup):
 	#replace the title of the iframe
     
     for span in soup.findAll("span", {'class': 'Examplewindow'}):
-        #print("Before"+str(p))
-        #span = p.find("span", {'class': 'Examplewindow'})
-        text = re.sub(r'\([^)]*\)', '', span.text) #check
+        #text = re.sub(r'\(<a .*>restore</a>\)',' ', span.text)
+        text = span.text[:-9]
         span.string = text
-        
+        #span['class'].append("ExampleBox")
+    
+        new_div = soup.new_tag('div')
+        new_div['style'] = "text-align: center;"
+        replace_spans(span,new_div)
+
+
     #replace iframe
     iframes = soup.findAll("iframe")
     for iframe in iframes:
         new_tag = soup.new_tag('div')
-        new_tag['class'] = "ngBox"
+        new_tag['class'] = "ExampleBox"
         new_tag['name'] = iframe['name']
-        new_tag['style'] = "border:1px solid black;display:inline-block;width:24em;text-align:left"
-        ex_path = "selectedTemplate.path = '" + iframe['src'] + "'"
-        new_tag['data-ng-include'] = ex_path
-        copyExampleFile(iframe['src'])
-        soup.iframe.replace_with(new_tag)
+        #new_tag['style'] = "border:1px solid black;display:inline-block;width:30em;text-align:left"
+        #ex_path = "selectedTemplate.path = '" + iframe['src'] + "'"
+        #new_tag['data-ng-include'] = ex_path
+        #copyExampleFile(iframe['src'])
+        ex_file = iframe['src']
+        example = get_beautiful_file(ex_file)
+        ul = example.body.find("ul")
+        if ul is not None:
+            #if the example file isn't an ordered list, chances are that it's a very big HTML file
+            #in that case, don't replace with dynamic ng-show command
+            new_tag.append(ul)
+        
+        new_div = soup.new_tag('div')
+        new_div['style'] = "text-align: center;"
+        new_div.append(new_tag)
+        soup.iframe.replace_with(new_div)
 
     return soup
 
@@ -70,30 +122,6 @@ def convertToButton(tag):
 
     return new_tag
 
-def replace_spans1(a, span, example, count):
-    print("example: "+ str(example))
-    print("a: "+ str(a))
-    print("span: "+ str(span))
-    #print("a:"+ str(a) + "span:" + str(span) + "example:" + str(example) +"count:"+ str(count))
-    
-    name = "example" + str(count)
-    ul.attrs.append(('ng-show',name))
-    ul.attrs.append(('class',"text-level2"))
-    li_list = ul.findAll("li", {"class" : "text-level2"})
-    for l in li_list:
-        l.attrs = [(key,value) for key,value in l.attrs
-                   if key != "class" or value != "text-level2"]
-        
-    #<a href="..." target="..."> remove the target part
-    a.attrs = [(key,value) for key,value in a.attrs
-               if key !="target"]
-    #remove the link from <a href="....">, point it to a null location
-    a["href"] = "#"
-    a.attrs.append(('ng-model',name))
-    a.attrs.append(('onclick',"return false"))
-    a.attrs.append(('ng-click',name +" = !" +name ) )
-    return;
-
 def replacePopUp(span):
     a = span.find("a")
     example = a["href"].decode("utf-8")
@@ -102,10 +130,11 @@ def replacePopUp(span):
     button = convertToButton(a)
     span.a.replace_with(button)
            
-    if(filename == "6-200.html"):
-        print(filename + " href: " + example)
+    #if(filename == "6-200.html"):
+        #print(filename + " href: " + example)
     if os.path.isfile(example):
-        print("trying to open ahref target for file: " + filename + " href : " + example)
+        #print("trying to open ahref target for file: " + filename + " href : " + example)
+        ex_file = example
         example = get_beautiful_file(example)
         ul = example.body.find("ul")
         if ul is not None:
@@ -115,6 +144,8 @@ def replacePopUp(span):
             modal['visible'] = "showModal"
             modal.append(ul)
             span.append(modal)
+        else:
+            copyExampleFile(ex_file)
 
     return span
 
@@ -123,17 +154,28 @@ def replace_spans(old_span, new_span):
     new_span.append(contents)
 
 
-def addModalPopUp(soupHTML):
-	count = 0
-	for ex_span in soupHTML.findAll("span", {"class": "example_icon"}):
+def addModalPopUp(soup):
+    count = 0
+    for ex_span in soup.findAll("span", {"class": "example_icon"}):
             new_span = replacePopUp(ex_span)
             div = soup.new_tag('div')
             div['ng-controller'] = "dynamicExamplesCtrl"
             div['class'] = "container"
             replace_spans(new_span,div)
+ # find all a which are examples and replace them with the standart <span><a></a></span> pattern
+    for a in soup.findAll("a", {"class": "example_icon"}):
+            new_span = soup.new_tag('span')
+            new_span['class'] = "example_icon"
+            a["class"] = ""
+            replace_spans(a,new_span)
 
-        count += 1
-	return soupHTML
+            new_span = replacePopUp(new_span)
+            div = soup.new_tag('div')
+            div['ng-controller'] = "dynamicExamplesCtrl"
+            div['class'] = "container"
+            replace_spans(new_span,div)
+
+    return soup
 
 #Main
 
@@ -141,23 +183,30 @@ print "Start"
 dir_path = '*00.htm'
 files = glob.glob(dir_path)
 print(files)
+count = 0
+modified = 0
 for filename in files:
     print("Working on file " + filename)
+    count += 1 
     html = filename
     
     if os.path.isfile(html): #verify if the file exists
         soup = get_beautiful_file(html)
+        #Remove header links - home, etc
+
+        soup = remove_all_navbars(soup)
+        
         if isiframePresent(soup) == 1:
             #Initial example box
+            modified += 1
             soup = replace_all_iframes(soup)
 
             #Add modal popup
             popup = addModalPopUp(soup)
 
-        #remove_comments(soup)
-    new_filename = filename[:-3] #ignore .htm
-    #filename = re.split('.',new_filename)[0]
-    #print(filename)
+        soup = getHTMLBody(soup)
+
+    new_filename = filename[:-3] #remove .htm
 
     folder = "../ParsedHTML"
     if not os.path.exists(folder):
@@ -166,3 +215,5 @@ for filename in files:
     f = open(new_filename, "w")
     f.write(str(soup.prettify("utf-8")))
     f.close()
+print("Total files: " + str(count))
+print("Files modified: " + str(modified))
