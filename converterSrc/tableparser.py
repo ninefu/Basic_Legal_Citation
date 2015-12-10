@@ -380,17 +380,25 @@ def linearize_tables(soup):
         linearize_rows_1_cols(soup, table)
         linearize_bb(soup, table)
         linearize_alwd(soup, table)
+
+#if the tag has a custom attribute ignore- them do not convert that
+def ignore_on_conversion(soup):
+    ignore_list = soup.findAll(lambda tag:[a for a in tag.attrs if a[0].startswith('ignore-')])
+    if ignore_list and len(ignore_list) > 0:
+        for tag in ignore_list:
+            tag.replaceWith("")
         
 count = 0
-dir_path = '*7-400.htm'
+dir_path = '*00.html'
 files = glob.glob(dir_path)
 for filename in files:
     print "Working on file " + filename
     html = filename
     if os.path.isfile(html): #verify if the file exists
-        soup = get_beautiful_file(html)   # create a soup
+        soup = get_beautiful_file(html)
         remove_all_navbars(soup)
         linearize_tables(soup)
+        ignore_on_conversion(soup)
 
         new_filename = filename[:-4]
         new_filename = new_filename +"_new.html"
