@@ -57,3 +57,7 @@ body{
 .navbar-brand {
     font-size: 1.4em;
 }
+
+.example-ul {
+    margin-left: 8%; !important
+}
