@@ -12,7 +12,7 @@ body{
 
 .Subsection {text-align:left; margin-left: 12%; font-size:1.2em; font-family:Arial, Helvetica, sans-serif; color:black; font-weight:bold;; background-color: #CCCCCC; margin-right: 12%}
 
-.Example {font-size:1.2em; font-family:Verdana, Arial, Helvetica, sans-serif; color:#0000CC;; font-style: normal;text-align: initial;}
+.Example {font-size:1.2em; padding-right: 1em; word-wrap: break-word;font-family:Verdana, Arial, Helvetica, sans-serif; color:#0000CC;; font-style: normal;text-align: initial;}
 
 .casename {  font-style: italic}
 
