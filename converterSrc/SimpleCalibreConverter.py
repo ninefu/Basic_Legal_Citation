@@ -3,7 +3,7 @@ import os.path
 
 '''
     HOW TO USE:
-        The computer must have Calibre installed for the program to work correctly.
+        The computer must have Calibre, BeautifulSoup, Python  installed for the program to work correctly.
         The user needs:
             a TOC (table of contents) file, which is just an html with links to other pages.
             a metadata file with info about the author, publisher, year, etc
@@ -26,10 +26,13 @@ import os.path
         --no-svg-cover   -- to work on iphones correctly
         --preserve-cover-aspect-ratio
 '''
+
+
 def epub_conversion(args):
     output = "basic-legal-citation.epub"
     args.append(output)
 
+    args.append("--breadth-first")
     args.append("--insert-blank-line-size")
     args.append("5")    
 

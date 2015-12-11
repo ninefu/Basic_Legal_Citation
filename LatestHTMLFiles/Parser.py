@@ -158,24 +158,17 @@ def replace_spans(old_span, new_span):
 def addModalPopUp(soup):
     count = 0
     for ex_span in soup.findAll("span", {"class": "example_icon"}):
+            ex_span['ng-controller'] = "dynamicExamplesCtrl"
             new_span = replacePopUp(ex_span)
-            div = soup.new_tag('div')
-            div['ng-controller'] = "dynamicExamplesCtrl"
-            div['class'] = "container"
-            replace_spans(new_span,div)
+            #replace_spans(ex_span,new_span)
  # find all a which are examples and replace them with the standart <span><a></a></span> pattern
     for a in soup.findAll("a", {"class": "example_icon"}):
             new_span = soup.new_tag('span')
             new_span['class'] = "example_icon"
-            a["class"] = ""
+            new_span['ng-controller'] = "dynamicExamplesCtrl"
             replace_spans(a,new_span)
-
             new_span = replacePopUp(new_span)
-            div = soup.new_tag('div')
-            div['ng-controller'] = "dynamicExamplesCtrl"
-            div['class'] = "container"
-            replace_spans(new_span,div)
-
+            #replace_spans(new_span,an_new_span)
     return soup
 
 #Main

@@ -23,7 +23,8 @@ p {
 .text-level1{
     font-family: "Times New Roman", Times, serif; 
     font-size: 12pt;
-    margin: 12pt; 
+    margin: 0pt; 
+    padding:0 0 20px 0;
 }
 
 .bold {
@@ -106,4 +107,14 @@ hr.smallrow {
 hr.tinyrow {
     width: 35%;
 }
-
+/*adding new CSS*/
+h2.Section {
+    font-size: 1.0em;
+}
+p.text-level1-center{
+    font-family: "Times New Roman", Times, serif;
+    text-align: center;
+}
+li.line-space{
+    padding: 0.2em;
+}
