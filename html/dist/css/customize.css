@@ -67,6 +67,15 @@ div {
     text-align: justify;
 }
 
+p.text-level1.ng-scope + div.container {
+    margin-left: 12%;
+}
+
+p.text-level2.ng-scope + div.container {
+    margin-left: 12%;
+}
+
+
 .text-level1.center {
     text-align: center!important;
 }
