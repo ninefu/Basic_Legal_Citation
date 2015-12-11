@@ -52,7 +52,7 @@
 
 </head>
 
-<body ng-controller="mainCtrl">
+<body ng-controller="mainCtrl" class="Normal">
 
     <div id="wrapper">
 
@@ -353,6 +353,7 @@ $('.nav .nav-second-level li a').click(function() {
     $(this).addClass('active');
     $(this).addClass('active').css('font-weight', 'bold');
     $(this).addClass('active').css('color', '#2C279C');
+    $('button.navbar-toggle').trigger("click");
 
 });
 </script>
