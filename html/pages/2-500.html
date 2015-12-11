@@ -5,6 +5,13 @@
   </title>
   <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
   </meta>
+
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+
  </head>
  <body bgcolor="#FFFFFF" class="Normal">
   <h3 class="Section">
@@ -131,6 +138,54 @@
      .
     </p>
     <p class="Text-Level1">
+
+
+
+    <div class="container" ng-controller="dynamicExamplesCtrl">
+      <span class="example_icon">
+       <button class="btn btn-default ignore-on-convert" ng-click="toggleModal('Success')">
+        «e.g.»
+       </button>
+       <test>
+       <modal visible="showModal" >
+        <ul>
+         <li class="Example">
+          United States - Tax Treatment for "Foreign Sales Corporations," 
+    World Trade Organization No. 108 (Aug. 30, 2002)
+          <span class="highlight">
+           (Falconer, 
+    Chambovey &amp; Seung Wha Chang, Arbs.)
+          </span>
+          .
+         </li>
+        </ul>
+       </modal>
+       </test>
+       <script>
+    $(document).ready(function() {
+    var $dragging = null;
+
+    $(document.body).on("mousemove", function(e) {
+        if ($dragging) {
+            $dragging.offset({
+                top: e.pageY,
+                left: e.pageX
+            });
+        }
+    });
+
+    $(document.body).on("mousedown", ".modal-dialog", function (e) {
+        $dragging = $(e.target);
+    });
+
+    $(document.body).on("mouseup", function (e) {
+        $dragging = null;
+    });
+});
+</script>
+      </span>
+     </div>
+
     </p>
    </br>
   </p>
