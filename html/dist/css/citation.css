@@ -6,7 +6,8 @@ body{
 	font-size: 1.4em;
 }
 
-#linearize-cols-3 td{
+#linearize-cols-3 td,
+#linearize-alwd td{
 	padding: 5px;
 }
 
