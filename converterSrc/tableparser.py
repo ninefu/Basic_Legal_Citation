@@ -265,10 +265,15 @@ def get_first_3(soup, table):
         li = Tag(soup, "li")
         for td in tr.findAll("td"):
             if loop != 3:
-                if ''.join(td.findAll(text=True)) != '&nbsp;':
-                    td.name = "span"
-                    if loop != 2: td.append(' - ')
-                    li.append(td)
+                try:
+                    text = ''.join(td.findAll(text=True))
+                    text = text.strip()
+                    if text != '' and text != '&nbsp;':
+                        td.name = "span"
+                        if loop != 2: td.append(' - ')
+                        li.append(td)
+                except:
+                    pass
             else:
                 break    
             loop += 1
@@ -287,10 +292,15 @@ def get_last_3(soup, table):
         li = Tag(soup, "li")
         for el in td[3:]:
             if loop != 3:
-                if ''.join(el.findAll(text=True)) != '&nbsp;':
-                    el.name = "span"
-                    if loop != 2: el.append(' - ')
-                    li.append(el)
+                try:
+                    text = ''.join(el.findAll(text=True))
+                    text = text.strip()
+                    if text != '' and text != '&nbsp;':
+                        el.name = "span"
+                        if loop != 2: el.append(' - ')
+                        li.append(el)
+                except:
+                    pass
             else:
                 break    
             loop += 1
