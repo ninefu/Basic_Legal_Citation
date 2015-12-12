@@ -63,41 +63,42 @@ def pdf_conversion(args):
     
     args.append("--breadth-first")
     args.append("--margin-bottom")
-    args.append("50")
+    args.append("100")
     args.append("--margin-top") 
     args.append("50")
     args.append("--margin-left")
-    args.append("50")
+    args.append("80")
     args.append("--margin-right")
-    args.append("50")
+    args.append("80")
     args.append("--insert-blank-line-size")
     args.append("5")    
 
-    arg = raw_input("Type the input metadata file (if any): ")
+    arg = ""#raw_input("Type the input metadata file (if any): ")
     if os.path.isfile(arg):
         args.append("-m")
         args.append(arg)
         args.append("--insert-metadata")
 
-    arg = raw_input("Type the cover file (if any): ")
+    arg = "cover.jpeg"#raw_input("Type the cover file (if any): ")
     if os.path.isfile(arg):
         args.append("--cover")
         args.append(arg)
         args.append("--preserve-cover-aspect-ratio")
 
-    arg = raw_input("Type a extra css file (if any): ")
+    arg = "pdf.css"#raw_input("Type a extra css file (if any): ")
     if os.path.isfile(arg):
         args.append("--extra-css")
         args.append(arg)
+    args.append("--pdf-page-numbers")
     return args
 
 args = []
 command = "ebook-convert"
 args.append(command)
 
-arg = raw_input("Type the input HTML (Table of Contents) file: ")
+arg = "pdf-toc.html"#raw_input("Type the input HTML (Table of Contents) file: ")
 if os.path.isfile(arg):
     args.append(arg)
-    args = epub_conversion(args)
+    args = pdf_conversion(args)
     call(args)
     

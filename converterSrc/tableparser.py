@@ -27,9 +27,14 @@ def linearize_cols_1(soup, table):
             for td in table.findAll("td"):
                 for p in td.findAll("p"):
                     p.name = "span"
-                if ''.join(td.findAll(text=True)) != '&nbsp;' and ''.join(td.findAll(text=True)) != '':
-                    td.name = "li"
-                    ul.append(td)
+                try:
+                    text = ''.join(td.findAll(text=True))
+                    text = text.strip()
+                    if text != '' and text != '&nbsp;':
+                        td.name = "li"
+                        ul.append(td)
+                except:
+                    pass
             table.replaceWith(ul)
 
 def linearize_cols_2_bold(soup, table):
@@ -381,7 +386,6 @@ def linearize_tables(soup):
         linearize_bb(soup, table)
         linearize_alwd(soup, table)
 
-#if the tag has a custom attribute ignore- them do not convert that
 def ignore_on_conversion(soup):
     ignore_list = soup.findAll(lambda tag:[a for a in tag.attrs if a[0].startswith('ignore-')])
     if ignore_list and len(ignore_list) > 0:
@@ -401,7 +405,7 @@ for filename in files:
         ignore_on_conversion(soup)
 
         new_filename = filename[:-4]
-        new_filename = new_filename +"_new.html"
+        new_filename = new_filename +"html"
         f = open(new_filename, "w")
         f.write(soup.prettify())
         f.close()

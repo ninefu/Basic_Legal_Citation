@@ -4,29 +4,6 @@ p {
 	text-indent: 0em;
 }
 
-.footer{
-   position: absolute;
-   bottom: 0;
-   width: 100%;
-   height: 60px;   /* Height of the footer */
-}
-
-.principle {  
-    font-weight: bold; 
-    color: #CC9900;
-}
-
-.highlight {  
-    background-color: #ffa500;
-}
-
-.text-level1{
-    font-family: "Times New Roman", Times, serif; 
-    font-size: 12pt;
-    margin: 0pt; 
-    padding:0 0 20px 0;
-}
-
 .bold {
     font-weight: bold;
 }
@@ -38,11 +15,6 @@ p {
 li.spaced{
     list-style: none;
     margin: 12pt; 
-}
-
-.text-level2{
-    font-family: "Times New Roman", Times, serif; 
-    font-size: 12pt;
 }
 
 .left{
@@ -66,7 +38,7 @@ li.spaced{
     text-align: justify;
 }
 
-body.center {
+.center {
     display: block;
     line-height: 1.2;
     text-align: center;
@@ -107,14 +79,86 @@ hr.smallrow {
 hr.tinyrow {
     width: 35%;
 }
-/*adding new CSS*/
-h2.Section {
-    font-size: 1.0em;
+
+ul.ebook-nobullet li{
+    list-style: none;
+    padding-bottom: 12pt;
 }
-p.text-level1-center{
-    font-family: "Times New Roman", Times, serif;
-    text-align: center;
+
+p.ebook-quoted{
+    padding-left: 10px;
 }
-li.line-space{
-    padding: 0.2em;
+
+.ebook-fixmargin{
+    padding: 10px;
+}
+
+/*citation.css*/
+.Section {
+    font-size: 1.2em; 
+    font-family: Arial; 
+    color: black; 
+    font-weight: bold;
+    text-align: left; 
+}
+
+.principle {  
+    font-weight: bold; 
+    color: #CC9900;
+}
+
+.highlight {  
+    background-color: #ffa500;
+}
+
+.illustration {  
+    font-size: 2em; 
+    background-color: #ffa500;
+}
+
+.Subsection {
+    text-align: left; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color:black; font-weight:bold;
+    background-color: #CCCCCC; 
+}
+
+.Subsubsection { 
+    text-align:left; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: black; 
+    font-weight: bold; 
+    font-style: italic;
+}
+
+.Example {
+    padding-right: 1em; 
+    word-wrap: break-word;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    color:#0000CC;
+    text-align: initial;
+}
+
+.heading {  
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    font-weight: normal;
+}
+
+.text-level2_large { 
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 2em;
+    margin: 10px;
+}
+
+
+.text-level1{
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 1.2em;
+    margin: 0pt; 
+    padding:0 0 20px 0;
+}
+
+.text-level2{
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 1.2em;
 }
