@@ -8,6 +8,10 @@ p {
     font-weight: bold;
 }
 
+.arial{
+    font-family: Arial-BoldItalicMT, Arial, sans-serif;
+}
+
 .big{
     font-size: 2em;
 }
@@ -119,7 +123,8 @@ p.ebook-quoted{
 .Subsection {
     text-align: left; 
     font-family: Arial, Helvetica, sans-serif; 
-    color:black; font-weight:bold;
+    color:black; 
+    font-weight:bold;
     background-color: #CCCCCC; 
 }
 
@@ -139,9 +144,24 @@ p.ebook-quoted{
     text-align: initial;
 }
 
+.in-state {  
+    background-color: #CCCCCC;
+}
+
 .heading {  
-    font-family: Verdana, Arial, Helvetica, sans-serif; 
     font-weight: normal;
+}
+
+.example_icon {  
+    font-size: 1.2em; 
+    color: #0000FF; 
+    font-style: italic;
+}
+
+
+li.heading{
+    margin-bottom: 20px;
+    list-style: none;
 }
 
 .text-level2_large { 
