@@ -90,6 +90,9 @@ def pdf_conversion(args):
         args.append("--extra-css")
         args.append(arg)
     args.append("--pdf-page-numbers")
+    args.append("--disable-font-rescaling")
+    args.append("--linearize-tables")
+    args.append("--smarten-punctuation")
     return args
 
 args = []
