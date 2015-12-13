@@ -110,7 +110,7 @@ Explains briefly where each tags come from and which pages must (![ok](http://ic
 
 *   ![ok](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/yellow-ok-icon.png) *§ 1-500:* explains the change in North Dakota's citation, it needs to be tagged. 
     * **Comments:**  We may have to tag that "ND App" (North Dakota Court of Appeals) is now "ND"; and the examples in the page.
-    
+        
         > N.D. R. Ct. 11.6 (b). 
 
 *  ![x](http://icons.iconarchive.com/icons/double-j-design/origami-colored-pencil/16/red-cross-icon.png) *§ 1-600:* explains that citations are not centralized and there are a few books; may not need tagging.   
