@@ -325,9 +325,15 @@ def sub_table(soup, subtable):
     string = '<i>The Bluebook: </i>'
     for tr in subtable.findAll("tr"):
         for td in tr.findAll("td"):
-            if ''.join(td.findAll(text=True)) != '&nbsp;':
-                string += ''.join(td.findAll(text=True)) 
-                string += ', '
+            try:
+                text = ''.join(td.findAll(text=True))
+                text = text.strip()
+                if text != '' and text != '&nbsp;':
+                    string += ''.join(td.findAll(text=True)) 
+                    string.strip()
+                    string += ', '
+            except:
+                pass
         string = string.strip().rstrip(',')
     li.append(BeautifulSoup(string))
     ul.append(li)
@@ -346,16 +352,26 @@ def linearize_bb(soup, table):
             for td in tr.findAll("td"):
                 for p in td.findAll("p"):
                     p.name = "span"
-                if ''.join(td.findAll(text=True)) != '&nbsp;': 
-                    if first == 1:
-                        li.append(td)
-                        first = 0
-                    else:
-                        td.replaceWith("")
+                try:
+                    text = ''.join(td.findAll(text=True))
+                    text = text.strip()
+                    if text != '' and text != '&nbsp;':
+                        if first == 1:
+                            li.append(td)
+                            first = 0
+                        else:
+                            td.replaceWith("")
+                except:
+                    pass
                 for subtable in td.findAll("table"):
                     sub = sub_table(soup, subtable)
-                    if ''.join(td.findAll(text=True)) != '&nbsp;': 
-                        li.append(sub)
+                    try:
+                        text = ''.join(td.findAll(text=True))
+                        text = text.strip()
+                        if text != '' and text != '&nbsp;': 
+                            li.append(sub)
+                    except:
+                        pass
             first = 1
             if li.contents: ul.append(li)
             div.append(ul)
@@ -367,9 +383,14 @@ def sub_table2(soup, subtable):
     string = '<i>ALWD Guide to Legal Citation: </i>'
     for tr in subtable.findAll("tr"):
         for td in tr.findAll("td"):
-            if ''.join(td.findAll(text=True)) != '&nbsp;':
-                string += ''.join(td.findAll(text=True)) 
-                string += ', '
+            try:
+                text = ''.join(td.findAll(text=True))
+                text = text.strip()
+                if text != '' and text != '&nbsp;':
+                    string += ''.join(td.findAll(text=True)) 
+                    string += ', '
+            except:
+                pass
         string = string.strip().rstrip(',')
     li.append(BeautifulSoup(string))
     ul.append(li)
@@ -388,16 +409,26 @@ def linearize_alwd(soup, table):
             for td in tr.findAll("td"):
                 for p in td.findAll("p"):
                     p.name = "span"
-                if ''.join(td.findAll(text=True)) != '&nbsp;': 
-                    if first == 1:
-                        li.append(td)
-                        first = 0
-                    else:
-                        td.replaceWith("")
+                try:
+                    text = ''.join(td.findAll(text=True))
+                    text = text.strip()
+                    if text != '' and text != '&nbsp;':
+                        if first == 1:
+                            li.append(td)
+                            first = 0
+                        else:
+                            td.replaceWith("")
+                except:
+                    pass
                 for subtable in td.findAll("table"):
                     sub = sub_table2(soup, subtable)
-                    if ''.join(td.findAll(text=True)) != '&nbsp;': 
-                        li.append(sub)
+                    try:
+                        text = ''.join(td.findAll(text=True))
+                        text = text.strip()
+                        if text != '' and text != '&nbsp;':
+                            li.append(sub)
+                    except:
+                        pass
             first = 1
             if li.contents: ul.append(li)
             div.append(ul)

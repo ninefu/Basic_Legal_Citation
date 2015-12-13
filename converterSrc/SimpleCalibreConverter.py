@@ -90,13 +90,15 @@ def pdf_conversion(args):
         args.append("--extra-css")
         args.append(arg)
     args.append("--pdf-page-numbers")
+    args.append("--disable-font-rescaling")
+    args.append("--smarten-punctuation")
     return args
 
 args = []
 command = "ebook-convert"
 args.append(command)
 
-arg = "pdf-toc.html"#raw_input("Type the input HTML (Table of Contents) file: ")
+arg = "ebook-toc.html"#raw_input("Type the input HTML (Table of Contents) file: ")
 if os.path.isfile(arg):
     args.append(arg)
     args = pdf_conversion(args)

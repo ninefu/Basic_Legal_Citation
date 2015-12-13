@@ -29,6 +29,9 @@ mark {
     line-height: 31px;
     opacity: 1;
 }
+.modal-content{
+    cursor:move;
+}
 
 #wrapper {
     width: 100%;
