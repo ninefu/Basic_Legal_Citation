@@ -523,7 +523,23 @@
 			"file": "html/bower_components/bootstrap/dist/css/bootstrap.css",
 			"settings":
 			{
-				"buffer_size": 141623,
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "bower.json",
+			"settings":
+			{
+				"buffer_size": 908,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "pyScript.py",
+			"settings":
+			{
+				"buffer_size": 408,
 				"line_ending": "Unix"
 			}
 		},
@@ -531,7 +547,7 @@
 			"file": "html/dist/css/customize.css",
 			"settings":
 			{
-				"buffer_size": 6263,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -539,7 +555,7 @@
 			"file": "html/pages/2-900.html",
 			"settings":
 			{
-				"buffer_size": 3412,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -547,7 +563,7 @@
 			"file": "html/pages/index.html",
 			"settings":
 			{
-				"buffer_size": 16578,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		},
@@ -555,7 +571,7 @@
 			"file": "html/js/controllers.js",
 			"settings":
 			{
-				"buffer_size": 2327,
+				"buffer_size": 0,
 				"line_ending": "Unix"
 			}
 		}
@@ -771,7 +787,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 91.0,
+		"height": 0.0,
 		"where_history":
 		[
 			"/Users/yihuifu/GitHub/CS_5150/html/pages"
@@ -929,7 +945,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -937,15 +953,15 @@
 					"file": "html/bower_components/bootstrap/dist/css/bootstrap.css",
 					"settings":
 					{
-						"buffer_size": 141623,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								21340,
-								21343
+								0,
+								0
 							]
 						],
 						"settings":
@@ -962,18 +978,72 @@
 				},
 				{
 					"buffer": 1,
-					"file": "html/dist/css/customize.css",
+					"file": "bower.json",
 					"settings":
 					{
-						"buffer_size": 6263,
+						"buffer_size": 908,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								293,
-								293
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Theme - Afterglow/Prefs/Langs/Bower JSON.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "pyScript.py",
+					"settings":
+					{
+						"buffer_size": 408,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "html/dist/css/customize.css",
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
 							]
 						],
 						"settings":
@@ -989,19 +1059,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 4,
 					"file": "html/pages/2-900.html",
 					"settings":
 					{
-						"buffer_size": 3412,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2097,
-								2097
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1017,19 +1087,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 5,
 					"file": "html/pages/index.html",
 					"settings":
 					{
-						"buffer_size": 16578,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								15880,
-								15884
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1045,11 +1115,11 @@
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "html/js/controllers.js",
 					"settings":
 					{
-						"buffer_size": 2327,
+						"buffer_size": 0,
 						"regions":
 						{
 						},

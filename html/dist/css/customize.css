@@ -16,9 +16,27 @@ mark {
   background-color: #FF9900!important;
 }
 
+
+.navbar-brand {
+    padding: 10px;
+}
+
 .navbar-toggle {
     float: left;
     margin-left: 15px;
+}
+
+.page-header{
+    margin-top: 8px;
+}
+
+.dropdown-menu {
+    min-width: initial;
+}
+
+.col-lg-8 {
+    padding-left: 20px;
+    padding-right:20px;
 }
 
 .modal-header .close {
@@ -29,13 +47,16 @@ mark {
     line-height: 31px;
     opacity: 1;
 }
+.modal-content{
+    cursor:move;
+}
 
 #wrapper {
     width: 100%;
 }
 
 #page-wrapper {
-    padding-top: 50px;
+    padding-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
     /*padding: 30px 15px;*/
@@ -89,27 +110,6 @@ p.text-level2.ng-scope + div.container {
     text-align: justify;
 }
 
-@media(min-width:768px) {
-    #page-wrapper {
-        position: inherit;
-        margin: 0 0 0 250px;
-        padding: 50px 30px;
-        border-left: 1px solid #e7e7e7;
-    }
-}
-
-@media(min-width: 504px) and (max-width: 767px){
-    .Normal{
-        padding-top: 50px;
-    }
-}
-
-@media(min-width: 320px) and (max-width: 503px){
-    .Normal{
-        padding-top: 95px;
-    }
-}
-
 .navbar-top-links {
     margin-right: 0;
 }
@@ -136,7 +136,10 @@ p.text-level2.ng-scope + div.container {
 }
 
 .navbar-top-links .dropdown-menu li a {
-    padding: 3px 20px;
+    /*padding: 3px 10px;*/
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-right: 10px;
     min-height: 0;
 }
 
@@ -450,4 +453,58 @@ table.dataTable thead .sorting:after {
 
 .panel-yellow a:hover {
     color: #df8a13;
+}
+
+@media(min-width:768px) {
+    #page-wrapper {
+        position: inherit;
+        margin: 0 0 0 250px;
+        border-left: 1px solid #e7e7e7;
+    }
+
+    .Normal{
+        padding-top: 30px;
+    }
+}
+
+@media(min-width: 504px) and (max-width: 767px){
+    .Normal{
+        padding-top: 70px;
+    }
+}
+
+@media(min-width: 320px) and (max-width: 503px){
+    .Normal{
+        padding-top: 110px;
+    }
+
+    .page-header{
+        margin-top: 15px;
+    }
+
+    .ExampleBox {
+        width:initial;
+    }
+
+    .dropdown-menu>li>a {
+        white-space: normal;
+    }
+
+    .navbar-top-links .dropdown-menu li a {
+        padding-left:5px;
+        padding-right:5px;
+    }
+}
+
+@media(min-width: 421px){
+    .dropdown-menu {
+        left: auto;
+        right: 0;
+    }
+}
+
+@media(max-width: 420px){
+    .dropdown-menu {
+        left: 0;
+    }
 }

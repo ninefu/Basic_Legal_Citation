@@ -263,8 +263,11 @@ app.directive('modal', function () {
       scope:true,
       link: function postLink(scope, element, attrs) {
           scope.$watch(attrs.visible, function(value){
-          if(value == true)
+          if(value == true){
+            
             $(element).modal('show');
+            $('.modal-content').draggable();
+          }
           else
             $(element).modal('hide');
         });
