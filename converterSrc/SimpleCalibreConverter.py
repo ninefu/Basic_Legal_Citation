@@ -34,15 +34,15 @@ def epub_conversion(args):
 
     args.append("--breadth-first")
     args.append("--insert-blank-line-size")
-    args.append("5")    
+    args.append("5")   
 
-    arg = raw_input("Type the input metadata file (if any): ")
+    arg = ""#raw_input("Type the input metadata file (if any): ")
     if os.path.isfile(arg):
         args.append("-m")
         args.append(arg)
         args.append("--insert-metadata")
 
-    arg = raw_input("Type the cover file (if any): ")
+    arg = "cover.jpeg"#raw_input("Type the cover file (if any): ")
     if os.path.isfile(arg):
         args.append("--cover")
         args.append(arg)
@@ -51,10 +51,15 @@ def epub_conversion(args):
         args.append("--no-default-epub-cover")
 
 
-    arg = raw_input("Type a extra css file (if any): ")
+    arg = "pdf.css"#raw_input("Type a extra css file (if any): ")
     if os.path.isfile(arg):
         args.append("--extra-css")
         args.append(arg)
+    args.append("--disable-font-rescaling")
+    args.append("--smarten-punctuation")
+    args.append("--expand-css")
+    args.append("--line-height")
+    args.append("15")
     return args
 
 def pdf_conversion(args):
