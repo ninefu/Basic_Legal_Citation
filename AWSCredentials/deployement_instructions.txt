@@ -1,0 +1,53 @@
+To search:
+----------
+yum search find "package_name"
+
+Install Apache:
+---------------
+sudo yum update -y
+sudo yum install -y httpd24 php56 mysql55-server php56-mysqlnd
+sudo service httpd start
+sudo chkconfig httpd on
+
+Dependencies for Amazon Linux:
+------------------------------
+yum install libXcomposite.x86_64
+yum install mesa-libGLU.x86_64
+
+install calibre
+---------------
+sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
+
+install beautiful soup
+----------------------
+pip install beautifulsoup4
+
+Setting up Apache file access restictions for /var/www/html/secure/author.html:
+--------------------------------------------------------------------------------
+Add to /etc/httpd/conf/httpd.conf:
+----------------------------------
+# Supplemental configuration
+<Directory "/var/www/html/secure">
+  AllowOverride AuthConfig
+ Options FollowSymLinks
+  Order allow,deny
+  Allow from all
+</Directory>
+
+Create a user and password:
+----------------------------
+htpasswd -c /var/www/html/.htpasswd peter
+
+Copy to /var/www/html/secure/.htaccess:
+-----------------------------------------
+AuthUserFile "/var/www/html/.htpasswd"
+AuthName "This is a secure login"
+AuthType Basic
+require valid-user
+
+sudo service httpd restart
+
+html/secure/samplePHP.php:
+--------------------------
+exec("/usr/bin/python ../../converterSrc/SimpleCalibreConverter.py", $output, $ret_code);
+
