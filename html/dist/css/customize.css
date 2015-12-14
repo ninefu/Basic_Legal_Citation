@@ -16,13 +16,27 @@ mark {
   background-color: #FF9900!important;
 }
 
+
+.navbar-brand {
+    padding: 10px;
+}
+
 .navbar-toggle {
     float: left;
     margin-left: 15px;
 }
 
+.page-header{
+    margin-top: 8px;
+}
+
 .dropdown-menu {
     min-width: initial;
+}
+
+.col-lg-8 {
+    padding-left: 20px;
+    padding-right:20px;
 }
 
 .modal-header .close {
@@ -117,6 +131,10 @@ p.text-level2.ng-scope + div.container {
 @media(min-width: 320px) and (max-width: 503px){
     .Normal{
         padding-top: 110px;
+    }
+
+    .page-header{
+        margin-top: 15px;
     }
 }
 
