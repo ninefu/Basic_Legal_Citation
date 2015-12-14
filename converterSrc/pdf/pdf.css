@@ -204,6 +204,14 @@ p.ebook-quoted{
     padding: 10px 10px 10px 15px;
 }
 
+.ExampleBox ul ul, 
+.example_icon ul ul{
+    text-align: left;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
 .example_icon ul li,
 .ExampleBox ul li{
     margin: 10px;
