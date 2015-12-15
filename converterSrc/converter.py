@@ -574,7 +574,6 @@ def pdf_conversion(folder, args):
     if os.path.isfile(arg):
         args.append("--cover")
         args.append(arg)
-        args.append("--preserve-cover-aspect-ratio")
 
     arg = folder + "pdf.css"#raw_input("Type a extra css file (if any): ")
     if os.path.isfile(arg):
@@ -583,6 +582,11 @@ def pdf_conversion(folder, args):
     args.append("--pdf-page-numbers")
     args.append("--disable-font-rescaling")
     args.append("--smarten-punctuation")
+    return args
+
+def mobi_conversion(folder, args):
+    output = "basic-legal-citation.mobi"
+    args.append(output)
     return args
 
 def copyfolder(src, dst, symlinks=False, ignore=None):
@@ -628,6 +632,7 @@ def create_convertible_folder():
 
 if __name__ == "__main__":
     folder = create_convertible_folder()
+    
     args = []
     command = "ebook-convert"
     args.append(command)
@@ -644,6 +649,15 @@ if __name__ == "__main__":
     if os.path.isfile(arg):
         args.append(arg)
         args = epub_conversion(folder + '/', args)
+        call(args)
+
+    args = []
+    command = "ebook-convert"
+    args.append(command)
+    arg = "basic-legal-citation.epub"#raw_input("Type the input HTML (Table of Contents) file: ")
+    if os.path.isfile(arg):
+        args.append(arg)
+        args = mobi_conversion(folder + '/', args)
         call(args)
     
     deletefolder(folder)
