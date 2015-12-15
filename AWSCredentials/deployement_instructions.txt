@@ -1,5 +1,21 @@
-To search:
-----------
+DEPLOYEMENT INSTRUCTIONS FOR BASIC LEGAL CITATION
+--------------------------------------------------
+
+These instructions are specific to Amazon's AWS service.
+The project was deployed on EC2 instance, running Amazon Linux.
+No backend database or appserver is running. All the files are being served from Apache.
+The authentication for author view is handled through Apache file level access configurations.
+The convertion of the web site to other portable formats is done by a python script running in the "cgi-bin" folder.
+For basic AWS instructions, scroll to the end of this document.
+
+
+cp script to cgi bin
+chmod 777 for data
+add htaccess to secure and cgi-bin folder
+write the author view
+
+To search for an unmet dependency on AWS:
+-----------------------------------------
 yum search find "package_name"
 
 Install Apache:
@@ -47,7 +63,35 @@ require valid-user
 
 sudo service httpd restart
 
-html/secure/samplePHP.php:
---------------------------
-exec("/usr/bin/python ../../converterSrc/SimpleCalibreConverter.py", $output, $ret_code);
+Basic AWS instructions:
+------------------------
+Deploy an EC2 instance from aws.amazon.com and save the .pem file as
+
+1. download the .pem attachment and copy it to ~
+Do a chmod 700 ~/*.pem
+
+2. cd to the CS 5150 project folder, where "html" file is present
+
+3. tar -cjf html.tar html/
+
+4.  scp -i ~/LegalCitation-final-ppt-Private-Cloud.pem html.tar ec2-user@ec2-52-35-183-12.us-west-2.compute.amazonaws.com:~
+
+5.
+Login to the server:
+ssh -i ~/LegalCitation-final-ppt-Private-Cloud.pem ec2-user@ec2-52-35-183-12.us-west-2.compute.amazonaws.com
+
+6. sudo cp html.tar /var/www
+
+7. sudo tar -xjf /var/www/html.tar
+
+Refresh the browser!
+
+Our current project is hosted @
+http://ec2-52-35-183-12.us-west-2.compute.amazonaws.com/
+
+The author view is accessible from:
+http://ec2-52-35-183-12.us-west-2.compute.amazonaws.com/secure/author.html
+Username: peter
+Passwd:   peter
+
 
