@@ -4,14 +4,275 @@ p {
 	text-indent: 0em;
 }
 
+li.line-space { 
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 1.0em;
+    padding: 0;
+    margin: 0;
+}
+
 .bold {
     font-weight: bold;
 }
 
+.ebook-small{
+    font-size: 0.7em;
+}
+
+.ebook-subsection {
+    text-align: left; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color:black; 
+    font-weight:bold;
+}
+
+.title-arial{
+    font-family: Arial-BoldItalicMT, Arial, sans-serif;
+    font-size: 1.5em;
+}
+
+.ebook-arial{
+    font-family: Arial-BoldItalicMT, Arial, sans-serif;
+}
+
+.ebook-sup{
+    font-family: Arial-BoldItalicMT, Arial, sans-serif;
+    font-size: 0.4em;
+    margin-bottom: 10px;
+}
+
+.big{
+    font-size: 3em;
+}
+
+li.spaced{
+    list-style: none;
+    font-size: 1.2em;
+    margin: 12pt; 
+}
+
+.left{
+    margin-left: 30pt;
+}
+
+.italics, .ITALICSORUNDERLINE{
+    font-style: italic;
+}
+
+.medium{
+    font-size: 1.8em;
+}
+
+.underline{
+    color: #0B0080;
+    text-decoration: underline;
+}
+
+.justified{
+    text-align: justify;
+}
+
 .center {
+    display: block;
+    line-height: 1.2;
+    text-align: center;
+}
+
+span.center {
     display: block;
     font-weight: bold;
     line-height: 1.2;
     text-align: center;
 }
 
+h1.center {
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0.67em 0
+}
+
+hr.row {
+    border: 0;
+    width: 100%;
+    color: #999;
+    background-color: #999;
+    height: 2px;
+}
+
+hr.smallrow {
+    border: 0;
+    width: 50%;
+    color: #999;
+    background-color: #999;
+    height: 2px;
+}
+
+hr.tinyrow {
+    width: 35%;
+}
+
+ul.ebook-nobullet li{
+    list-style: none;
+    padding-bottom: 12px;
+}
+
+p.ebook-quoted{
+    padding-left: 2px;
+}
+
+.ebook-fixmargin{
+    padding: 10px;
+}
+
+/*citation.css*/
+.Section {
+    font-size: 1.2em; 
+    font-family: Arial; 
+    color: black; 
+    font-weight: bold;
+    text-align: left; 
+}
+
+.principle {  
+    font-weight: bold; 
+    color: #CC9900;
+}
+
+.highlight {  
+    background-color: #ffa500;
+}
+
+.illustration {  
+    font-size: 1.125em; 
+    background-color: #ffa500;
+}
+
+.Subsection {
+    text-align: left; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: black; 
+    font-weight: bold;
+}
+
+.casename {  
+    font-style: italic;
+}
+
+.Subsubsection { 
+    text-align:left; 
+    font-family: Arial, Helvetica, sans-serif; 
+    color: black; 
+    font-weight: bold; 
+    font-style: italic;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    font-size: 1.2em;
+}
+
+.Example {
+    font-size: 0.9em;
+    padding-right: 1em; 
+    word-wrap: break-word;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    color:#0000CC;
+    text-align: initial;
+}
+
+.in-state {  
+    background-color: #CCCCCC;
+}
+
+.heading {  
+    font-weight: normal;
+}
+
+.example_icon {  
+    font-size: 0.9em; 
+    color: #0000FF; 
+    font-style: italic;
+}
+
+.example_icon ul,
+.ExampleBox ul{
+    list-style: none;
+    border: 3px solid gray;
+    margin: 10px;
+    padding-left: 20px;
+}
+
+.ExampleBox ul ul, 
+.example_icon ul ul{
+    text-align: left;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.example_icon ul li,
+.ExampleBox ul li{
+    margin: 10px;
+}
+
+.Examplewindow {  
+    font-size: 1.2em; 
+    font-weight: bold; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li.heading{
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.text-level2_large { 
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+
+.text-level1,
+#linearize-cols-1-4{
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 1.2em;
+    margin: 0pt; 
+    padding:0 0 20px 0;
+}
+
+.text-level2{
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 1.2em;
+}
+
+.text-level3 { 
+    font-family: "Times New Roman", Times, serif;  
+    font-size: 1.2em;
+}
+
+.difference {  
+    font-size: larger; 
+    font-weight: bold; 
+    color: #CC0033;
+}
+
+.note {  
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 1.2em;
+}
+
+.Subsubsubsection { 
+    text-align: left; 
+    font-size: 1.2em; 
+    font-family:"Tms Rmn", "Times New Roman", sans-serif; 
+    color: black; 
+    font-weight: bold; 
+    font-style: normal;
+}
+
+.ebook-small p.text-level1{
+    font-size: 0.7em;
+    padding:0 0 5px 0;
+}
