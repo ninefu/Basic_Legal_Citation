@@ -155,6 +155,9 @@ app.config(function($routeProvider) {
     .when('/about', {
         templateUrl : '../pages/about.html'
     })
+    .when('/searchResult', {
+        templateUrl : '../pages/searchResult.html'
+    })
     .otherwise({
         redirectTo: '/'
     });
@@ -180,12 +183,23 @@ app.controller('dynamicExamplesCtrl', ['$scope', function($scope) {
 }]);
 
 
-app.controller('mainController', function($scope) {
+app.controller('mainController', function($scope,$location) {
   console.log("Init'd statePracticesCtrl")
   $scope.sortType     = 'state'; // set the default sort type
   $scope.sortReverse  = false;  // set the default sort order
   $scope.searchFish   = '';     // set the default search/filter term
-  
+  $scope.searchResults = [];
+  $scope.searchTag = function(searchTerm) {
+      console.log($scope.tags);
+            for(key in $scope.tags){
+                var tagsForAPage = $scope.tags[key];
+                if(tagsForAPage.indexOf(searchTerm)>=0){
+                        $scope.searchResults.push(key);
+                }
+            }
+            //here change state , not very sure if that will work or not
+            $location.path("/searchResult");
+  }
   // create the list of sushi rolls 
   $scope.countries = [
 {state: 'Alabama', Cases: '3-200.html#3-210_Alabama', Statutes:'3-300.html#3-320_Alabama', Regulations:'3-400.html#3-410_Alabama', Examples_and_Rules:'state_samples/sample_alabama.html'},
@@ -240,7 +254,20 @@ app.controller('mainController', function($scope) {
 {state: 'Wisconsin', Cases: '3-200.html#3-210_Wisconsin', Statutes:'3-300.html#3-320_Wisconsin', Regulations:'3-400.html#3-410_Wisconsin', Examples_and_Rules:'state_samples/sample_wisconsin.html'},
 {state: 'Wyoming', Cases: '3-200.html#3-210_Wyoming', Statutes:'3-300.html#3-320_Wyoming', Regulations:'3-400.html#3-410_Wyoming', Examples_and_Rules:'state_samples/sample_wyoming.html'}
   ];
-  
+
+    $scope.tags =  {
+	'1-200': ["citation"],
+	'1-500': ["abbreviation"],
+	'2-100': ["citation"],
+	'2-200': ["citation"],
+	'2-300': ["citation", "abbreviation"],
+	'2-400': ["citation", "abbreviation"],
+	'2-500': ["citation"],
+	'2-600': ["citation"],
+	'2-700': ["citation", "abbreviation"],
+	'2-800': ["citation"],
+	'2-900': ["citation"]	
+    };
 });
 
 

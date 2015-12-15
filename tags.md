@@ -1,14 +1,3 @@
-![HTML5 TAGS](https://github.com/johncurcio/fluffy-rainbow-colored-unicorn/blob/master/tags.jpg?raw=true)
-
-**Status:**
-
-    - Tags created: 5
-    - Tags documented: 5
-    - Tags reviewed: 
-        - By team: 5
-        - By Sylvia: 0
-    - Tags added to HTML: 0
-
 # Tags
 ---
 Document defining all tags added to the HTML5 files in the Legal Citation Website. All attributes and tags must not use plural form. 

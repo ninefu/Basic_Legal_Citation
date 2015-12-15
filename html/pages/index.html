@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="LegalCitationApp">
+<html lang="en" ng-app="LegalCitationApp" >
 
 <head>
 
@@ -48,12 +48,42 @@
 	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 -->
 <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<!-- JAVASCRIPT to clear search text when the field is clicked -->
+<script type="text/javascript">
+window.onload = function(){ 
+    // Get submit button
+   /* tags =  {
+	'1-200.html': ["<citation>"],
+	'1-500.html': ["<abbreviation>"],
+	'2-100.html': ["<citation>"],
+	'2-200.html': ["<citation>"],
+	'2-300.html': ["<citation>", "<abbreviation>"],
+	'2-400.html': ["<citation>", "<abbreviation>"],
+	'2-500.html': ["<citation>"],
+	'2-600.html': ["<citation>"],
+	'2-700.html': ["<citation>", "<abbreviation>"],
+	'2-800.html': ["<citation>"],
+	'2-900.html': ["<citation>"]	
+			      };
+		*/
 
 
+    var submitbutton = document.getElementById("searchButton");
+    var submitText = document.getElementById("searchText");
+    //Add listener to submit button
+  
+
+    if(submitText.addEventListener){
+        submitText.addEventListener("click", function() {
+                submitText.value = '';
+        });
+    }
+}
+</script>
 
 </head>
 
-<body ng-controller="mainCtrl" class="Normal">
+<body  class="Normal" ng-controller="mainController">
 
     <div id="wrapper">
 
@@ -123,9 +153,13 @@
                     <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
+                              <!--<li class="search">
+                                <input type="text" id="searchText" name="search" size="21" maxlength="120" value="Search our website">
+                                <input type="submit" value="Search" id="searchButton">
+                              </li> -->
+			      <input type="text" id="searchText" class="form-control" placeholder="Search..." ng-model="searchText">
+                              <span class="input-group-btn">
+				<button id="searchButton" class="btn btn-default" type="button" ng-click="searchTag(searchText)">
                                     <i class="fa fa-search"></i>
                                 </button>
                             </span>

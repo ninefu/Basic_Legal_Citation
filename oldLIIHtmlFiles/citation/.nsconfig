@@ -1,4 +1,0 @@
-# -FrontPage-
-<Files *>
-RestrictAccess return-code="403" type="allow" ip="*.*.*.*"
-</Files>
