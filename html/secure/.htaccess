@@ -1,4 +1,4 @@
-AuthUserFile "/Library/WebServer/Documents/.htpasswd"
+AuthUserFile "/var/www/html/.htpasswd"
 AuthName "This is a secure login"
 AuthType Basic
 require valid-user

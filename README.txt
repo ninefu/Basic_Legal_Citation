@@ -1,22 +1,15 @@
 DEPLOYEMENT INSTRUCTIONS FOR BASIC LEGAL CITATION
 --------------------------------------------------
-
-These instructions are specific to Amazon's AWS service.
-The project was deployed on EC2 instance, running Amazon Linux.
-No backend database or appserver is running. All the files are being served from Apache.
-The authentication for author view is handled through Apache file level access configurations.
-The convertion of the web site to other portable formats is done by a python script running in the "cgi-bin" folder.
-For basic AWS instructions, scroll to the end of this document.
-
-
-cp script to cgi bin
-chmod 777 for data
-add htaccess to secure and cgi-bin folder
-write the author view
+- These instructions are specific to Amazon's AWS service.
+- The project was deployed on EC2 instance, running Amazon Linux.
+- No backend database or appserver is running. All the files are being served from Apache.
+- The authentication for author view is handled through Apache file level access configurations and requires to configure .htaccess. These - instructions have been explained in this document.
+- The convertion of the web site to other portable formats is done by a python script running in the "cgi-bin" folder.
+- For basic AWS instructions, scroll to the end of this document.
 
 To search for an unmet dependency on AWS:
 -----------------------------------------
-yum search find "package_name"
+yum search package_name
 
 Install Apache:
 ---------------
@@ -33,6 +26,8 @@ yum install mesa-libGLU.x86_64
 install calibre
 ---------------
 sudo -v && wget -nv -O- https://raw.githubusercontent.com/kovidgoyal/calibre/master/setup/linux-installer.py | sudo python -c "import sys; main=lambda:sys.stderr.write('Download failed\n'); exec(sys.stdin.read()); main()"
+yum install ImageMagick
+yum install ImageMagick-devel
 
 install beautiful soup
 ----------------------
@@ -54,13 +49,24 @@ Create a user and password:
 ----------------------------
 htpasswd -c /var/www/html/.htpasswd peter
 
-Copy to /var/www/html/secure/.htaccess:
+Append to /var/www/html/secure/.htaccess:
 -----------------------------------------
 AuthUserFile "/var/www/html/.htpasswd"
 AuthName "This is a secure login"
 AuthType Basic
 require valid-user
 
+Set up the cgi-bin
+--------------------
+Copy the contents of "cgi-bin" in the project folder to /var/www/cgi-bin of Amazon
+
+Create a temporary directory:
+-----------------------------
+mkdir /var/www/html/data
+chmod 777 /var/www/html/data
+
+Restart the server
+------------------
 sudo service httpd restart
 
 Basic AWS instructions:
@@ -86,7 +92,9 @@ ssh -i ~/LegalCitation-final-ppt-Private-Cloud.pem ec2-user@ec2-52-35-183-12.us-
 
 Refresh the browser!
 
-Our current project is hosted @
+Our current project is hosted @ 
+-------------------------------
+(This may be re-deployed on a different server and the URL is NOT always GUARANTEED to be valid)
 http://ec2-52-35-183-12.us-west-2.compute.amazonaws.com/
 
 The author view is accessible from:

@@ -1,3 +1,6 @@
+#!/usr/bin/python -u
+print "Content-type: text/html\r\n\r\n"
+
 '''
     HOW TO USE:
         The computer must have Calibre, BeautifulSoup, Python  installed for the program to work correctly.
@@ -37,7 +40,7 @@
         --pdf-page-numbers                - add page numbers to the pdf
 '''
 
-from subprocess import call
+from subprocess import call, PIPE, Popen
 import os.path
 import glob
 import zipfile
@@ -47,7 +50,8 @@ import os.path
 import urlparse
 import cgi
 import shutil, errno
-from BeautifulSoup import BeautifulSoup,Tag, Comment
+#from BeautifulSoup import BeautifulSoup,Tag, Comment
+from bs4 import BeautifulSoup,Tag, Comment
 
 # get the html file as a BeautifulSoup file
 def get_beautiful_file(filename):
@@ -514,8 +518,8 @@ def ignore_on_conversion(soup):
         for tag in ignore_list:
             tag.replaceWith("")
 
-def epub_conversion(folder, args):
-    output = "basic-legal-citation.epub"
+def epub_conversion(folder, args, outputFolder):
+    output = outputFolder + "basic-legal-citation.epub"
     args.append(output)
 
     args.append("--breadth-first")
@@ -548,8 +552,8 @@ def epub_conversion(folder, args):
     args.append("15")
     return args
 
-def pdf_conversion(folder, args):
-    output = "basic-legal-citation.pdf"
+def pdf_conversion(folder, args, outputFolder):
+    output = outputFolder + "basic-legal-citation.pdf"
     args.append(output)
     
     args.append("--breadth-first")
@@ -584,8 +588,8 @@ def pdf_conversion(folder, args):
     args.append("--smarten-punctuation")
     return args
 
-def mobi_conversion(folder, args):
-    output = "basic-legal-citation.mobi"
+def mobi_conversion(folder, args, outputFolder):
+    output = outputFolder + "basic-legal-citation.mobi"
     args.append(output)
     return args
 
@@ -608,7 +612,7 @@ def create_convertible_folder():
     dir_path = '*.html'
     files = glob.glob(dir_path)
     folder = "ebook"
-    copyfolder("state_samples", folder+"/state_samples")
+    copyfolder("../html/pages/state_samples", folder+"/state_samples")
     if os.path.isfile("pdf.css"): 
         shutil.copy("pdf.css", folder)
     if os.path.isfile("cover.jpeg"): 
@@ -630,34 +634,73 @@ def create_convertible_folder():
             f.close()
     return folder
 
-if __name__ == "__main__":
-    folder = create_convertible_folder()
-    
-    args = []
-    command = "ebook-convert"
-    args.append(command)
-    arg = folder + "/pdf-toc.html"#raw_input("Type the input HTML (Table of Contents) file: ")
-    if os.path.isfile(arg):
-        args.append(arg)
-        args = pdf_conversion(folder + '/', args)
-        call(args)
-    
-    args = []
-    command = "ebook-convert"
-    args.append(command)
-    arg = folder + "/ebook-toc.html"#raw_input("Type the input HTML (Table of Contents) file: ")
-    if os.path.isfile(arg):
-        args.append(arg)
-        args = epub_conversion(folder + '/', args)
-        call(args)
+#execute the command
+def execute(args):
+    process = Popen(args, shell=False, stdout=PIPE)
 
-    args = []
-    command = "ebook-convert"
-    args.append(command)
-    arg = "basic-legal-citation.epub"#raw_input("Type the input HTML (Table of Contents) file: ")
-    if os.path.isfile(arg):
-        args.append(arg)
-        args = mobi_conversion(folder + '/', args)
-        call(args)
-    
-    deletefolder(folder)
+    # Poll process for new output until finished
+    while True:
+        nextline = process.stdout.readline()
+        if nextline == '' and process.poll() != None:
+            break
+        sys.stdout.write(nextline.replace("\n","<br />\n"))
+        sys.stdout.flush()
+
+    return process.communicate()[1]
+
+if __name__ == "__main__":
+    try:
+        folder = create_convertible_folder()
+        args = []
+        command = "ebook-convert"
+        args.append(command)
+        arg = folder + "/pdf-toc.html"#raw_input("Type the input HTML (Table of Contents) file: ")
+
+        #delete the contents of the outputFolder
+        outputFolder = "../html/data/"
+        if os.path.exists(outputFolder):
+            deletefolder(outputFolder)
+        os.mkdir(outputFolder) 
+
+        print "Beginning conversion, please don't refresh..."
+        if os.path.isfile(arg):
+            args.append(arg)
+            args = pdf_conversion(folder + '/', args, outputFolder)
+            err = execute(args)
+
+            if(err != None):
+                deletefolder(folder)
+                sys.exit("PDF conversion failed!")
+        
+        args = []
+        command = "ebook-convert"
+        args.append(command)
+        arg = folder + "/ebook-toc.html"#raw_input("Type the input HTML (Table of Contents) file: ")
+        if os.path.isfile(arg):
+            args.append(arg)
+            args = epub_conversion(folder + '/', args, outputFolder)
+            err = execute(args)
+            if(err != None):
+                deletefolder(folder)
+                sys.exit("ePub conversion failed!")
+        args = []
+        command = "ebook-convert"
+        args.append(command)
+        arg = "basic-legal-citation.epub"#raw_input("Type the input HTML (Table of Contents) file: ")
+        if os.path.isfile(arg):
+            args.append(arg)
+            args = mobi_conversion(folder + '/', args, outputFolder)
+            err = execute(args)
+            if(err != None):
+                deletefolder(folder)
+                sys.exit("mobi conversion failed!")
+
+        print('<link href="../dist/css/customize.css" rel="stylesheet">')
+        print('<link href="../dist/css/citation.css" rel="stylesheet">')
+        print('<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">')
+        print('<div class = "conButt btn-lg btn-info "><a href="../data">Converted files </a></div>')
+    except:
+        print "Unexpected error:", sys.exc_info()[0]
+        raise
+    finally:
+        deletefolder(folder)
