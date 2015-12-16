@@ -50,8 +50,10 @@ import os.path
 import urlparse
 import cgi
 import shutil, errno
-#from BeautifulSoup import BeautifulSoup,Tag, Comment
-from bs4 import BeautifulSoup,Tag, Comment
+
+#import BeautifulSoup for Ubuntu and bs4 for Amazon Linux
+from BeautifulSoup import BeautifulSoup,Tag, Comment
+#from bs4 import BeautifulSoup,Tag, Comment
 
 # get the html file as a BeautifulSoup file
 def get_beautiful_file(filename):

@@ -6,6 +6,57 @@ DEPLOYEMENT INSTRUCTIONS FOR BASIC LEGAL CITATION
 - The authentication for author view is handled through Apache file level access configurations and requires to configure .htaccess. These - instructions have been explained in this document.
 - The convertion of the web site to other portable formats is done by a python script running in the "cgi-bin" folder.
 - For basic AWS instructions, scroll to the end of this document.
+- This document also contains instructions to install on Ubuntu AWS instance.
+
+									-------------------
+									Common instructions
+									--------------------
+Un-tar the project into /var/www/html
+
+Create a user and password:
+----------------------------
+htpasswd -c /var/www/html/.htpasswd peter
+
+Append to /var/www/html/secure/.htaccess:
+-----------------------------------------
+AuthUserFile "/var/www/html/.htpasswd"
+AuthName "This is a secure login"
+AuthType Basic
+require valid-user
+
+Create a temporary directory:
+-----------------------------
+mkdir /var/www/html/data
+chmod 777 /var/www/html/data
+									--------------------------
+									Ubuntu on AWS instructions
+									--------------------------
+Install required software:
+--------------------------
+sudo apt-get install apache2 python-beautifulsoup calibre-bin calibre
+
+Setup the cgi-bin config @
+/etc/apache2/sites-enabled/lii_apache2_last:
+---------------------------------------------
+        ScriptAlias /cgi-bin/ /usr/lib/cgi-bin/
+        <Directory "/usr/lib/cgi-bin">
+                AllowOverride None
+                Options +ExecCGI -MultiViews +SymLinksIfOwnerMatch
+                AddHandler cgi-script .py
+                Order allow,deny
+                Allow from all
+        </Directory>
+
+		<Directory "/var/www/html/secure">
+  			AllowOverride AuthConfig
+ 			Options FollowSymLinks
+  			Order allow,deny
+ 			Allow from all
+		</Directory>
+
+									---------------------
+									Amazon Linux Instance
+									---------------------
 
 To search for an unmet dependency on AWS:
 -----------------------------------------
@@ -45,25 +96,9 @@ Add to /etc/httpd/conf/httpd.conf:
   Allow from all
 </Directory>
 
-Create a user and password:
-----------------------------
-htpasswd -c /var/www/html/.htpasswd peter
-
-Append to /var/www/html/secure/.htaccess:
------------------------------------------
-AuthUserFile "/var/www/html/.htpasswd"
-AuthName "This is a secure login"
-AuthType Basic
-require valid-user
-
 Set up the cgi-bin
 --------------------
 Copy the contents of "cgi-bin" in the project folder to /var/www/cgi-bin of Amazon
-
-Create a temporary directory:
------------------------------
-mkdir /var/www/html/data
-chmod 777 /var/www/html/data
 
 Restart the server
 ------------------

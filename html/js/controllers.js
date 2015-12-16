@@ -146,8 +146,8 @@ app.config(function($routeProvider) {
     .when('/toc', {
         templateUrl : '../pages/toc.html'
     })
-    .when('/index', {
-        templateUrl : '../pages/content_index.html'
+    .when('/topics', {
+        templateUrl : '../pages/topics.html'
     })
     .when('/help', {
         templateUrl : '../pages/help.html'
@@ -157,6 +157,9 @@ app.config(function($routeProvider) {
     })
     .when('/searchResult', {
         templateUrl : '../pages/searchResult.html'
+    })
+    .when('/toc', {
+        templateUrl : '../pages/toc.html'
     })
     .otherwise({
         redirectTo: '/'
