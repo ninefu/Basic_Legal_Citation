@@ -56,7 +56,7 @@ from bs4 import BeautifulSoup,Tag, Comment
 # get the html file as a BeautifulSoup file
 def get_beautiful_file(filename):
     ex_file = urllib.urlopen(filename).read().decode('utf-8', 'ignore')
-    ex_soup = BeautifulSoup(ex_file)
+    ex_soup = BeautifulSoup(ex_file, "html.parser")
     return ex_soup
 
 # remove those navigation headers and footers from every page.
@@ -607,31 +607,71 @@ def copyfolder(src, dst, symlinks=False, ignore=None):
 def deletefolder(folder):
     shutil.rmtree(folder)
 
+def deleteFolderContents(folder):
+    for the_file in os.listdir(folder):
+    file_path = os.path.join(folder, the_file)
+    try:
+        if os.path.isfile(file_path):
+            os.unlink(file_path)
+        #elif os.path.isdir(file_path): shutil.rmtree(file_path)
+    except Exception, e:
+        print e
+
 # put the files in a sepparate folder so you won't loose information
 def create_convertible_folder():
-    dir_path = '*.html'
-    files = glob.glob(dir_path)
     folder = "ebook"
-    copyfolder("../html/pages/state_samples", folder+"/state_samples")
+
+    #copy all files from ../html/pages
+    htmlPages = "../html/pages"
+    if os.path.exists(htmlPages):
+        shutil.copytree(htmlPages, folder)
+
+    #copy the css files to ebook
+    styleFiles = glob.iglob(os.path.join('.', "*.css"))
+    for file in styleFiles:
+        if os.path.isfile(file):
+            shutil.copy2(file, folder)
+
+    #copy html files in pwd to ebook
+    htmlFiles = glob.iglob(os.path.join('.', "*.html"))
+    for file in htmlFiles:
+        if os.path.isfile(file):
+            shutil.copy2(file, folder)
+
+    #copy the jpeg and jpg files to ebook
+    jpg = glob.iglob(os.path.join('.', "*.jpg"))
+    for file in jpg:
+        if os.path.isfile(file):
+            shutil.copy2(file, folder)
+    jpeg = glob.iglob(os.path.join('.', "*.jpeg"))
+    for file in jpeg:
+        if os.path.isfile(file):
+            shutil.copy2(file, folder)
+
+    #copy some styling files to ebook temp folder as well
     if os.path.isfile("pdf.css"): 
         shutil.copy("pdf.css", folder)
     if os.path.isfile("cover.jpeg"): 
         shutil.copy("cover.jpeg", folder)
-    for filename in files:
-        print "Working on file " + filename
-        html = filename
-        if os.path.isfile(html): #verify if the file exists
-            soup = get_beautiful_file(html)
-            linearize_tables(soup)
-            ignore_on_conversion(soup)
+
+    #for each *.html in ebook, recursively do a beautiful soup
+    for root, dirs, files in os.walk("/mydir"):
+        for file in files:
+            if file.endswith(".html"):
+                html = os.path.join(root, file)
+                print "Working on file " + html 
+                soup = get_beautiful_file(html)
+                linearize_tables(soup)
+                ignore_on_conversion(soup)
             
-            new_filename = filename[:-4]
-            if not os.path.exists(folder):
-                os.makedirs(folder)
-            new_filename = folder+"/"+ new_filename +"html"
-            f = open(new_filename, "w")
-            f.write(soup.prettify("utf-8"))
-            f.close()
+                #get the file name, barring the extension
+                new_filename = html[:-4]
+                if not os.path.exists(folder):
+                    os.makedirs(folder)
+                new_filename = folder+"/"+ new_filename +"html"
+                f = open(new_filename, "w")
+                f.write(soup.prettify("utf-8"))
+                f.close()
     return folder
 
 #execute the command
@@ -649,8 +689,8 @@ def execute(args):
     return process.communicate()[1]
 
 if __name__ == "__main__":
+    folder = create_convertible_folder()
     try:
-        folder = create_convertible_folder()
         args = []
         command = "ebook-convert"
         args.append(command)
@@ -658,18 +698,21 @@ if __name__ == "__main__":
 
         #delete the contents of the outputFolder
         outputFolder = "../html/data/"
-        if os.path.exists(outputFolder):
-            deletefolder(outputFolder)
-        os.mkdir(outputFolder) 
+        deleteFolderContents(outputFolder)
 
-        print "Beginning conversion, please don't refresh..."
+        #if the outputFolder was never there, let's create one
+        #ideally this must never happen. will cause write permission issues
+        if not os.path.exists(outputFolder):
+            os.mkdir(outputFolder) 
+
+        print "Beginning conversion, please don't refresh...<br />\n\r"
         if os.path.isfile(arg):
             args.append(arg)
             args = pdf_conversion(folder + '/', args, outputFolder)
             err = execute(args)
 
             if(err != None):
-                deletefolder(folder)
+                print('<h3> PDF conversion failed! </h3><br/>\r\n')
                 sys.exit("PDF conversion failed!")
         
         args = []
@@ -681,18 +724,18 @@ if __name__ == "__main__":
             args = epub_conversion(folder + '/', args, outputFolder)
             err = execute(args)
             if(err != None):
-                deletefolder(folder)
+                print('<h3> ePub conversion failed! </h3><br/>\r\n')
                 sys.exit("ePub conversion failed!")
         args = []
         command = "ebook-convert"
         args.append(command)
-        arg = "basic-legal-citation.epub"#raw_input("Type the input HTML (Table of Contents) file: ")
+        arg = outputFolder + "/basic-legal-citation.epub"#raw_input("Type the input HTML (Table of Contents) file: ")
         if os.path.isfile(arg):
             args.append(arg)
             args = mobi_conversion(folder + '/', args, outputFolder)
             err = execute(args)
             if(err != None):
-                deletefolder(folder)
+                print('<h3> mobi conversion failed! </h3><br/>\r\n')
                 sys.exit("mobi conversion failed!")
 
         print('<link href="../dist/css/customize.css" rel="stylesheet">')
@@ -700,7 +743,9 @@ if __name__ == "__main__":
         print('<link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">')
         print('<div class = "conButt btn-lg btn-info "><a href="../data">Converted files </a></div>')
     except:
-        print "Unexpected error:", sys.exc_info()[0]
+        print "Unexpected error:", sys.exc_info()
         raise
     finally:
-        deletefolder(folder)
+        print "done"
+        if os.path.exists(folder):
+            deletefolder(folder)
