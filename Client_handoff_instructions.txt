@@ -1,28 +1,76 @@
-How to maintain the website
---------------------------------------
+Instructions to maintain and to the website
+--------------------------------------------
+The site has been re-designed with Angular JS.
+The most common concepts used are angular routing, angular filter, angular iframes and popups.
+Calibre and beautifulsoup are being used for conversion to other portable formats.
+Each of these have been explained in greater detail below.
 
-should we show him create example live demo tom??
-
-Adding an example
-Adding ignore-on-convert attribute
-Adding a new page:
-linking it to ePub ToC
-linking it on angular js router
-Adding link to sidebar, top navigation bars
-adding search tables (this one is tricky)
-making hyperlinks to point to other pages, may jump outside the site’s layout
-pdf and calibre specific tags/css style updates
-Upload location for the new html, epub and mobi files - the name should match the href links in index.html and location must be html/pages
-anything else??
-
+Before proceeding to the use-cases, an attempt to answer the client's concerns on quality of final product,
 From the client’s mail:
-
+--------------------------
+Question:
 Information on where things stand with the search feature and how to create the tags that it can search on.  I note that at present it generates no results when fed search terms drawn from the old version's index or a state name.
 
+Answer:
+The search has only been partially implemented. The HTML files have been manually read through and relevant tags have been added. The summary of the tags have been described in tags.pdf
+
+The search was implemented as an experiment. A person can search a tag name such as "citation" and a page with hyperlinks to other pages which contain atleast one tag of type <citation>, would be dynamically displayed. But, the user still had to click on each of the hyperlinks and then search for the content within that page.
+
+We haven't been able to extract the contents enclosed between tag types.
+
+Also, it is unrealistic to expect a person to enter tag names such as "citation" into the search bar. It hence requires a pre-processor method that would map search keywords to tag types. At the very least, this would take quite some effort to do query processing, then inferring the tag names and then displaying the relevant contents along with page hyperlinks. We retained the search bar since it can search tag names. But, it can't de deployed in production right now.
+
+Question:
 A report on what happened with the plan to have examples drawn from any of the state tables pulled up by entering the name of the state of interest into a search box?  Did you complete the feature sufficiently that I can implement it?  I am recalling agreement that it was better than or at least a useful tool in addition to the tables of state names.
 
-
+Answer:
+The state table names have been done for 7-500.html : § 7-500. Table of State-Specific Citation Norms and Practices
+
+The search bar for this is only on that page. We didn't convert all of the pages into such a format because the format is difficult for maintenance for a non-programmer. The later part of the document explains how to make such a dynamic table. If the client is confident of updating and maintaining the data structures involved, it is feasible to convert all tables into this format. 
+
+For now, we've only made the tables which are less likely to contain changing rows/columns into this dynamic search type.
+
+Alternately, a programmer can experiment with creating a new angular js directive for the jquery equivalent of filter found @
+http://jsfiddle.net/FranWahl/rFGWZ/
+
+$("#search").on("keyup", function() {
+    var value = $(this).val();
+
+    $("table tr").each(function(index) {
+        if (index !== 0) {
+
+            $row = $(this);
+
+            var id = $row.find("td:first").text();
+
+            if (id.indexOf(value) !== 0) {
+                $row.hide();
+            }
+            else {
+                $row.show();
+            }
+        }
+    });
+});
+
+The above code is in jquery. Jquery and angular JS often don't mix well together since the event handle cycles are different. It would be a fun experiment to try and convert the above piece of code into an angular js directive. With this, the client may be able to maintain the table easily and, giving interactive features for the table search.
+
+Basic Folder Structure of the project
+--------------------------------------
+1.
+cgi-bin - contains converter.py, the main script that converts the website into other portable formats.
+Also contains other files like preface.html and special .css files which help to style the epub and mobi formats.
+
+2. html/pages - contains all the static .html files
+
+3. html/js - contains the javascript components. Mostly used for Angular JS to display the basic template of the site.
+
+------------------------------------
+Most common use-cases of the site
+-------------------------------------
+
 1.    Adding a new Example
+------------------------------
  
 To add a new example in a page:
  
@@ -49,14 +97,17 @@ Code convention to add an initial example text in the example box:
 10.  </div>
 11.</div>
 12.</p>
- 
+
+Explanation of code:
 Line 1 to 12: <p> tag with class = “iframe”. Same as in the original files.
 Line 2: <a> tag with the frame name. Same as in the original files.
 Line 3 to 5: <div> with <span> tag contains the heading of the Example. Same as in the original files.
 The ignore-on-convert attribute is explained in the next section.
 Line 6 to 11: <div> tag that contains the Example box (iframe-look-alike)
 Line 7 to 10: <div> tag which is the Example box. The CSS class, “ExampleBox” defines the border and the look and feel of the iframe-look-alike box.
-Line 8 to 9: <ul> tag contains the list of examples in any example box. We have noticed that the examples across the website are all written in <ul> tags. In future, if this has to be changed to any other format, for example a paragraph, then the code would be:
+Line 8 to 9: <ul> tag contains the list of examples in any example box. We have noticed that the examples across the website are all written in <ul> tags. 
+
+In future, if this has to be changed to any other format, for example a paragraph, then the code would be:
         	<p>
 .
 .
@@ -79,6 +130,8 @@ Code convention to add an example in a popup:
 5.              </ul>
 6.        </modal>
 7.  </span>
+
+Explanation of code:
 Line 1: <span> tag is used to create an angularJS element for the “button-click-pop-up-open” interaction. There will be no change in this line.
 Line 2: <button> tag is the substitution for the <<e.g>> hyperlink. There will not be any change in this tag.
 Line 3: <modal> tag defines the popup and the content within the pop. Do not modify this in the HTML file.
@@ -98,7 +151,7 @@ Line 7: </span> tag ends the button and popup definition.
 
 
 2.   Adding the ignore-on-convert attribute
- 
+----------------------------------------------- 
 We have noticed that the author has excluded the initial example textbox in the ebook versions. While converting our new website into an ebook (pdf/epub/mobi), to exclude the initial example boxes, we have written a script which skips these elements that should not appear on the ebook. This is implemented by using a special class called “ignore-on-convert”.
 There are many other elements on the website which should not be present on the ebook, for example, buttons, a few hyperlinks, etc. All of these elements are given an attribute class during the website construction phase. Before conversion, a script is written which runs in the background along with the conversion to skip all these elements.
  
@@ -111,16 +164,10 @@ Code convention to add this attribute:
 ·         All the tags within the outer <div> tag will also be skipped since they are surrounded by the tag with the attribute. 
 
 3.    Adding a new page:
-      On the website:
-The background skin and layout of the site is saved in html/pages/index.html
+-------------------------
+All new html pages must be added under html/pages folder.
 
-To keep a new page within this  layout:
-Add an entry to the side bar as:
-@html/pages/index.html
-
-
-
-·         Linking it to ebook:
+Linking it to ebook:
 -   	If a new page has to be added to the website, update the ebook table of contents without which the changes are not reflected in the ebook.
 -   	The Table of contents file can be found in the cgi-bin folder. File name “ebook-toc.html”.
 -   	In the HTML file, add a list item to the existing structure of <ul> tags.
@@ -138,4 +185,192 @@ Add an entry to the side bar as:
 							<ul class="nav nav-second-level">
 								<li><a href="#3-100">Electronic Resources</a></li>
 
+4. Adding a new entry in the left navigation pane
+--------------------------------------------------
+The basic layout of the page has been saved in html/pages/index.html
+Side bars, top navigation bars, the colour scheme of the navigation panes, all these are to be edited in this file.
 
+Left navigation menu entry:
+<li><a href="#"><i class="fa fa-fw"></i> EXAMPLES – CITATIONS OF ...<span class="fa arrow"></span></a>
+              <ul class="nav nav-second-level">
+                <li><a href="#3-100">Electronic Resources</a></li>
+                <li><a href="#8-new"> This is a new entry </a></li>
+
+
+Notice that the main heading in the side bar - "EXAMPLES – CITATIONS" has a href="#". This means that upon clicking that link, no new page must be loaded.
+
+<a href="#8-new"> DO NOT put direct links like 8-new.html here. Any direct link will cause the page to open a new window and the basic website template will no longer be displayed.
+
+The site uses angular-js routing to set up links.
+
+In html/pages/index.html:
+<a href="#8-new"> A new page hyperlink </a>
+
+Each link must have an equivalent entry in html/js/controllers.js:
+     .when('/1-100', {
+        templateUrl : '../pages/1-100.html'
+    }) 
+    .when('/8-new', {
+        templateUrl : '../pages/newly-added-page.html'
+    })
+This will map the string "8-new" to the actual html file - "newly-added-page.html"
+Each hyperlink on the site must have an entry in controllers.js to ensure that all links are 
+displayed within the basic design layout of the page.
+
+There may be a way to do this without entering new entries in controllers.js. A programmer may google about angular js route to know how to match common prefix strings and redirect.
+
+5. Adding a new entry on top navigation bar:
+---------------------------------------------
+html/pages/index.html:
+      <ul class="nav navbar-top-links navbar-right">
+        <li><a href="/"><i class="fa fa-fw"></i>Home</a></li>
+        <li><a href="#toc"><i class="fa fa-fw"></i>Table of
+            Contents</a></li>
+        <li><a href="#new-top-page"><i class="fa fa-fw"></i> New page on top bar </a></li>
+
+html/js/controllers.js :
+    .when('/', {
+        templateUrl : '../pages/intro.html'
+    })   
+     .when('/1-100', {
+        templateUrl : '../pages/1-100.html'
+    }) 
+    .when('/new-top-page', {
+        templateUrl : '../pages/new-page-to-be-on-top.html'
+    }) 
+
+6. Adding dynamic search tables:
+---------------------------------
+7-500.html is a fancy table that has a lot of datastructures behind it.
+The data must be represented in the JSON format.
+
+html/js/controllers.js:
+  $scope.countries = [
+{state: 'Alabama', Cases: '3-200.html#3-210_Alabama', Statutes:'3-300.html#3-320_Alabama', Regulations:'3-400.html#3-410_Alabama', Examples_and_Rules:'state_samples/sample_alabama.html'},
+{state: 'Alaska', Cases: '3-200.html#3-210_Alaska', Statutes:'3-300.html#3-320_Alaska', Regulations:'3-400.html#3-410_Alaska', Examples_and_Rules:'state_samples/sample_alaska.html'},
+...]
+
+html/pages/7-500.html:
+
+        <input type="text" class="form-control" placeholder="Search States"
+          ng-model="searchCountries"> <br>
+
+            <tr
+              ng-repeat="roll in countries | orderBy:sortType:sortReverse | filter:searchCountries">
+              <td class="col-md-1">{{ roll.state }}</td>
+              <td class="col-md-1"><a href="{{ roll.Cases }}">Cases</a></td>
+              <td class="col-md-1"><a href="{{ roll.Statutes }}">Statutes</a></td>
+              </a>
+              <td class="col-md-1"><a href="{{ roll.Regulations }}">Regulations</a></td>
+              <td class="col-md-1"><a href="{{ roll.Examples_and_Rules }}">Examples
+                  and Rules</a></td>
+            </tr>
+
+Here <input type..> represents the search box on top of the table. The ng-model="searchCountries" must be used in the next line.
+
+<tr> means construct a table row dynamically
+ng-repeat - choose each entry from the big JSON table shown previously, processing them one at a time
+filter:searchCountries - reduce table rows based on input given in the input text box
+<td> - table data
+href = {{roll.Cases}} - for each table row, fetch data from $scope.countries shown above. Notice that the JSON table has Cases, state, Statutes, etc., which are being re-used inside a <td>
+
+This is the angular JS way of inserting a big table as a JSON and then writing a few lines of code to help make dynamic searches on the table.
+
+We understand that this method may not be easy to maintain for a client who is not a programmer. Hence, we limited it to tables that usually don't have changing data.
+
+If one can make an angular directive based on the URL that I gave at the start of this document, it would be great to have a nice search feature and to describe the table as general <td> <tr> entries.
+
+Note: The data of the table is fetched from $scope.countries and must not be inserted as regular text in the actual table.
+
+7. Making hyperlinks load the target page within the page framework:
+----------------------------------------------------------------------
+The site has a lot of hyperlinks as <a href="2-100.html"> All such links will open the target page in a new window, outside the basic layout template.
+
+To fix this issue, one must use solutions described in points 4. or 5.
+
+8. pdf and calibre specific tags/css style updates
+---------------------------------------------------
+The conversion is done by the converter.py script in the cgi-bin folder of the project.
+It contains other files too, like preface.html. These MUST be present and must have the same name for the script to work correctly and to produce beautiful output formats.
+
+The client really need NOT WORRY about the following info. All these have been taken care of by us when setting up the project's folder structures and writing converter.py.
+
+But, if anyone intends to change folder or rename files, then these are to be kept in mind. Also, converter.py has a lot of hard-coded relative file path which may need to be modified if someone intends to move around  files.
+
+GENERAL CONVETER GUIDELINES (copied from the comments in converter.py):
+        The user needs:
+            * a TOC (table of contents) file, which is just an html with links to other pages.
+            * a metadata file with info about the author, publisher, year, etc
+            * a cover page for the book
+        For simplicity we have provided both a table of contents in ebook-toc.html and a cover page for the
+        conversion. 
+
+    HOW IT WORKS:
+        All of the pages are embedded using the links inside the toc file, if you want a page in the
+        pdf or epub, input a anchor <a href> </a> in the TOC file. The order of the anchors is maintained
+        during conversion. 
+
+    THE CODE:
+        Most of the code is used to linearize the tables created in a few of the HTML. Each table has
+        received an id according to how it should be linearized. The linearization is heavily dependant
+        upon the structure of the tables. In case the structure is altered, the linearization may not
+        work as intended. 
+
+    OPTIONS:
+        -m metadata_file                  - sets the metadata of the ebook
+        --insert-metadata
+        --cover cover.jpeg                - iff cover is not specified in metadata
+        --breadth-first                   - analyse the TOC.html in breadth first search order
+        --extra-css style.css             - adds an extra css file
+        --no-default-epub-cover
+        --no-svg-cover                    - to work on iphones correctly
+        --preserve-cover-aspect-ratio
+        --disable-font-rescaling          - preserve the font size specified in the css
+        --expand-css                      - use the full css file
+        --smarten-punctuation             - convert the punctuation into its typographic equivalent
+        --margin-*                        - set the margin of the book in px
+        --pdf-page-numbers                - add page numbers to the pdf
+
+One may add or delete these options in conveter.py to generate more refined outputs.
+
+9.
+Upload location for the new html, epub and mobi files
+---------------------------------------------------------
+html files - html/pages
+portable format files that are visible to public - html/pages
+portable files generated by converter.py, based on the current site's contents - html/data. This folder isn't accessible through the main site but anyone with the URL can view it's contents.
+
+The file names must NOT change. If they do, the site visitors will no longer be able to download files by clicking on the dropdown menu in the top-right corner of the site. The href links will break on name change. Correct the file names in html/js/controllers.js if one REALLY wants to rename the output file names.
+
+10. Author view
+-----------------
+The author view is used to convert the site's contents into 3 portable formats - PDF, ePub, Mobi. The contents are then stored in html/data. The author can download these files, check for correctness and then re-upload them to html/pages to be available to the general public.
+
+The files are to be generated in dreamWeaver, author is free to edit the dreamweaver's output to add angular js code and then upload them to the server.
+
+11. Additional comments
+------------------------
+ng-app="LegalCitationApp" - the index.html and 7-500.html page has this tag. It means that they are all part of a single module. One may need to add this only if a page must contain dynamic features like popups, dynamic search tables, etc.
+
+
+ng-controller - A controller defines a scope of visibility for variables. This project has a 'mainCtrl' and 'dynamicExamplesCtrl'.
+These terms are pretty confusing to a non-technical maintainer. At a very basic level, if a person has to build any dynamic angular JS feature, he must define ng-app and an ng-controller. If the ng-controller used is dynamicExamplesCtrl, he must go to html/js/controllers.js and he needs to add a function there, which will get called on an event.
+
+For eg, the popup windows are defined with ng-app="LegalCitationApp", ng-controller="dynamicExamplesCtrl". The html/js/controllers.js has:
+
+app.controller('dynamicExamplesCtrl', ['$scope', function($scope) {
+   $scope.toggleModal = function(btnClicked){
+        $scope.buttonClicked = btnClicked;
+        $scope.showModal = !$scope.showModal;
+    }
+...
+}
+On a popup button click, the $scope.toggleModal function is called and this is how they are bound together.
+
+
+
+
+The site is large and is expected to take some more developers to reach perfection. We hope that the client finds our work useful and that one day, will be used by all the law students.
+
+Sd/-
+Software Engg. team
