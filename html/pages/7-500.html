@@ -1,95 +1,64 @@
 <html>
- <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>
-   Basic Legal Citation: &sect; 7-500 (2013)
-  </title>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  
-  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Basic Legal Citation: &sect; 7-500 (2013)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
- </head>
- <body bgcolor="#FFFFFF" class="Normal">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+<script type="text/javascript" src="../js/controller.js"></script>
 
-  <!-- include the angular ctrls -->  
-  <script type="text/javascript" src="../js/controller.js"></script>
+</head>
+<body bgcolor="#FFFFFF" class="Normal">
+	<h3 class="Section">
+		§ 7-500. <a name="7-500"> </a> Table of State-Specific Citation Norms
+		and Practices
+	</h3>
 
- </body>
- <body bgcolor="#FFFFFF" class="Normal">
-  <h1 align = "left" >
-   &sect; 7-500.
-   Table of State-Specific Citation 
+	<p class="text-level1">The following table provides links to the
+		citation forms for cases, statutes, and regulations in all fifty
+		states and the District of Columbia. For each it also provides a
+		sample of in-state citation practice drawing upon a recent decision of
+		the state's highest court and notes any explicit citation rules
+		governing briefs and memoranda submitted to it.</p>
 
+	<div class="text-level1">
+		<div class="container" ng-app="LegalCitationApp"
+			ng-controller="mainController" ignore-on-convert="">
+			<div class="col-xs-9">
+				<input type="text" class="form-control" placeholder="Search States"
+					ng-model="searchCountries"> <br>
+				<table id="linearize-cols-1-4"
+					class="table table-bordered table-striped table-condensed"
+					width="80%" laceholder="Search States" ng-model="searchCountries">
+					<thead>
+						<tr>
+							<td class="col-sm-0"><b>States </a></td>
+							<td class="col-sm-1"><b>Cases </td>
+							<td class="col-sm-1"><b>Statutes </td>
 
+							<td class="col-sm-1"><b>Regulations </td>
 
-  Norms and Practices
-  </h1>
-  
-  <p>
-   The following table provides links to the citation forms 
+							<td class="col-sm-1"><b>Examples and Rules </td>
 
+						</tr>
+					</thead>
+					<tbody>
+						<tr
+							ng-repeat="roll in countries | orderBy:sortType:sortReverse | filter:searchCountries">
+							<td class="col-md-1">{{ roll.state }}</td>
+							<td class="col-md-1"><a href="{{ roll.Cases }}">Cases</a></td>
+							<td class="col-md-1"><a href="{{ roll.Statutes }}">Statutes</a></td>
+							</a>
+							<td class="col-md-1"><a href="{{ roll.Regulations }}">Regulations</a></td>
+							<td class="col-md-1"><a href="{{ roll.Examples_and_Rules }}">Examples
+									and Rules</a></td>
+						</tr>
+					</tbody>
 
-
-  for cases, statutes, and regulations in all fifty states and the District of 
-
-
-
-  Columbia. For each it also provides a sample of in-state citation practice drawing 
-
-
-
-  upon a recent decision of the state's highest court and notes any explicit citation 
-
-
-
-  rules governing briefs and memoranda submitted to it.
-  </p>
-  
-  <div class="container" ng-app="LegalCitationApp" ng-controller="mainController" ignore-on-convert="">
-  <div class = "col-xs-9">
-  <input type="text" class="form-control" placeholder="Search States" ng-model="searchCountries">
-  <br>
-  <table id="linearize-cols-1-4" class="table table-bordered table-striped table-condensed" width = "80%" laceholder="Search States" ng-model="searchCountries">
-    
-    <thead>
-      <tr>
-        <td class = "col-sm-0">
-            <b>States 
-          </a>
-        </td>
-        <td class = "col-sm-1">
-          <b>Cases          
-        </td>
-        <td class = "col-sm-1">
-          <b>Statutes
-        </td>
-        
-         <td class = "col-sm-1">
-           <b>Regulations
-        </td>
-        
-         <td class = "col-sm-1">
-          <b>Examples and Rules
-        </td>
-        
-      </tr>
-    </thead>
-    
-    <tbody>
-      <tr ng-repeat="roll in countries | orderBy:sortType:sortReverse | filter:searchCountries">
-        <td class = "col-md-1">{{ roll.state }}</td>
-        <td class = "col-md-1"><a href = "{{ roll.Cases }}">Cases</a></td>
-        <td class = "col-md-1"> <a href = "{{ roll.Statutes }}" >Statutes</a></td></a>
-        <td class = "col-md-1"> <a href = "{{ roll.Regulations }}" >Regulations</a></td>
-        <td class = "col-md-1"> <a href = "{{ roll.Examples_and_Rules }}" >Examples and Rules</a></td>
-      </tr>
-    </tbody>
-    
-  </table>
-</div> 
-</div>
-
-
-  
- </body>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
 </html>
