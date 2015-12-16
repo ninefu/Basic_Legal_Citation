@@ -1,0 +1,141 @@
+How to maintain the website
+--------------------------------------
+
+should we show him create example live demo tom??
+
+Adding an example
+Adding ignore-on-convert attribute
+Adding a new page:
+linking it to ePub ToC
+linking it on angular js router
+Adding link to sidebar, top navigation bars
+adding search tables (this one is tricky)
+making hyperlinks to point to other pages, may jump outside the site’s layout
+pdf and calibre specific tags/css style updates
+Upload location for the new html, epub and mobi files - the name should match the href links in index.html and location must be html/pages
+anything else??
+
+From the client’s mail:
+
+Information on where things stand with the search feature and how to create the tags that it can search on.  I note that at present it generates no results when fed search terms drawn from the old version's index or a state name.
+
+A report on what happened with the plan to have examples drawn from any of the state tables pulled up by entering the name of the state of interest into a search box?  Did you complete the feature sufficiently that I can implement it?  I am recalling agreement that it was better than or at least a useful tool in addition to the tables of state names.
+
+
+1.    Adding a new Example
+ 
+To add a new example in a page:
+ 
+·         There are no separate example files with notations such as 2-100_ex0.html etc.
+·         If a new example has to be added in an html file, go to the appropriate section/paragraph where the example text has to be added.
+·         Follow the code conventions below to add an example either in the initial example box or in a popup.
+ 
+Code convention to add an initial example text in the example box:
+ 
+1.    <p class="iframe">
+2.    <a name="2-100_frame_1"> </a>
+3.    <div ignore-on-convert="" style="text-align: center;">
+4.     <span class="Examplewindow"> § 2-110(1) Examples Window </span>
+5.    </div>
+6.     <div ignore-on-convert="" style="text-align: center;">
+7.       <div class="ExampleBox" name="2-100_frame_1">
+8.           <ul>
+.
+.
+//Example content goes here.
+.
+.
+9.           </ul>
+10.  </div>
+11.</div>
+12.</p>
+ 
+Line 1 to 12: <p> tag with class = “iframe”. Same as in the original files.
+Line 2: <a> tag with the frame name. Same as in the original files.
+Line 3 to 5: <div> with <span> tag contains the heading of the Example. Same as in the original files.
+The ignore-on-convert attribute is explained in the next section.
+Line 6 to 11: <div> tag that contains the Example box (iframe-look-alike)
+Line 7 to 10: <div> tag which is the Example box. The CSS class, “ExampleBox” defines the border and the look and feel of the iframe-look-alike box.
+Line 8 to 9: <ul> tag contains the list of examples in any example box. We have noticed that the examples across the website are all written in <ul> tags. In future, if this has to be changed to any other format, for example a paragraph, then the code would be:
+        	<p>
+.
+.
+//Example content goes here.
+.
+.
+            </p>
+Code convention to add an example in a popup:
+ 
+1.  <span class="example_icon" ng-controller="dynamicExamplesCtrl">
+2.        <button class="btn btn-default" ignore-on-convert=""
+ 			ng-click="toggleModal('Success')">«e.g.»</button>
+3.        <modal visible="showModal">
+4.              <ul>
+.
+.
+//Example content goes here.
+.
+.
+5.              </ul>
+6.        </modal>
+7.  </span>
+Line 1: <span> tag is used to create an angularJS element for the “button-click-pop-up-open” interaction. There will be no change in this line.
+Line 2: <button> tag is the substitution for the <<e.g>> hyperlink. There will not be any change in this tag.
+Line 3: <modal> tag defines the popup and the content within the pop. Do not modify this in the HTML file.
+Line 4: <ul> tag contains the list of examples in any example box. We have noticed that the examples across the website are all written in <ul> tags. In future, if this has to be changed to any other format, for example a paragraph, then the code would be
+3.         <modal visible="showModal">
+4.              <p>
+.
+.
+//Example content goes here.
+.
+.
+5.              </p>
+6.         </modal>
+Line 5: </ul> or </p> tag is the end of the example text tag.
+Line 6: </modal> tag is the end of the popup definition tag.
+Line 7: </span> tag ends the button and popup definition.
+
+
+2.   Adding the ignore-on-convert attribute
+ 
+We have noticed that the author has excluded the initial example textbox in the ebook versions. While converting our new website into an ebook (pdf/epub/mobi), to exclude the initial example boxes, we have written a script which skips these elements that should not appear on the ebook. This is implemented by using a special class called “ignore-on-convert”.
+There are many other elements on the website which should not be present on the ebook, for example, buttons, a few hyperlinks, etc. All of these elements are given an attribute class during the website construction phase. Before conversion, a script is written which runs in the background along with the conversion to skip all these elements.
+ 
+Code convention to add this attribute:
+1.    <div ignore-on-convert="" style="text-align: center;">
+2.     <span class="Examplewindow"> § 2-110(1) Examples Window </span>
+3.    </div>
+ 
+·         In this example, the entire <div> tag will be skipped and not shown in the ebook versions.
+·         All the tags within the outer <div> tag will also be skipped since they are surrounded by the tag with the attribute. 
+
+3.    Adding a new page:
+      On the website:
+The background skin and layout of the site is saved in html/pages/index.html
+
+To keep a new page within this  layout:
+Add an entry to the side bar as:
+@html/pages/index.html
+
+
+
+·         Linking it to ebook:
+-   	If a new page has to be added to the website, update the ebook table of contents without which the changes are not reflected in the ebook.
+-   	The Table of contents file can be found in the cgi-bin folder. File name “ebook-toc.html”.
+-   	In the HTML file, add a list item to the existing structure of <ul> tags.
+-   	Example, if a new entry called Purposes of Legal Citation has to be added and its index number is 1-200, the following code has to be added.
+<li class="">
+   	<span class="">
+    	<a href="1-200.html">
+     	§ 1-200
+    	</a>
+    	. Purposes of Legal Citation
+   	</span>
+</li>
+<li><a href="#"><i class="fa fa-fw"></i> EXAMPLES –
+								CITATIONS OF ...<span class="fa arrow"></span></a>
+							<ul class="nav nav-second-level">
+								<li><a href="#3-100">Electronic Resources</a></li>
+
+
