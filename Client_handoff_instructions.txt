@@ -290,6 +290,14 @@ To fix this issue, one must use solutions described in points 4. or 5.
 
 8. pdf and calibre specific tags/css style updates
 ---------------------------------------------------
+There are 2 converters that are being handed over to the client:
+1. html/pages/standalone-converter.py - The more awesome and functional converter that does a very good job at converting to all 3 formats.
+                                        "python html/pages/standalone-converter.py" command must be run on a TERMINAL to trigger this
+                                        This is on the client's personal computer and assume that all html files are present locally
+                                        More instructions on what files it expects are in the comments section of html/pages/standalone-converter.py
+                                        Produces an output folder "converted-files", which can be reviewed by the client.
+2. cgi-bin/converter.py - almost similar to the previous converter but, a lot of code was modified in this to make it deployable as a web page. Unfortunately, some functionality in it broke and the outputs generated aren't as pretty as the previous one. If a programmer can make html/pages/standalone-converter.py deployable as a script in cgi-bin folder of a hosted server, then the client will have online site conversion capabilities.
+
 The conversion is done by the converter.py script in the cgi-bin folder of the project.
 It contains other files too, like preface.html. These MUST be present and must have the same name for the script to work correctly and to produce beautiful output formats.
 
