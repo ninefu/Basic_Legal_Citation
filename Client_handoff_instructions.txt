@@ -367,7 +367,13 @@ app.controller('dynamicExamplesCtrl', ['$scope', function($scope) {
 }
 On a popup button click, the $scope.toggleModal function is called and this is how they are bound together.
 
+12. Search engine optimization
+---------------------------------
+Currently, the site has no SEO. I did research about prerender.io and seems like a good fit for this project. This will help google's crawlers to easily search the dynamic pages.
 
+13. Search
+-----------
+Reported in a separate document - search_bar_progress.docx
 
 
 The site is large and is expected to take some more developers to reach perfection. We hope that the client finds our work useful and that one day, will be used by all the law students.
