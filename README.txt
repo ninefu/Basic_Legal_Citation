@@ -1,3 +1,8 @@
+PROJECT BASIC LEGAL CITATION
+
+This project revamped the website of Introduction to Basic Legal Citation (https://www.law.cornell.edu/citation/) into a more modern and interactive one based on AngularJS. In addition, the workflow of maintaining the website and another three e-book formats has been reduced by 75% by developing a customized format converter. 
+
+
 DEPLOYEMENT INSTRUCTIONS FOR BASIC LEGAL CITATION
 --------------------------------------------------
 - These instructions are specific to Amazon's AWS service.
@@ -126,15 +131,5 @@ ssh -i ~/LegalCitation-final-ppt-Private-Cloud.pem ec2-user@ec2-52-35-183-12.us-
 7. sudo tar -xjf /var/www/html.tar
 
 Refresh the browser!
-
-Our current project is hosted @ 
--------------------------------
-(This may be re-deployed on a different server and the URL is NOT always GUARANTEED to be valid)
-http://ec2-52-35-183-12.us-west-2.compute.amazonaws.com/
-
-The author view is accessible from:
-http://ec2-52-35-183-12.us-west-2.compute.amazonaws.com/secure/author.html
-Username: peter
-Passwd:   peter
 
 
