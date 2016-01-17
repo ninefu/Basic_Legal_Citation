@@ -1,6 +1,6 @@
 PROJECT BASIC LEGAL CITATION
 
-This project revamped the website of Introduction to Basic Legal Citation (https://www.law.cornell.edu/citation/) into a more modern and interactive one based on AngularJS. In addition, the workflow of maintaining the website and another three e-book formats has been reduced by 75% by developing a customized format converter. 
+This is a project developed in the course CS 5150 Software Engineering. The team revamped the website of Introduction to Basic Legal Citation (https://www.law.cornell.edu/citation/) into a more modern and interactive one based on AngularJS. In addition, the workflow of maintaining the website and another three e-book formats has been reduced by 75% by developing a customized format converter from HTML5 to PDF, mobi, and ePub. 
 
 
 DEPLOYEMENT INSTRUCTIONS FOR BASIC LEGAL CITATION
